@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/Shohruh121-AslToshMebellari/',
+  base: './',
   server: {
     port: 3000,
     open: true
