@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AslToshMebel — Каталог премиум искусственного камня. Кварц, акрил, гранит. Столешницы для кухни и ванной комнаты." />
+  <title>AslToshMebel — Премиум каталог камня</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">ASLTOSHMEBEL</div>
+    <div class="preloader-bar"></div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="custom-cursor" id="cursor"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 text-decoration-none">
+        <span class="font-heading text-2xl font-bold tracking-wider text-white">ASLTOSH<span class="text-[#c8a45c]">MEBEL</span></span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-10">
+        <a href="#home" class="nav-link" data-ru="Главная" data-uz="Bosh sahifa">Главная</a>
+        <a href="#about" class="nav-link" data-ru="О нас" data-uz="Biz haqimizda">О нас</a>
+        <a href="./catalog.html" class="nav-link text-[#c8a45c]" data-ru="Каталог" data-uz="Katalog">Каталог</a>
+        <a href="#process" class="nav-link" data-ru="Процесс" data-uz="Jarayon">Процесс</a>
+        <a href="#contact" class="nav-link" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
+      </div>
+
+      <div class="hidden md:flex items-center gap-3">
+        <button id="langToggle" class="px-3 py-1.5 text-xs font-semibold tracking-wider uppercase border border-[#c8a45c]/40 text-[#c8a45c] hover:bg-[#c8a45c] hover:text-[#0a0a0a] transition-all duration-300">UZ</button>
+        <a href="#contact" class="btn-primary text-sm py-3 px-6" data-ru="Заказать" data-uz="Buyurtma berish">Заказать</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="nav-link mobile-nav-link" data-ru="Главная" data-uz="Bosh sahifa">Главная</a>
+    <a href="#about" class="nav-link mobile-nav-link" data-ru="О нас" data-uz="Biz haqimizda">О нас</a>
+    <a href="./catalog.html" class="nav-link mobile-nav-link text-[#c8a45c]" data-ru="Каталог" data-uz="Katalog">Каталог</a>
+    <a href="#process" class="nav-link mobile-nav-link" data-ru="Процесс" data-uz="Jarayon">Процесс</a>
+    <a href="#contact" class="nav-link mobile-nav-link" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
+    <button id="langToggleMobile" class="px-4 py-2 mt-2 text-xs font-semibold tracking-wider uppercase border border-[#c8a45c]/40 text-[#c8a45c] hover:bg-[#c8a45c] hover:text-[#0a0a0a] transition-all">UZ</button>
+    <a href="#contact" class="btn-primary mt-4" data-ru="Заказать" data-uz="Buyurtma berish">Заказать</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="max-w-3xl">
+        <div class="hero-badge reveal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span data-ru="Гарантия премиум качества" data-uz="Premium sifat kafolati">Гарантия премиум качества</span>
+        </div>
+        
+        <h1 class="hero-title reveal" style="transition-delay: 0.2s">
+          <span data-ru="Роскошь" data-uz="Tabiatning">Роскошь</span><br/>
+          <span class="accent" data-ru="Натурального" data-uz="Hashamatini">Натурального</span><br/>
+          <span data-ru="Камня в Вашем Доме" data-uz="Uyingizga Olib Keling">Камня в Вашем Доме</span>
+        </h1>
+        
+        <p class="hero-subtitle reveal" style="transition-delay: 0.4s" data-ru="Премиум столешницы из кварца, акрила и гранита. Каждый проект — произведение искусства." data-uz="Kvars, granit va marmar toshlardan tayyorlangan premium oshxona stollari. Har bir loyiha — san'at asari.">
+          Премиум столешницы из кварца, акрила и гранита. 
+          Каждый проект — произведение искусства.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mt-10 reveal" style="transition-delay: 0.6s">
+          <a href="#catalog" class="btn-primary" data-ru="Смотреть каталог" data-uz="Katalogni ko'rish">
+            <span>Смотреть каталог</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#contact" class="btn-outline" data-ru="Бесплатная консультация" data-uz="Bepul konsultatsiya">
+            <span>Бесплатная консультация</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-[#8a8578] text-xs tracking-[3px] uppercase">
+      <span data-ru="Листайте вниз" data-uz="Pastga suring">Листайте вниз</span>
+      <div class="w-[1px] h-10 bg-gradient-to-b from-[#c8a45c] to-transparent animate-pulse"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="py-8 overflow-hidden border-y border-white/5">
+    <div class="marquee-track">
+      <span class="marquee-item text-[#c8a45c]">КВАРЦ</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+      <span class="marquee-item text-[#e8d5b0]">ГРАНИТ</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+      <span class="marquee-item text-[#c8a45c]">МРАМОР</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+      <span class="marquee-item text-[#e8d5b0]">АКРИЛ</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+      <span class="marquee-item text-[#c8a45c]">ОНИКС</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+      <span class="marquee-item text-[#e8d5b0]">КВАРЦ</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+      <span class="marquee-item text-[#c8a45c]">ГРАНИТ</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+      <span class="marquee-item text-[#e8d5b0]">МРАМОР</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+      <span class="marquee-item text-[#c8a45c]">АКРИЛ</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+      <span class="marquee-item text-[#e8d5b0]">ОНИКС</span>
+      <span class="marquee-item text-[#c8a45c]/40">&bull;</span>
+    </div>
+  </div>
+
+  <!-- STATS SECTION -->
+  <section class="py-20 bg-[#0e0e0e]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="stat-card reveal" style="transition-delay: 0.1s">
+          <div class="stat-number" data-count="5000">0</div>
+          <div class="stat-text" data-ru="Выполненных проектов" data-uz="Bajarilgan loyihalar">Выполненных проектов</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.2s">
+          <div class="stat-number" data-count="182">0</div>
+          <div class="stat-text" data-ru="Видов камня" data-uz="Tosh turlari">Видов камня</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.3s">
+          <div class="stat-number" data-count="8">0</div>
+          <div class="stat-text" data-ru="Лет опыта" data-uz="Yillik tajriba">Лет опыта</div>
+        </div>
+        <div class="stat-card reveal" style="transition-delay: 0.4s">
+          <div class="stat-number" data-count="100" data-suffix="%">0</div>
+          <div class="stat-text" data-ru="Довольных клиентов" data-uz="Mamnun mijozlar">Довольных клиентов</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-24 md:py-32" id="about">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left">
+          <div class="section-label" data-ru="О нас" data-uz="Biz haqimizda">О нас</div>
+          <h2 class="section-title">
+            <span data-ru="Совершенство в искусстве" data-uz="Sun'iy tosh san'atida">Совершенство в искусстве</span> <span class="text-[#c8a45c]" data-ru="камня" data-uz="mukammallik">камня</span>
+          </h2>
+          <div class="divider-line"></div>
+          <p class="section-desc mb-6" data-ru="Компания AslToshMebel — ведущая компания в Узбекистане по производству и установке премиальных изделий из искусственного камня. Мы изготавливаем столешницы, поверхности для ванных комнат и другие изделия из кварца, гранита и акрила." data-uz="AslToshMebel kompaniyasi — O'zbekistonda premium sifatli sun'iy tosh mahsulotlarini ishlab chiqarish va o'rnatish bo'yicha yetakchi kompaniya. Biz kvars, granit va marmar toshlardan oshxona stollari, vanna xonasi yuzalari va boshqa buyumlarni tayyorlaymiz.">
+            Компания AslToshMebel — ведущая компания в Узбекистане по производству и установке премиальных изделий из искусственного камня. Мы изготавливаем столешницы, поверхности для ванных комнат и другие изделия из кварца, гранита и акрила.
+          </p>
+          <p class="section-desc mb-8" data-ru="В каждом проекте мы уделяем особое внимание качеству, точности и эстетике. Наши мастера — профессионалы своего дела." data-uz="Har bir loyihada biz sifat, aniqlik va estetikaga alohida e'tibor qaratamiz. Bizning ustalarimiz — o'z sohasining professionallari.">
+            В каждом проекте мы уделяем особое внимание качеству, точности и эстетике. Наши мастера — профессионалы своего дела.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 flex items-center justify-center bg-[rgba(200,164,92,0.1)] text-[#c8a45c] flex-shrink-0 mt-1">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold text-sm mb-1" data-ru="Премиум качество" data-uz="Premium sifat">Премиум качество</h4>
+                <p class="text-[#8a8578] text-xs leading-relaxed" data-ru="Лучшие материалы" data-uz="Eng yaxshi materiallar">Лучшие материалы</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 flex items-center justify-center bg-[rgba(200,164,92,0.1)] text-[#c8a45c] flex-shrink-0 mt-1">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold text-sm mb-1" data-ru="Быстрое выполнение" data-uz="Tez bajarish">Быстрое выполнение</h4>
+                <p class="text-[#8a8578] text-xs leading-relaxed" data-ru="Сдача в срок" data-uz="O'z vaqtida topshirish">Сдача в срок</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 flex items-center justify-center bg-[rgba(200,164,92,0.1)] text-[#c8a45c] flex-shrink-0 mt-1">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold text-sm mb-1" data-ru="Гарантия" data-uz="Kafolat">Гарантия</h4>
+                <p class="text-[#8a8578] text-xs leading-relaxed" data-ru="Гарантия до 10 лет" data-uz="10 yilgacha kafolat">Гарантия до 10 лет</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 flex items-center justify-center bg-[rgba(200,164,92,0.1)] text-[#c8a45c] flex-shrink-0 mt-1">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold text-sm mb-1" data-ru="Профессиональная команда" data-uz="Professional jamoa">Профессиональная команда</h4>
+                <p class="text-[#8a8578] text-xs leading-relaxed" data-ru="Опытные мастера" data-uz="Tajribali ustalar">Опытные мастера</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <div class="relative">
+            <div class="aspect-[4/5] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="AslToshMebel производство" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="absolute -bottom-6 -left-6 bg-[#c8a45c] text-[#0a0a0a] p-6 max-w-[200px]">
+              <div class="font-heading text-3xl font-bold">8+</div>
+              <div class="text-sm font-semibold mt-1" data-ru="Лет опыта" data-uz="Yillik tajriba">Лет опыта</div>
+            </div>
+            <div class="absolute -top-4 -right-4 w-24 h-24 border border-[#c8a45c]/30"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG SECTION -->
+  <section class="py-24 md:py-32 bg-[#0e0e0e]" id="catalog">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <div class="section-label justify-center">
+          <span></span><span data-ru="Каталог камня" data-uz="Tosh Katalogi">Каталог камня</span>
+        </div>
+        <h2 class="section-title">
+          <span data-ru="Наша" data-uz="Bizning">Наша</span> <span class="text-[#c8a45c]" data-ru="коллекция" data-uz="kolleksiyamiz">коллекция</span>
+        </h2>
+        <p class="section-desc mx-auto" data-ru="Премиум коллекция кварцевого и акрилового камня. Каждый камень — идеальное сочетание природы и технологий." data-uz="Kvars va akril toshlarning premium kolleksiyasi. Har bir tosh — tabiat va texnologiyaning mukammal uyg'unligi.">
+          Премиум коллекция кварцевого и акрилового камня. 
+          Каждый камень — идеальное сочетание природы и технологий.
+        </p>
+      </div>
+
+      <!-- Stone Grid (9 stones on main page) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="stoneGrid">
+        <!-- 9 cards injected by JS -->
+      </div>
+
+      <!-- See All Button -->
+      <div class="text-center mt-12 reveal">
+        <a href="./catalog.html" class="btn-primary inline-flex" id="viewAllBtn" data-ru="Смотреть все 182 декора" data-uz="Barcha 182 ta dekorni ko'rish">
+          <span>Смотреть все 182 декора</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS SECTION -->
+  <section class="py-24 md:py-32" id="process">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <div class="section-label justify-center">
+          <span></span><span data-ru="Процесс работы" data-uz="Ish jarayoni">Процесс работы</span>
+        </div>
+        <h2 class="section-title">
+          <span data-ru="Как мы" data-uz="Qanday">Как мы</span> <span class="text-[#c8a45c]" data-ru="работаем" data-uz="ishlaymiz">работаем</span>
+        </h2>
+        <p class="section-desc mx-auto" data-ru="От заказа до готового изделия — каждый этап под контролем." data-uz="Buyurtma berishdan tayyor mahsulotni olishgacha — har bir bosqich nazorat ostida.">
+          От заказа до готового изделия — каждый этап под контролем.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="process-step reveal" style="transition-delay: 0.1s">
+          <div class="process-number text-[#c8a45c]">01</div>
+          <h3 class="text-white font-heading text-xl font-semibold mb-3" data-ru="Консультация" data-uz="Konsultatsiya">Консультация</h3>
+          <p class="text-[#8a8578] text-sm leading-relaxed" data-ru="Бесплатная консультация для определения ваших потребностей и рекомендации подходящего вида камня." data-uz="Bepul konsultatsiya orqali sizning ehtiyojlaringizni aniqlash va eng mos tosh turini tavsiya etish.">Бесплатная консультация для определения ваших потребностей и рекомендации подходящего вида камня.</p>
+        </div>
+        <div class="process-step reveal" style="transition-delay: 0.2s">
+          <div class="process-number text-[#c8a45c]">02</div>
+          <h3 class="text-white font-heading text-xl font-semibold mb-3" data-ru="Замер" data-uz="O'lchov">Замер</h3>
+          <p class="text-[#8a8578] text-sm leading-relaxed" data-ru="Наши мастера приедут к вам для точных замеров и предложат дизайн-проект." data-uz="Professional ustalarimiz sizning oshxonangizga kelib, aniq o'lchovlarni olib, dizayn taklif qiladi.">Наши мастера приедут к вам для точных замеров и предложат дизайн-проект.</p>
+        </div>
+        <div class="process-step reveal" style="transition-delay: 0.3s">
+          <div class="process-number text-[#c8a45c]">03</div>
+          <h3 class="text-white font-heading text-xl font-semibold mb-3" data-ru="Производство" data-uz="Ishlab chiqarish">Производство</h3>
+          <p class="text-[#8a8578] text-sm leading-relaxed" data-ru="Резка, формовка и полировка камня на современном оборудовании с высокой точностью." data-uz="Zamonaviy uskunalarda yuqori aniqlikda tosh kesish, shakllantirish va jilolash ishlari.">Резка, формовка и полировка камня на современном оборудовании с высокой точностью.</p>
+        </div>
+        <div class="process-step reveal" style="transition-delay: 0.4s">
+          <div class="process-number text-[#c8a45c]">04</div>
+          <h3 class="text-white font-heading text-xl font-semibold mb-3" data-ru="Установка" data-uz="O'rnatish">Установка</h3>
+          <p class="text-[#8a8578] text-sm leading-relaxed" data-ru="Профессиональная установка и проверка качества. Сдача с гарантией." data-uz="Professional o'rnatish va sifat tekshiruvi. Kafolat bilan birga topshiriladi.">Профессиональная установка и проверка качества. Сдача с гарантией.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="py-24 md:py-32 bg-[#0e0e0e]" id="contact">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div class="reveal-left">
+          <div class="section-label" data-ru="Связь" data-uz="Bog'lanish">Связь</div>
+          <h2 class="section-title">
+            <span data-ru="Свяжитесь" data-uz="Biz bilan">Свяжитесь</span> <span class="text-[#c8a45c]" data-ru="с нами" data-uz="aloqa qiling">с нами</span>
+          </h2>
+          <div class="divider-line"></div>
+          <p class="section-desc mb-10" data-ru="Есть вопросы? Получите бесплатную консультацию или оформите заказ. Наши специалисты готовы помочь." data-uz="Savollaringiz bormi? Bepul konsultatsiya olish yoki buyurtma berish uchun biz bilan bog'laning. Mutaxassislarimiz sizga yordam berishga tayyor.">
+            Есть вопросы? Получите бесплатную консультацию или оформите заказ. 
+            Наши специалисты готовы помочь.
+          </p>
+
+          <div class="space-y-4">
+            <div class="contact-info-card flex items-center gap-4">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold text-sm" data-ru="Телефон" data-uz="Telefon">Телефон</h4>
+                <a href="tel:+998702720907" class="text-[#c8a45c] text-sm hover:underline block">+998 70 272 09 07</a>
+                <a href="tel:+998973162220" class="text-[#c8a45c] text-sm hover:underline block">+998 97 316 22 20</a>
+              </div>
+            </div>
+            <div class="contact-info-card flex items-center gap-4">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold text-sm" data-ru="Адрес" data-uz="Manzil">Адрес</h4>
+                <p class="text-[#8a8578] text-sm" data-ru="г. Карши, Тараккиёт МФЙ" data-uz="Qarshi shahar, Taraqqiyot MFY">г. Карши, Тараккиёт МФЙ</p>
+              </div>
+            </div>
+            <a href="https://t.me/ASL_TOSH_MEBELLARI" target="_blank" class="contact-info-card flex items-center gap-4 hover:border-[#c8a45c]/30 transition-all">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold text-sm">Telegram</h4>
+                <p class="text-[#c8a45c] text-sm">@ASL_TOSH_MEBELLARI</p>
+              </div>
+            </a>
+            <a href="https://instagram.com/asl_tosh_mebellari" target="_blank" class="contact-info-card flex items-center gap-4 hover:border-[#c8a45c]/30 transition-all">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold text-sm">Instagram</h4>
+                <p class="text-[#c8a45c] text-sm">@asl_tosh_mebellari</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <form id="contactForm" class="space-y-5 bg-[#141414] border border-white/5 p-8 md:p-10">
+            <h3 class="font-heading text-2xl font-semibold text-white mb-2" data-ru="Оформить заказ" data-uz="Buyurtma berish">Оформить заказ</h3>
+            <p class="text-[#8a8578] text-sm mb-6" data-ru="Заполните форму, мы свяжемся с вами" data-uz="Formani to'ldiring, biz siz bilan bog'lanamiz">Заполните форму, мы свяжемся с вами</p>
+            
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Ваше имя *" data-uz="Ismingiz *">Ваше имя *</label>
+                <input type="text" name="name" class="form-input" placeholder="Ваше имя" required />
+              </div>
+              <div>
+                <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Телефон *" data-uz="Telefon *">Телефон *</label>
+                <input type="tel" name="phone" class="form-input" placeholder="+998 90 123 45 67" required />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Тип камня" data-uz="Tosh turi">Тип камня</label>
+              <select name="stoneType" class="form-input bg-[rgba(26,26,26,0.8)]">
+                <option value="">Выберите...</option>
+                <option value="akril">Акриловый камень</option>
+                <option value="kvars">Кварцевый камень</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Сообщение" data-uz="Xabar">Сообщение</label>
+              <textarea name="message" class="form-input form-textarea" placeholder="Кратко о вашем проекте..." rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary w-full justify-center text-center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <span data-ru="Отправить" data-uz="Yuborish">Отправить</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 mb-10">
+        <div>
+          <span class="font-heading text-2xl font-bold tracking-wider text-white">ASLTOSH<span class="text-[#c8a45c]">MEBEL</span></span>
+          <p class="text-[#8a8578] text-sm mt-4 leading-relaxed max-w-sm" data-ru="Премиум изделия из искусственного камня. Столешницы из кварца, акрила и гранита для кухни и ванной." data-uz="Premium sifatli sun'iy tosh mahsulotlari. Oshxona va vanna xonasi uchun kvars, granit va marmar toshlar.">
+            Премиум изделия из искусственного камня. Столешницы из кварца, акрила и гранита для кухни и ванной.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4" data-ru="Быстрые ссылки" data-uz="Tezkor havolalar">Быстрые ссылки</h4>
+          <div class="space-y-3">
+            <a href="#home" class="footer-link block" data-ru="Главная" data-uz="Bosh sahifa">Главная</a>
+            <a href="#about" class="footer-link block" data-ru="О нас" data-uz="Biz haqimizda">О нас</a>
+            <a href="#catalog" class="footer-link block" data-ru="Каталог" data-uz="Katalog">Каталог</a>
+            <a href="#contact" class="footer-link block" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4" data-ru="Рабочее время" data-uz="Ish vaqti">Рабочее время</h4>
+          <div class="space-y-3 text-[#8a8578] text-sm">
+            <p data-ru="Понедельник - Суббота: 09:00 - 20:00" data-uz="Dushanba - Shanba: 09:00 - 20:00">Понедельник - Суббота: 09:00 - 20:00</p>
+            <p data-ru="Воскресенье: Выходной" data-uz="Yakshanba: Dam olish kuni">Воскресенье: Выходной</p>
+            <a href="tel:+998702720907" class="mt-4 text-[#c8a45c] block hover:underline">+998 70 272 09 07</a>
+            <a href="tel:+998973162220" class="text-[#c8a45c] block hover:underline">+998 97 316 22 20</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col items-center gap-4">
+        <div class="flex items-center gap-4 mb-2">
+          <a href="https://t.me/ASL_TOSH_MEBELLARI" target="_blank" class="w-10 h-10 flex items-center justify-center border border-white/10 text-[#8a8578] hover:border-[#c8a45c] hover:text-[#c8a45c] transition-all" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <a href="https://instagram.com/asl_tosh_mebellari" target="_blank" class="w-10 h-10 flex items-center justify-center border border-white/10 text-[#8a8578] hover:border-[#c8a45c] hover:text-[#c8a45c] transition-all" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+        <p class="text-[#5a5a5a] text-sm text-center">&copy; 2026 AslToshMebel. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STONE DETAIL MODAL -->
+  <div class="modal-overlay" id="stoneModal">
+    <div class="modal-content relative">
+      <button class="modal-close" id="modalClose">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div id="modalBody">
+        <!-- Content injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ORDER FORM MODAL -->
+  <div class="order-form-overlay" id="orderModal">
+    <div class="modal-content relative max-w-lg">
+      <button class="modal-close" id="orderModalClose">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="p-8 md:p-10">
+        <h3 class="font-heading text-2xl font-semibold text-white mb-2" data-ru="Оформить заказ" data-uz="Buyurtma berish">Оформить заказ</h3>
+        <p class="text-[#8a8578] text-sm mb-6" id="orderStoneName">Выбранный камень: —</p>
+
+        <form id="orderForm" class="space-y-5">
+          <input type="hidden" name="stoneId" id="orderStoneId" />
+          <div>
+            <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Ваше имя *" data-uz="Ismingiz *">Ваше имя *</label>
+            <input type="text" name="name" class="form-input" placeholder="Ваше имя" required />
+          </div>
+          <div>
+            <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Телефон *" data-uz="Telefon *">Телефон *</label>
+            <input type="tel" name="phone" class="form-input" placeholder="+998 90 123 45 67" required />
+          </div>
+          <div>
+            <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Тип камня" data-uz="Tosh turi">Тип камня</label>
+            <select name="orderStoneType" id="orderStoneType" class="form-input bg-[rgba(26,26,26,0.8)]">
+              <option value="">Выберите тип...</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Декор" data-uz="Dekor">Декор</label>
+            <select name="orderDecor" id="orderDecor" class="form-input bg-[rgba(26,26,26,0.8)]">
+              <option value="">Сначала выберите тип...</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Сообщение" data-uz="Xabar">Сообщение</label>
+            <textarea name="message" class="form-input form-textarea" placeholder="Дополнительная информация..." rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span data-ru="Отправить заказ" data-uz="Buyurtma yuborish">Отправить заказ</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="toastMessage">Сообщение отправлено!</span>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Наверх">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
