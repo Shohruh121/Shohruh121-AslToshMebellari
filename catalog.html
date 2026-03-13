@@ -14,7 +14,7 @@
   <nav class="navbar scrolled" id="navbar">
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
       <a href="/" class="flex items-center gap-3 text-decoration-none">
-        <span class="font-heading text-2xl font-bold tracking-wider text-white">ASLTOSH<span class="text-[#c8a45c]">MEBEL</span></span>
+        <span class="font-heading text-2xl font-bold tracking-wider text-white"><span class="text-[#c8a45c]">ASL</span>TOSH<span class="text-[#c8a45c]">MEBEL</span></span>
       </a>
 
       <div class="hidden md:flex items-center gap-10">
@@ -30,11 +30,14 @@
         <a href="/#contact" class="btn-primary text-sm py-3 px-6" data-ru="Заказать" data-uz="Buyurtma berish">Заказать</a>
       </div>
 
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="flex md:hidden items-center gap-3">
+        <button id="langToggleMobile" class="px-3 py-1.5 text-xs font-semibold tracking-wider uppercase border border-[#c8a45c]/40 text-[#c8a45c] hover:bg-[#c8a45c] hover:text-[#0a0a0a] transition-all duration-300">UZ</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -45,7 +48,6 @@
     <a href="/catalog.html" class="nav-link mobile-nav-link" data-ru="Каталог" data-uz="Katalog">Каталог</a>
     <a href="/#process" class="nav-link mobile-nav-link" data-ru="Процесс" data-uz="Jarayon">Процесс</a>
     <a href="/#contact" class="nav-link mobile-nav-link" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
-    <button id="langToggleMobile" class="px-4 py-2 mt-2 text-xs font-semibold tracking-wider uppercase border border-[#c8a45c]/40 text-[#c8a45c] hover:bg-[#c8a45c] hover:text-[#0a0a0a] transition-all">UZ</button>
     <a href="/#contact" class="btn-primary mt-4" data-ru="Заказать" data-uz="Buyurtma berish">Заказать</a>
   </div>
 
@@ -91,7 +93,7 @@
       </div>
 
       <!-- Stone Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="stoneGrid">
+      <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6" id="stoneGrid">
         <!-- Cards injected by JS -->
       </div>
 
