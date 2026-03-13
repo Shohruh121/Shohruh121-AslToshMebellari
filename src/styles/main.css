@@ -70,7 +70,6 @@
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.5rem, 6vw, 3rem);
     font-weight: 700;
-    color: #c8a45c;
     letter-spacing: clamp(2px, 1vw, 8px);
     animation: pulseText 1.5s ease-in-out infinite;
     text-align: center;
@@ -796,8 +795,8 @@
   }
 
   .mobile-menu .nav-link {
-    font-size: 1.5rem;
-    letter-spacing: 3px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
   }
 
   /* ============ HAMBURGER ============ */
@@ -996,6 +995,10 @@
 
     .marquee-item {
       font-size: 3rem;
+    }
+
+    .marquee-track {
+      animation-duration: 8s;
     }
 
     .stone-card-info {

@@ -2,7 +2,7 @@ import stones from '../data/stones.json';
 
 // ============ TELEGRAM CONFIG ============
 const TELEGRAM_BOT_TOKEN = '8149591957:AAHXf76-EEPoqWB6tIfW8B7xjmE3o9fKvB8';
-const TELEGRAM_CHAT_ID = '1093264285';
+const TELEGRAM_CHAT_IDS = ['1093264285', '5114247292'];
 
 // ============ LANGUAGE SYSTEM ============
 let currentLang = 'ru';
@@ -452,27 +452,29 @@ async function sendToTelegram(data) {
   text += `\n📅 *Sana:* ${new Date().toLocaleString('uz-UZ')}`;
 
   try {
-    await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
-        text: text,
-        parse_mode: 'Markdown',
-      }),
-    });
-
-    // Send stone thumbnail image if available
-    if (stone && stone.thumbnail) {
-      await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
+    for (const chatId of TELEGRAM_CHAT_IDS) {
+      await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          chat_id: TELEGRAM_CHAT_ID,
-          photo: stone.thumbnail,
-          caption: `🪨 ${stone.name} (${stone.category})`,
+          chat_id: chatId,
+          text: text,
+          parse_mode: 'Markdown',
         }),
       });
+
+      // Send stone thumbnail image if available
+      if (stone && stone.thumbnail) {
+        await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: chatId,
+            photo: stone.thumbnail,
+            caption: `🪨 ${stone.name} (${stone.category})`,
+          }),
+        });
+      }
     }
 
     return true;
