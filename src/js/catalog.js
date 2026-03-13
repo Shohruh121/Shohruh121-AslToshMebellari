@@ -5,7 +5,7 @@ const TELEGRAM_BOT_TOKEN = '8149591957:AAHXf76-EEPoqWB6tIfW8B7xjmE3o9fKvB8';
 const TELEGRAM_CHAT_IDS = ['1093264285', '5114247292', '1032173492'];
 
 // ============ LANGUAGE SYSTEM ============
-let currentLang = 'ru';
+let currentLang = localStorage.getItem('siteLang') || 'ru';
 
 function getDesc(stone) {
   if (currentLang === 'uz') return stone.description_uz || stone.description_ru || '';
@@ -14,6 +14,7 @@ function getDesc(stone) {
 
 function switchLanguage(lang) {
   currentLang = lang;
+  localStorage.setItem('siteLang', lang);
   document.querySelectorAll('[data-ru][data-uz]').forEach(el => {
     const text = el.getAttribute(`data-${lang}`);
     if (text) {
@@ -53,6 +54,11 @@ function switchLanguage(lang) {
 // ============ DOM ELEMENTS ============
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
+
+// Apply saved language on page load
+if (currentLang !== 'ru') {
+  switchLanguage(currentLang);
+}
 
 // ============ MOBILE MENU ============
 const hamburger = $('#hamburger');
