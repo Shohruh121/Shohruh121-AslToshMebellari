@@ -2,10 +2,15 @@ import stones from '../data/stones.json';
 
 // ============ TELEGRAM CONFIG ============
 const TELEGRAM_BOT_TOKEN = '8149591957:AAHXf76-EEPoqWB6tIfW8B7xjmE3o9fKvB8';
-const TELEGRAM_CHAT_IDS = ['1093264285', '5114247292'];
+const TELEGRAM_CHAT_IDS = ['1093264285', '5114247292', '1032173492'];
 
 // ============ LANGUAGE SYSTEM ============
 let currentLang = 'ru';
+
+function getDesc(stone) {
+  if (currentLang === 'uz') return stone.description_uz || stone.description_ru || '';
+  return stone.description_ru || stone.description_uz || '';
+}
 
 function switchLanguage(lang) {
   currentLang = lang;
@@ -112,7 +117,7 @@ function createStoneCard(stone, index) {
     <div class="stone-card-info">
       <div class="stone-card-type">${stone.category} ${collText}</div>
       <h3 class="stone-card-name">${stone.name}</h3>
-      <p class="stone-card-desc">${stone.description}</p>
+      <p class="stone-card-desc">${getDesc(stone)}</p>
       <button class="stone-card-btn view-details-btn" data-id="${stone.id}">
         ${detailShort}
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -141,8 +146,9 @@ function renderStones() {
 
   const filtered = stones.filter((stone) => {
     const matchesFilter = currentFilter === 'all' || stone.category === currentFilter || stone.type === currentFilter;
+    const desc = getDesc(stone).toLowerCase();
     const matchesSearch = stone.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          stone.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          desc.includes(searchQuery.toLowerCase()) ||
                           stone.type.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           stone.category.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesFilter && matchesSearch;
@@ -223,12 +229,42 @@ function openStoneModal(stone) {
   const originLabel = currentLang === 'ru' ? 'Происхождение' : 'Kelib chiqishi';
 
   modalBody.innerHTML = `
-    <div class="modal-image-container">
-      <img src="${stone.images[0]}" alt="${stone.name}" class="modal-image" id="modalMainImage" />
+    <div class="modal-image-container" id="galleryContainer">
+      <div class="gallery-swipe" id="gallerySwipe" style="display:flex;width:${stone.images.length * 100}%;transition:transform 0.3s ease;">
+        ${stone.images.map((img, i) => `
+          <div style="width:${100 / stone.images.length}%;flex-shrink:0;">
+            <img src="${img}" alt="${stone.name}" class="modal-image gallery-slide-img" data-index="${i}" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" />
+          </div>
+        `).join('')}
+      </div>
       ${stone.images.length > 1 ? `
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          ${stone.images.map((img, i) => `
-            <img src="${img}" alt="" class="gallery-thumb ${i === 0 ? 'active' : ''}" data-index="${i}" />
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2" id="galleryDots">
+          ${stone.images.map((_, i) => `
+            <span class="gallery-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>
+          `).join('')}
+        </div>
+        <div class="absolute top-1/2 -translate-y-1/2 left-2 z-10">
+          <button class="gallery-arrow" id="galleryPrev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+        </div>
+        <div class="absolute top-1/2 -translate-y-1/2 right-2 z-10">
+          <button class="gallery-arrow" id="galleryNext"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+        </div>
+      ` : ''}
+    </div>
+    <!-- Fullscreen overlay -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+      <button class="fullscreen-close" id="fullscreenClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      <div class="fullscreen-swipe" id="fullscreenSwipe" style="display:flex;width:${stone.images.length * 100}%;transition:transform 0.3s ease;">
+        ${stone.images.map((img, i) => `
+          <div style="width:${100 / stone.images.length}%;flex-shrink:0;display:flex;align-items:center;justify-content:center;height:100%;">
+            <img src="${img}" alt="${stone.name}" style="max-width:100%;max-height:100%;object-fit:contain;" />
+          </div>
+        `).join('')}
+      </div>
+      ${stone.images.length > 1 ? `
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3" id="fullscreenDots">
+          ${stone.images.map((_, i) => `
+            <span class="gallery-dot fullscreen-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>
           `).join('')}
         </div>
       ` : ''}
@@ -245,7 +281,7 @@ function openStoneModal(stone) {
       </div>
 
       <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">${stone.name}</h2>
-      <p class="text-[#a8a8a8] leading-relaxed mb-8">${stone.description}</p>
+      <p class="text-[#a8a8a8] leading-relaxed mb-8">${getDesc(stone)}</p>
 
       <div class="grid sm:grid-cols-2 gap-8 mb-8">
         <div>
@@ -302,20 +338,82 @@ function openStoneModal(stone) {
     </div>
   `;
 
-  // Gallery thumb click
-  modalBody.querySelectorAll('.gallery-thumb').forEach((thumb) => {
-    thumb.addEventListener('click', () => {
-      const index = parseInt(thumb.dataset.index);
-      const mainImg = $('#modalMainImage');
-      mainImg.style.opacity = '0';
-      setTimeout(() => {
-        mainImg.src = stone.images[index];
-        mainImg.style.opacity = '1';
-      }, 200);
-      modalBody.querySelectorAll('.gallery-thumb').forEach((t) => t.classList.remove('active'));
-      thumb.classList.add('active');
+  // ---- Gallery swipe logic ----
+  let currentSlide = 0;
+  const totalSlides = stone.images.length;
+  const gallerySwipe = document.getElementById('gallerySwipe');
+  const galleryDots = document.querySelectorAll('#galleryDots .gallery-dot');
+
+  function goToSlide(idx) {
+    currentSlide = Math.max(0, Math.min(idx, totalSlides - 1));
+    if (gallerySwipe) gallerySwipe.style.transform = `translateX(-${currentSlide * (100 / totalSlides)}%)`;
+    galleryDots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+  }
+
+  const prevBtn = document.getElementById('galleryPrev');
+  const nextBtn = document.getElementById('galleryNext');
+  if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+  galleryDots.forEach(dot => {
+    dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.index)));
+  });
+
+  let touchStartX = 0;
+  const galleryContainer = document.getElementById('galleryContainer');
+  if (galleryContainer) {
+    galleryContainer.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    galleryContainer.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) goToSlide(currentSlide + 1);
+        else goToSlide(currentSlide - 1);
+      }
+    });
+  }
+
+  // ---- Fullscreen logic ----
+  const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+  const fullscreenSwipe = document.getElementById('fullscreenSwipe');
+  const fullscreenDots = document.querySelectorAll('#fullscreenDots .fullscreen-dot');
+  let fsSlide = 0;
+
+  function goToFsSlide(idx) {
+    fsSlide = Math.max(0, Math.min(idx, totalSlides - 1));
+    if (fullscreenSwipe) fullscreenSwipe.style.transform = `translateX(-${fsSlide * (100 / totalSlides)}%)`;
+    fullscreenDots.forEach((d, i) => d.classList.toggle('active', i === fsSlide));
+  }
+
+  modalBody.querySelectorAll('.gallery-slide-img').forEach(img => {
+    img.addEventListener('click', () => {
+      fsSlide = currentSlide;
+      goToFsSlide(fsSlide);
+      fullscreenOverlay.classList.add('active');
     });
   });
+
+  document.getElementById('fullscreenClose').addEventListener('click', () => {
+    fullscreenOverlay.classList.remove('active');
+  });
+  fullscreenOverlay.addEventListener('click', (e) => {
+    if (e.target === fullscreenOverlay) fullscreenOverlay.classList.remove('active');
+  });
+
+  fullscreenDots.forEach(dot => {
+    dot.addEventListener('click', () => goToFsSlide(parseInt(dot.dataset.index)));
+  });
+
+  let fsTouchStartX = 0;
+  if (fullscreenOverlay) {
+    fullscreenOverlay.addEventListener('touchstart', (e) => { fsTouchStartX = e.touches[0].clientX; }, { passive: true });
+    fullscreenOverlay.addEventListener('touchend', (e) => {
+      const diff = fsTouchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) goToFsSlide(fsSlide + 1);
+        else goToFsSlide(fsSlide - 1);
+      }
+    });
+  }
 
   // Order button
   modalBody.querySelector('.order-stone-btn').addEventListener('click', () => {

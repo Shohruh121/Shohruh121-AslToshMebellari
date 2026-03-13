@@ -12,7 +12,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/A-405/A-405-sl%20wall.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-405/A-405.jpg",
-    "description": "A-405 Peach Fruit — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -32,7 +31,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-405 Peach Fruit — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "A-405 Peach Fruit — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "south-coast",
@@ -47,7 +48,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/A-409/A-409-sl%20wall.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-409/A-409.jpg",
-    "description": "A-409 South Coast — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -67,7 +67,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-409 South Coast — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "A-409 South Coast — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "a-418-oak-wood",
@@ -82,7 +84,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/A-418%20Oak%20Wood%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-418.jpg",
-    "description": "A-418 Oak Wood — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -102,7 +103,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-418 Oak Wood — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "A-418 Oak Wood — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "a-420-starry-beat",
@@ -117,7 +120,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/A-420%20Starry%20Beat.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-420.jpg",
-    "description": "A-420 Starry Beat — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -137,7 +139,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-420 Starry Beat — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "A-420 Starry Beat — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "d-303-raisined-chocolate",
@@ -151,7 +155,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-303%20Raisined%20Chocolate%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-303.jpg",
-    "description": "D-303 Raisined Chocolate — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -171,7 +174,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-303 Raisined Chocolate — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "D-303 Raisined Chocolate — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "natural-detox",
@@ -185,7 +190,6 @@
       "https://interstone.uz/media/images/1280/stones/natural-detox/D-311%20Natural%20Detox%284%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/natural-detox/D-311.jpg",
-    "description": "D-311 Natural Detox — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -205,7 +209,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-311 Natural Detox — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "D-311 Natural Detox — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "sanded-grizzle",
@@ -219,7 +225,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20159/N%20159%20Sanded%20Grizzle%20INT%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20159/N%20159%20Sanded%20Grizzle%20zoom.jpg",
-    "description": "N-159 Sanded Grizzle — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -239,7 +244,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-159 Sanded Grizzle — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "N-159 Sanded Grizzle — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "sanded-grey",
@@ -253,7 +260,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20420/N_420_Sanded_Grey_sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20420/N_420_Sanded_Grey_zoom.jpg",
-    "description": "N-420 Sanded Grey — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -273,7 +279,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-420 Sanded Grey — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "N-420 Sanded Grey — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "splendor",
@@ -285,7 +293,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20634/N%20634%20Splendor%20sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20634/N%20634%20Splendor%20zoom.jpg",
-    "description": "N-634 Splendor — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -305,7 +312,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-634 Splendor — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "N-634 Splendor — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "cobble-gold",
@@ -319,7 +328,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20840/N%20840%20Cobble%20Gold%20INT%2003.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20840/N%20840%20Cobble%20Gold%20zoom.jpg",
-    "description": "N-840 Cobble Gold — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -339,7 +347,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-840 Cobble Gold — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "N-840 Cobble Gold — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "cobble-brown",
@@ -350,7 +360,6 @@
       "https://interstone.uz/media/images/540/stones/Neomarm/N%20857/N%20857%20Cobble%20Brown%20zoom.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/540/stones/Neomarm/N%20857/N%20857%20Cobble%20Brown%20zoom.jpg",
-    "description": "Палитра цветов — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -370,7 +379,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "Палитра цветов — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "Палитра цветов — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "kalakatta-ayachcho",
@@ -384,7 +395,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7300/7300%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%90%D1%8F%D1%87%D1%87%D0%BE%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7300/7300_ZOOM_R.jpg",
-    "description": "7300 Калакатта Аяччо — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -404,7 +414,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "7300 Калакатта Аяччо — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "7300 Калакатта Аяччо — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "kalakatta-bearn",
@@ -418,7 +430,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7470/7470%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%91%D0%B5%D0%B0%D1%80%D0%BD-int03.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7470/7470_ZOOM_U.jpg",
-    "description": "7470 Калакатта Беарн — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -438,7 +449,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "7470 Калакатта Беарн — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "7470 Калакатта Беарн — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "kalakatta-le-nor",
@@ -452,7 +465,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7600/7600%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%BB%D0%B5%20%D0%9D%D0%BE%D1%80%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7600/7600_ZOOM_R.jpg",
-    "description": "7600 Калакатта ле Нор — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -472,7 +484,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "7600 Калакатта ле Нор — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "7600 Калакатта ле Нор — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "calacatta-cassel",
@@ -486,7 +500,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7670/7670%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%9A%D0%B0%D1%81%D1%81%D0%B5%D0%BB%D1%8C%20int%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7670/7670_ZOOM_R.jpg",
-    "description": "7670 Калакатта Кассель — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -506,7 +519,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "7670 Калакатта Кассель — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "7670 Калакатта Кассель — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "calacatta-marsel",
@@ -520,7 +535,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7700/7700%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%9C%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D1%8C%20int%2003.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7700/7700_ZOOM_R.jpg",
-    "description": "7700 Калакатта Марсель — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -540,7 +554,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "7700 Калакатта Марсель — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "7700 Калакатта Марсель — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "bottichino-burzh",
@@ -554,7 +570,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/2030/2030%20%D0%91%D0%BE%D1%82%D1%82%D0%B8%D1%87%D0%B8%D0%BD%D0%BE%20%D0%91%D1%83%D1%80%D0%B6%20int%2003.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/2030/2030_ZOOM_R.jpg",
-    "description": "2030 Боттичино Бурж — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -574,7 +589,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "2030 Боттичино Бурж — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "2030 Боттичино Бурж — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "limuzen",
@@ -588,7 +605,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9006/9006%20%D0%9B%D0%B8%D0%BC%D1%83%D0%B7%D0%B5%D0%BD%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9006/9006_ZOOM_R.jpg",
-    "description": "9006 Лимузен — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -608,7 +624,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "9006 Лимузен — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "9006 Лимузен — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "korsika",
@@ -622,7 +640,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9010/9010%20%D0%9A%D0%BE%D1%80%D1%81%D0%B8%D0%BA%D0%B0%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9010/9010_ZOOM_R.jpg",
-    "description": "9010 Корсика — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -642,7 +659,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "9010 Корсика — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "9010 Корсика — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "orlean",
@@ -656,7 +675,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/1203/1203%20%D0%9E%D1%80%D0%BB%D0%B5%D0%B0%D0%BD%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/1203/1203_ZOOM_R.jpg",
-    "description": "1203 Орлеан — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -676,7 +694,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "1203 Орлеан — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "1203 Орлеан — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "q106-gray-sand",
@@ -689,7 +709,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q106/Q106%20Gray%20Sand_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q106/Q106%20Gray%20Sand_ZOOM.jpg",
-    "description": "Q106 Gray Sand — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -709,7 +728,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q106 Gray Sand — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "Q106 Gray Sand — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "q750-statuario-classic",
@@ -723,7 +744,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q750/Q750-Statuario-Classic_1.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q750/Q750%20Statuario%20Classic_ZOOM.jpg",
-    "description": "Q750 Statuario Classic — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -743,7 +763,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q750 Statuario Classic — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "Q750 Statuario Classic — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "q775-sahara-noir",
@@ -756,7 +778,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q775/Q775%20Sahara%20Noir_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q775/Q775%20Sahara%20Noir_ZOOM.jpg",
-    "description": "Q775 Sahara Noir — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -776,7 +797,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q775 Sahara Noir — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "Q775 Sahara Noir — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "q850-urban-grigio",
@@ -789,7 +812,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q850/Q850_Urban_Grigio%20int_v2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q850/Q850%20Urban%20Grigio_ZOOM.jpg",
-    "description": "Q850 Urban Grigio — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -809,7 +831,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q850 Urban Grigio — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "Q850 Urban Grigio — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "c-808-rossano",
@@ -823,7 +847,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/C-808/c808%20int%202.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/C-808/c808%20zoom.jpg",
-    "description": "C-808 Rossano — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -843,7 +866,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "C-808 Rossano — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "C-808 Rossano — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "c-809-angiari",
@@ -854,7 +879,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/C-809/809.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/C-809/809.jpg",
-    "description": "C-809 Angiari — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -874,7 +898,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "C-809 Angiari — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "C-809 Angiari — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "a-427-primo",
@@ -889,7 +915,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/A-427/A-427%20Primo_int3.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-427/A-427%20Primo_Blizko.jpg",
-    "description": "A-427 Primo — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -909,7 +934,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-427 Primo — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "A-427 Primo — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "s-220-crystal-snowflake",
@@ -923,7 +950,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/S-220/S-220%20Crystal%20snowflake_int2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-220/S-220%20Crystal%20snowflake_Blizko.jpg",
-    "description": "S-220 Crystal snowflake — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -943,7 +969,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-220 Crystal snowflake — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "S-220 Crystal snowflake — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "p-102-pure-beige",
@@ -958,7 +986,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/P-102_ispr.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/P-102.jpg",
-    "description": "P-102 Pure Beige — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -978,7 +1005,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "P-102 Pure Beige — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "P-102 Pure Beige — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "nk-3300-french-lace",
@@ -991,7 +1020,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NK-3300/3300%20%D0%BD%D0%BA.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-3300/nk%203300%20zoom.png",
-    "description": "NK-3300 French Lace — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -1011,7 +1039,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-3300 French Lace — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "NK-3300 French Lace — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "nk-3500-snow-fairy",
@@ -1023,7 +1053,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-3500/nk%203500.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-3500/nk%203500%20zoom.png",
-    "description": "NK-3500 Snow Fairy — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -1043,7 +1072,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-3500 Snow Fairy — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "NK-3500 Snow Fairy — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "nk-3600-concrete-jungle",
@@ -1056,7 +1087,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-3600/NK-3600_Concrete_Jungle_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-3600/NK3600-Concrete%20Jungle.jpg",
-    "description": "NK-3600 Concrete Jungle — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -1076,7 +1106,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-3600 Concrete Jungle — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "NK-3600 Concrete Jungle — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "nk-3700-grey-swirls",
@@ -1089,7 +1121,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-3700/nk%203700.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-3700/nk%203700%20zoom.png",
-    "description": "NK-3700 Grey Swirls — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -1109,7 +1140,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-3700 Grey Swirls — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "NK-3700 Grey Swirls — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "nk-3800-foggy-sunrise",
@@ -1122,7 +1155,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-3800/nk%203800.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-3800/nk%203800%20zoom.png",
-    "description": "NK-3800 Foggy Sunrise — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -1142,7 +1174,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-3800 Foggy Sunrise — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "NK-3800 Foggy Sunrise — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "nk-5000-calacatta-veil",
@@ -1155,7 +1189,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-5000/NK-5000.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-5000/NK-5000%20%20zoom.png",
-    "description": "NK-5000 Calacatta Veil — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -1175,7 +1208,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-5000 Calacatta Veil — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "NK-5000 Calacatta Veil — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "nk-8016-white-stream",
@@ -1188,7 +1223,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NK-8016/8016_interior.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NK-8016/8016_zoom.jpg",
-    "description": "NK-8016 White Stream — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -1208,7 +1242,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-8016 White Stream — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "NK-8016 White Stream — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "nk-8062-terracotta",
@@ -1221,7 +1257,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NK-8062/8062_interior.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NK-8062/8062_zoom.jpg",
-    "description": "NK-8062 Terracotta — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -1241,7 +1276,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-8062 Terracotta — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "NK-8062 Terracotta — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "nk-8065-creamy-serenity",
@@ -1254,7 +1291,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NK-8065/8065_interior.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NK-8065/8065_zoom.jpg",
-    "description": "NK-8065 Creamy Serenity — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -1274,7 +1310,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-8065 Creamy Serenity — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "NK-8065 Creamy Serenity — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "nk-8070-cold-beauty",
@@ -1287,7 +1325,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-8070/nk%208070.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-8070/nk%208070%20zoom.png",
-    "description": "NK-8070 Cold Beauty — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -1307,7 +1344,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-8070 Cold Beauty — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "NK-8070 Cold Beauty — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "nk-8100-beige-melody",
@@ -1320,7 +1359,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-8100/nk%208100.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-8100/nk%208100%20zoom.png",
-    "description": "NK-8100 Beige Melody — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -1340,7 +1378,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-8100 Beige Melody — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "NK-8100 Beige Melody — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "nk-8540-cloudy-sky",
@@ -1353,7 +1393,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-8540/NK-8540.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-8540/NK-8540%20zoom.png",
-    "description": "NK-8540 Cloudy Sky — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -1373,7 +1412,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-8540 Cloudy Sky — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "NK-8540 Cloudy Sky — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "nk-8550-winter-stream",
@@ -1386,7 +1427,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-8550/NK-8550.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/NK-8550/NK-8550%20zoom.png",
-    "description": "NK-8550 Winter Stream — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -1406,7 +1446,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "NK-8550 Winter Stream — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "NK-8550 Winter Stream — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "calacatta-mon-sen-mishel",
@@ -1419,7 +1461,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7060/7060%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%9C%D0%BE%D0%BD%20%D0%A1%D0%B5%D0%BD-%D0%9C%D0%B8%D1%88%D0%B5%D0%BB%D1%8C_01.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7060/7060%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%9C%D0%BE%D0%BD%20%D0%A1%D0%B5%D0%BD-%D0%9C%D0%B8%D1%88%D0%B5%D0%BB%D1%8C_ZOOM.jpg",
-    "description": "7060 Калакатта Мон-Сен-Мишель — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -1439,7 +1480,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": ""
+    "size": "",
+    "description_uz": "7060 Калакатта Мон-Сен-Мишель — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "7060 Калакатта Мон-Сен-Мишель — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "calacatta-versal",
@@ -1453,7 +1496,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7070/7070-%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0-%D0%92%D0%B5%D1%80%D1%81%D0%B0%D0%BB%D1%8C-int-02.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7070/avant_7070_ZOOM.jpg",
-    "description": "7070 Калакатта Версаль — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -1473,7 +1515,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "7070 Калакатта Версаль — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "7070 Калакатта Версаль — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "akvitaniya-blanka",
@@ -1486,7 +1530,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7200/7200-%D0%90%D0%BA%D0%B2%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F-%D0%91%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0_01.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7200/7200%20%D0%90%D0%BA%D0%B2%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%91%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0_ZOOM.jpg",
-    "description": "7200 Аквитания Бланка — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -1506,7 +1549,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": ""
+    "size": "",
+    "description_uz": "7200 Аквитания Бланка — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "7200 Аквитания Бланка — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "kalakatta-arras",
@@ -1520,7 +1565,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7500/7500%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%90%D1%80%D1%80%D0%B0%D1%81%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7500/7500_ZOOM_R.jpg",
-    "description": "7500 Калакатта Аррас — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -1540,7 +1584,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "7500 Калакатта Аррас — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "7500 Калакатта Аррас — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "7540-kalakatta-konkord",
@@ -1554,7 +1600,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7540/7540_Calacatta_Concorde_int2_v2%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7540/7540_Calacatta_Concorde_zoom_v2%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg",
-    "description": "7540 Калакатта Конкорд — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -1574,7 +1619,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "7540 Калакатта Конкорд — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "7540 Калакатта Конкорд — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "7550-kalakatta-kanny-gold",
@@ -1587,7 +1634,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7550/7550%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%9A%D0%B0%D0%BD%D0%BD%D1%8B%20%D0%93%D0%BE%D0%BB%D0%B4_01.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7550/7550%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%9A%D0%B0%D0%BD%D0%BD%D1%8B%20%D0%93%D0%BE%D0%BB%D0%B4_ZOOM.jpg",
-    "description": "7550 Калакатта Канны Голд — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -1607,7 +1653,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": ""
+    "size": "",
+    "description_uz": "7550 Калакатта Канны Голд — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "7550 Калакатта Канны Голд — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "7570-kalakatta-monako",
@@ -1620,7 +1668,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7570/7570/7570%20Calacatta%20Monaco%20int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/7570/7570/7570%20Calacatta%20Monaco%20ZOOM.jpg",
-    "description": "7570 Калакатта Монако — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -1640,7 +1687,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "7570 Калакатта Монако — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "7570 Калакатта Монако — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "9060-patagoniya-martinika",
@@ -1654,7 +1703,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/9060/9060_Patagonia_Martinica_int12%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/9060/9060_Patagonia_Martinica_zoom_v2%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg",
-    "description": "9060 Патагония Мартиника — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -1674,7 +1722,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "9060 Патагония Мартиника — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "9060 Патагония Мартиника — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "8011-nant",
@@ -1688,7 +1738,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/8011/8011%20%D0%9D%D0%B0%D0%BD%D1%82_02.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/8011/8011%20%D0%9D%D0%B0%D0%BD%D1%82_ZOOM.jpg",
-    "description": "8011 Нант — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -1708,7 +1757,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "8011 Нант — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "8011 Нант — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "8600-shamoni",
@@ -1721,7 +1772,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/8600/8600H_Chamonix_int1_mat%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/8600/8600H_Chamonix_zoom_mat%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg",
-    "description": "8600 Шамони — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -1741,7 +1791,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "8600 Шамони — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "8600 Шамони — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "8800-kassis",
@@ -1755,7 +1807,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/8800/8800%20%D0%9A%D0%B0%D1%81%D1%81%D0%B8%D1%81_02.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/8800/8800%20%D0%9A%D0%B0%D1%81%D1%81%D0%B8%D1%81_ZOOM.jpg",
-    "description": "8800 Кассис — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -1775,7 +1826,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "8800 Кассис — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "8800 Кассис — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "8811-reze",
@@ -1789,7 +1842,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/8811/8811-%D0%A0%D0%B5%D0%B7%D0%B5_02.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/8811/8811-%D0%A0%D0%B5%D0%B7%D0%B5_ZOOM.jpg",
-    "description": "8811 Резе — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -1809,7 +1861,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "8811 Резе — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "8811 Резе — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "grenobl",
@@ -1823,7 +1877,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/2032/2032%20%D0%93%D1%80%D0%B5%D0%BD%D0%BE%D0%B1%D0%BB%D1%8C%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/2032/2032_ZOOM_R.jpg",
-    "description": "2032 Гренобль — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -1843,7 +1896,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "2032 Гренобль — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "2032 Гренобль — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "2110-monmartr",
@@ -1856,7 +1911,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/2110/2110_Montmartre__int11%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/2110/2110_Montmartre__zoom%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg",
-    "description": "2110 Монмартр — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -1876,7 +1930,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "2110 Монмартр — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "2110 Монмартр — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "2115-azur-krem",
@@ -1889,7 +1945,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/2115/2115_Azur_Creme_int11%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/2115/2115_Azur_Creme_zoom%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg",
-    "description": "2115 Азур Крем — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -1909,7 +1964,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "2115 Азур Крем — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "2115 Азур Крем — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "burbonne",
@@ -1923,7 +1980,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9005/9005%20%D0%91%D1%83%D1%80%D0%B1%D0%BE%D0%BD%D0%BD%D0%B5%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9005/9005_ZOOM_R.jpg",
-    "description": "9005 Бурбонне — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -1943,7 +1999,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "9005 Бурбонне — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "9005 Бурбонне — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "lotaringiya",
@@ -1957,7 +2015,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9023/9023%20%D0%9B%D0%BE%D1%82%D0%B0%D1%80%D0%B8%D0%BD%D0%B3%D0%B8%D1%8F%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9023/9023_ZOOM_R.jpg",
-    "description": "9023 Лотарингия — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -1977,7 +2034,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "9023 Лотарингия — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "9023 Лотарингия — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "gris-fonse",
@@ -1991,7 +2050,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9050/9050%20%D0%93%D1%80%D0%B8%D1%81%20%D0%A4%D0%BE%D0%BD%D1%81%D0%B5%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9050/9050_ZOOM_R.jpg",
-    "description": "9050 Грис Фонсе — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -2011,7 +2069,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "9050 Грис Фонсе — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "9050 Грис Фонсе — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "9212-sen-trope",
@@ -2025,7 +2085,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/9212/9212%20%D0%A1%D0%B5%D0%BD-%D0%A2%D1%80%D0%BE%D0%BF%D0%B5_02.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/9212/9212%20%D0%A1%D0%B5%D0%BD-%D0%A2%D1%80%D0%BE%D0%BF%D0%B5_ZOOM.jpg",
-    "description": "9212 Сен-Тропе — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -2045,7 +2104,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "9212 Сен-Тропе — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "9212 Сен-Тропе — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "9510-vanilla-ansi",
@@ -2058,7 +2119,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/9510/9510%20%D0%92%D0%B0%D0%BD%D0%B8%D0%BB%D0%BB%D0%B0%20%D0%90%D0%BD%D1%81%D0%B8_01.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/9510/9510%20%D0%92%D0%B0%D0%BD%D0%B8%D0%BB%D0%BB%D0%B0%20%D0%90%D0%BD%D1%81%D0%B8_ZOOM.jpg",
-    "description": "9510 Ванилла Анси — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -2078,7 +2138,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": ""
+    "size": "",
+    "description_uz": "9510 Ванилла Анси — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "9510 Ванилла Анси — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "1111-avallon",
@@ -2092,7 +2154,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/1111/1111%20%D0%90%D0%B2%D0%B0%D0%BB%D0%BB%D0%BE%D0%BD_02.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Avant%20Quartz/1111/1111%20%D0%90%D0%B2%D0%B0%D0%BB%D0%BB%D0%BE%D0%BD_ZOOM.jpg",
-    "description": "1111 Аваллон — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -2112,7 +2173,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "1111 Аваллон — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "1111 Аваллон — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "q117-jade-white",
@@ -2126,7 +2189,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Noblle/Q117/Q117%20Jade%20White_2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Noblle/Q117/Q117%20Jade%20White%20zoom.jpg",
-    "description": "Q117 Jade White — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -2146,7 +2208,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q117 Jade White — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "Q117 Jade White — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "q127-gray-coast",
@@ -2159,7 +2223,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Noblle/q127/Q127%20Gray%20Coast%20int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Noblle/q127/Q127%20Gray%20Coast%20zoom.jpg",
-    "description": "Q127 Gray Coast — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -2179,7 +2242,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q127 Gray Coast — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "Q127 Gray Coast — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "q131-black-sand",
@@ -2193,7 +2258,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Noblle/q131/Q131%20Black%20Sand_2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Noblle/q131/Q131%20Black%20Sand%20zoom.jpg",
-    "description": "Q131 Black Sand — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -2213,7 +2277,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q131 Black Sand — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "Q131 Black Sand — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "q703-calacatta-borghini",
@@ -2227,7 +2293,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Noblle/q703/Q703%20Calacatta%20Borghini_2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Noblle/q703/Q703%20Calacatta%20Borghini%20zoom.jpg",
-    "description": "Q703 Calacatta Borghini — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -2247,7 +2312,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q703 Calacatta Borghini — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "Q703 Calacatta Borghini — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "q772-light-haze",
@@ -2260,7 +2327,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Noblle/Q772/Q772%20Light%20Haze%20int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Noblle/Q772/Q772%20Light%20Haze%20ZOOM.jpg",
-    "description": "Q772 Light Haze — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -2280,7 +2346,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q772 Light Haze — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "Q772 Light Haze — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "q810-grey-glow",
@@ -2294,7 +2362,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Noblle/q810/Q810%20Grey%20Glow_2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Noblle/q810/Q810%20Grey%20Glow%20Jambo%20zoom.jpg",
-    "description": "Q810 Grey Glow — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -2314,7 +2381,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q810 Grey Glow — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "Q810 Grey Glow — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "c-801-arezzo",
@@ -2329,7 +2398,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/C-801/C-801-Arezzo_int3_v2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/C-801/Grandex_C-801%20Arezzo_ZOOM_v2.jpg",
-    "description": "C-801 Arezzo — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -2349,7 +2417,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "C-801 Arezzo — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "C-801 Arezzo — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "c-802-piacenza",
@@ -2364,7 +2434,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/C-802/C-802%20Piacenza_int3.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/C-802/C-802%20Piacenza_Blizko.jpg",
-    "description": "C-802 Piacenza — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -2384,7 +2453,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "C-802 Piacenza — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "C-802 Piacenza — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "c-803-salerno",
@@ -2399,7 +2470,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/C-803/C-803%20Salerno_int3.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/C-803/C-803%20Salerno_Blizko.jpg",
-    "description": "C-803 Salerno — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -2419,7 +2489,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "C-803 Salerno — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "C-803 Salerno — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "m-701-hazel-flow",
@@ -2434,7 +2506,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M_701_A%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-701%20A.jpg",
-    "description": "M-701 А Hazel Flow — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -2454,7 +2525,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-701 А Hazel Flow — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "M-701 А Hazel Flow — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "m-705-lake-coast",
@@ -2469,7 +2542,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M-705%20A%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-705%20A.jpg",
-    "description": "M-705 A Lake Coast — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -2489,7 +2561,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-705 A Lake Coast — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "M-705 A Lake Coast — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "m-706-stormy-sea",
@@ -2504,7 +2578,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M-706%20A.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-706%20A.jpg",
-    "description": "M-706 A Stormy Sea — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -2524,7 +2597,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-706 A Stormy Sea — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "M-706 A Stormy Sea — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "m-707-noble-pearl",
@@ -2539,7 +2614,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M-707%20A.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-707%20A.jpg",
-    "description": "M-707 А Noble Pearl — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -2559,7 +2633,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-707 А Noble Pearl — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "M-707 А Noble Pearl — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "m-708-deep-water",
@@ -2574,7 +2650,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M_708_A%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-708%20A.jpg",
-    "description": "M-708 A Deep Water — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -2594,7 +2669,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-708 A Deep Water — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "M-708 A Deep Water — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "m-710-float-rock",
@@ -2608,7 +2685,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M-710%20Float%20Rock%20side%20A%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-710%20A.jpg",
-    "description": "M-710 A Float Rock — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -2628,7 +2704,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-710 A Float Rock — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "M-710 A Float Rock — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "m-711-sparkling-wave",
@@ -2642,7 +2720,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M-711%20Sparkling%20Wave%20side%20A%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-711%20A.jpg",
-    "description": "M-711 A Sparkling Wave — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -2662,7 +2739,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-711 A Sparkling Wave — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "M-711 A Sparkling Wave — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "m-712-stylish-moon",
@@ -2677,7 +2756,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M_712_A.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-712%20A.jpg",
-    "description": "M-712 A Stylish Moon — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -2697,7 +2775,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-712 A Stylish Moon — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "M-712 A Stylish Moon — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "m-713-whitesand-beach",
@@ -2711,7 +2791,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M-713%20Whitesand%20Beach%20side%20A%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-713%20A.jpg",
-    "description": "M-713 A Whitesand Beach — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -2731,7 +2810,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-713 A Whitesand Beach — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "M-713 A Whitesand Beach — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "m-717-shrimp-crust-1624006633",
@@ -2745,7 +2826,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/m-717-shrimp-crust-b/M-717%20Shrimp%20Crust%20side%20A%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/m-717-shrimp-crust-b/M-717-A.jpg",
-    "description": "M-717 A Shrimp Crust — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -2765,7 +2845,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-717 A Shrimp Crust — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "M-717 A Shrimp Crust — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "m-718-neptun-trident",
@@ -2779,7 +2861,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M-718%20Neptun%20Trident%20side%20A%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-718-A.jpg",
-    "description": "M-718 А Neptun Trident — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -2799,7 +2880,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-718 А Neptun Trident — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "M-718 А Neptun Trident — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "m-719-octopus-ink",
@@ -2813,7 +2896,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/M-719%20Octopus%20Ink%20side%20A%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-719-A.jpg",
-    "description": "M-719 А Octopus Ink — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -2833,7 +2915,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-719 А Octopus Ink — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "M-719 А Octopus Ink — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "m-720-a-carrara-lunar",
@@ -2847,7 +2931,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/M-720%20A/M-720%20Carrara%20Lunar_int2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-720%20A/M-720%20Carrara%20Lunar_Blizko.jpg",
-    "description": "M-720 A Carrara Lunar — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -2867,7 +2950,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-720 A Carrara Lunar — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "M-720 A Carrara Lunar — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "m-723-a-timber-wolf",
@@ -2881,7 +2966,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/M-723%20A/M-723%20Timber%20Wolf_int2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-723%20A/M-723%20Timber%20Wolf_Blizko.jpg",
-    "description": "M-723 A Timber Wolf — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -2901,7 +2985,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-723 A Timber Wolf — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "M-723 A Timber Wolf — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "m-727-a-venice",
@@ -2915,7 +3001,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/M-727%20A/M-727%20Venice_int2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/M-727%20A/M-727%20Venice_Blizko.jpg",
-    "description": "M-727 A Venice — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -2935,7 +3020,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "M-727 A Venice — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "M-727 A Venice — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "cloudy-mount",
@@ -2950,7 +3037,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/A-401/A-401-sl%20wall.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-401/A-401.jpg",
-    "description": "A-401 Cloudy Mount — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -2970,7 +3056,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-401 Cloudy Mount — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "A-401 Cloudy Mount — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "asphalt-material",
@@ -2985,7 +3073,6 @@
       "https://interstone.uz/media/images/1280/stones/asphalt-material/A-403-sl%20wall.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/asphalt-material/A-403.jpg",
-    "description": "A-403 Asphalt Material — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -3005,7 +3092,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-403 Asphalt Material — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "A-403 Asphalt Material — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "space-galaxy",
@@ -3020,7 +3109,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/A-406/A-406-sl%20wall.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-406/A-406.jpg",
-    "description": "A-406 Space Galaxy — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -3040,7 +3128,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-406 Space Galaxy — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "A-406 Space Galaxy — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "cotton-wool",
@@ -3055,7 +3145,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/A-410/A-410-sl%20wall.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-410/A-410.jpg",
-    "description": "A-410 Cotton Wool — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -3075,7 +3164,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-410 Cotton Wool — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "A-410 Cotton Wool — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "precious-stone",
@@ -3089,7 +3180,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/A-411/A-411%20Precious%20Stone.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-411/A-411.jpg",
-    "description": "A-411 Precious Stone — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -3109,7 +3199,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-411 Precious Stone — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "A-411 Precious Stone — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "citron-blossom",
@@ -3123,7 +3215,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/A-412/A-412%20Citron%20Blossom.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-412/A-412.jpg",
-    "description": "A-412 Citron Blossom — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -3143,7 +3234,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-412 Citron Blossom — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "A-412 Citron Blossom — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "historical-spot",
@@ -3157,7 +3250,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/A-414/A-414%20Historical%20Spot.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-414/A-414.jpg",
-    "description": "A-414 Historical Spot — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -3177,7 +3269,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-414 Historical Spot — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "A-414 Historical Spot — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "a-416-visible-horizon",
@@ -3191,7 +3285,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/A-416%20Visible%20Horizon%20%282%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-416.jpg",
-    "description": "A-416 Visible Horizon — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -3211,7 +3304,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-416 Visible Horizon — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "A-416 Visible Horizon — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "a-419-cromium-atom",
@@ -3226,7 +3321,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/A-419%20Cromium%20Atom%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-419.jpg",
-    "description": "A-419 Cromium Atom — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -3246,7 +3340,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-419 Cromium Atom — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "A-419 Cromium Atom — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "a-421-coal-mine",
@@ -3261,7 +3357,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/A-421%20Coal%20Mine.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-421.jpg",
-    "description": "A-421 Coal Mine — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -3281,7 +3376,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-421 Coal Mine — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "A-421 Coal Mine — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "snow-pile",
@@ -3296,7 +3393,6 @@
       "https://interstone.uz/media/images/1280/stones/snow-pile/A-422-sl%20wall.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/snow-pile/A-422.jpg",
-    "description": "A-422 Snow Pile — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -3316,7 +3412,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-422 Snow Pile — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "A-422 Snow Pile — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "a-423-industrial-draft",
@@ -3330,7 +3428,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/A-423%20Industrial%20Draft%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-423.jpg",
-    "description": "A-423 Industrial Draft — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -3350,7 +3447,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-423 Industrial Draft — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "A-423 Industrial Draft — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "a-424-loft-design",
@@ -3364,7 +3463,6 @@
       "https://interstone.uz/media/images/1280/stones/GRANDEX/a-424-loft-design/A-424%20Loft%20Design%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/a-424-loft-design/A-424.jpg",
-    "description": "A-424 Loft Design — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -3384,7 +3482,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-424 Loft Design — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "A-424 Loft Design — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "a-425-urban-project",
@@ -3399,7 +3499,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/A-425%20Urban%20Project.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/A-425.jpg",
-    "description": "A-425 Urban Project — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -3419,7 +3518,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "A-425 Urban Project — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "A-425 Urban Project — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "d-301-poppy-seed",
@@ -3434,7 +3535,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-301%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-301.jpg",
-    "description": "D-301 Poppy Seed — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -3454,7 +3554,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-301 Poppy Seed — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "D-301 Poppy Seed — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "d-302-morning-coffee",
@@ -3469,7 +3571,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-302%20Morning%20Coffee%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-302.jpg",
-    "description": "D-302 Morning Coffee — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -3489,7 +3590,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-302 Morning Coffee — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "D-302 Morning Coffee — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "d-304-ice-cream",
@@ -3504,7 +3607,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-304%20Ice-Cream%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-304.jpg",
-    "description": "D-304 Ice-Cream — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -3524,7 +3626,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-304 Ice-Cream — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "D-304 Ice-Cream — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "d-308-cubic-mint",
@@ -3539,7 +3643,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-308%20Cubic%20Mint%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-308.jpg",
-    "description": "D-308 Cubic Mint — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -3559,7 +3662,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-308 Cubic Mint — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "D-308 Cubic Mint — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "d-309-mushroom-soup",
@@ -3574,7 +3679,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-309%20Mushroom%20Soup%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-309.jpg",
-    "description": "D-309 Mushroom Soup — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -3594,7 +3698,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-309 Mushroom Soup — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "D-309 Mushroom Soup — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "d-310-herbal-ash",
@@ -3609,7 +3715,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-310%20Herbal%20Ash%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-310.jpg",
-    "description": "D-310 Herbal Ash — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -3629,7 +3734,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-310 Herbal Ash — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "D-310 Herbal Ash — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "d-312-pietra-absorb",
@@ -3644,7 +3751,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-312%20Pietra%20Absorb.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-312.jpg",
-    "description": "D-312 Pietra Absorb — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -3664,7 +3770,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-312 Pietra Absorb — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "D-312 Pietra Absorb — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "d-313-milky-way",
@@ -3679,7 +3787,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-313%20Milky%20Way.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-313.jpg",
-    "description": "D-313 Milky Way — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -3699,7 +3806,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-313 Milky Way — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "D-313 Milky Way — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "d-314-arctic-ice",
@@ -3714,7 +3823,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-314%20Arctic%20Ice.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-314.jpg",
-    "description": "D-314 Arctic Ice — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -3734,7 +3842,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-314 Arctic Ice — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "D-314 Arctic Ice — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "d-315-spacemen-food",
@@ -3749,7 +3859,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/D-315%20Spacemen%20Food.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/D-315.jpg",
-    "description": "D-315 Spacemen Food — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -3769,7 +3878,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "D-315 Spacemen Food — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "D-315 Spacemen Food — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "s-201-dirty-sand",
@@ -3784,7 +3895,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-201.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-201.jpg",
-    "description": "S-201 Dirty Sand — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -3804,7 +3914,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-201 Dirty Sand — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "S-201 Dirty Sand — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "s-202-peaceful-night",
@@ -3819,7 +3931,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-202%20Peaceful%20Night.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-202.jpg",
-    "description": "S-202 Peaceful Night — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -3839,7 +3950,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-202 Peaceful Night — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "S-202 Peaceful Night — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "s-203-sparkling-sand",
@@ -3854,7 +3967,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-203_N_510.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-203.jpg",
-    "description": "S-203 Sparkling Sand — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -3874,7 +3986,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-203 Sparkling Sand — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "S-203 Sparkling Sand — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "s-204-creamy-sand",
@@ -3889,7 +4003,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-204_N_421.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-204.jpg",
-    "description": "S-204 Creamy Sand — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -3909,7 +4022,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-204 Creamy Sand — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "S-204 Creamy Sand — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "s-205-fair-sky",
@@ -3924,7 +4039,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-205_N_440.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-205.jpg",
-    "description": "S-205 Fair Sky — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -3944,7 +4058,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-205 Fair Sky — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "S-205 Fair Sky — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "s-206-wet-sand",
@@ -3959,7 +4075,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-206_N_430.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-206.jpg",
-    "description": "S-206 Wet Sand — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -3979,7 +4094,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-206 Wet Sand — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "S-206 Wet Sand — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "s-207-clear-sky",
@@ -3994,7 +4111,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-207.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-207.jpg",
-    "description": "S-207 Clear Sky — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -4014,7 +4130,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-207 Clear Sky — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "S-207 Clear Sky — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "s-208-natural-sand",
@@ -4029,7 +4147,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-208.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-208.jpg",
-    "description": "S-208 Natural Sand — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -4049,7 +4166,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-208 Natural Sand — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "S-208 Natural Sand — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "s-209-light-sand",
@@ -4063,7 +4182,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-209%20Light%20Sand%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-209_Light_Sand.jpg",
-    "description": "S-209 Light Sand — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -4083,7 +4201,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-209 Light Sand — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "S-209 Light Sand — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "s-211-romantic-night",
@@ -4097,7 +4217,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-211%20Romantic%20Night%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-211.jpg",
-    "description": "S-211 Romantic Night — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -4117,7 +4236,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-211 Romantic Night — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "S-211 Romantic Night — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "s-212-thunder-sky",
@@ -4132,7 +4253,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-212%20Thunder%20Sky.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-212.jpg",
-    "description": "S-212 Thunder Sky — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -4152,7 +4272,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-212 Thunder Sky — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "S-212 Thunder Sky — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "s-215-sanded-alps",
@@ -4167,7 +4289,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-215%20Sanded%20Alps.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-215.jpg",
-    "description": "S-215 Sanded Alps — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -4187,7 +4308,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-215 Sanded Alps — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "S-215 Sanded Alps — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "s-217-midnight-sky",
@@ -4202,7 +4325,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-217%20Midnight%20Sky.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-217.jpg",
-    "description": "S-217 Midnight Sky — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -4222,7 +4344,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-217 Midnight Sky — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "S-217 Midnight Sky — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "s-218-crispy-beige",
@@ -4237,7 +4361,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/S-218%20Crispy%20Beige.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/S-218.jpg",
-    "description": "S-218 Crispy Beige — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -4257,7 +4380,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "S-218 Crispy Beige — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "S-218 Crispy Beige — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "p-104-pure-white",
@@ -4272,7 +4397,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/P-104_N_010.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/P-104.jpg",
-    "description": "P-104 Pure White — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -4292,7 +4416,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "P-104 Pure White — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "P-104 Pure White — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "p-105-pure-black",
@@ -4307,7 +4433,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/P-105%20Pure%20Black.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/P-105.jpg",
-    "description": "P-105 Pure Black — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -4327,7 +4452,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "P-105 Pure Black — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "P-105 Pure Black — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "p-108-pure-grey",
@@ -4342,7 +4469,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/P-108%20Pure%20Grey.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/P-108.jpg",
-    "description": "P-108 Pure Grey — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -4362,7 +4488,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "P-108 Pure Grey — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "P-108 Pure Grey — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "j-504-cut-diamond",
@@ -4377,7 +4505,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/J-504%20Cut%20Diamond%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/J-504.jpg",
-    "description": "J-504 Cut Diamond — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -4397,7 +4524,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "J-504 Cut Diamond — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "J-504 Cut Diamond — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "j-505-pearl-necklace",
@@ -4412,7 +4541,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/J-505%20Pearl%20Necklace%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/J-505.jpg",
-    "description": "J-505 Pearl Necklace — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -4432,7 +4560,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "J-505 Pearl Necklace — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "J-505 Pearl Necklace — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "e-603-snowy-moscow",
@@ -4447,7 +4577,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/E-603%20Snowy%20Moscow%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/E-603.jpg",
-    "description": "E-603 Snowy Moscow — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -4467,7 +4596,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "E-603 Snowy Moscow — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "E-603 Snowy Moscow — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "e-605-indian-mantra",
@@ -4482,7 +4613,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/E-605.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/E-605.jpg",
-    "description": "E-605 Indian Mantra — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -4502,7 +4632,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "E-605 Indian Mantra — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "E-605 Indian Mantra — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "e-609-business-tokio",
@@ -4517,7 +4649,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/E-609%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/E-609.jpg",
-    "description": "E-609 Business Tokio — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -4537,7 +4668,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "E-609 Business Tokio — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "E-609 Business Tokio — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "e-614-marrakesh-plaza",
@@ -4551,7 +4684,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/E-614%20Marrakesh%20Plaza%20%282%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/E-614.jpg",
-    "description": "E-614 Marrakesh Plaza — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -4571,7 +4703,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "E-614 Marrakesh Plaza — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "E-614 Marrakesh Plaza — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "e-618-saturn-ring",
@@ -4586,7 +4720,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/Grandex/E-618%20Saturn%20Ring%20%283%29.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/GRANDEX/E-618.jpg",
-    "description": "E-618 Saturn Ring — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -4606,7 +4739,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "E-618 Saturn Ring — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "E-618 Saturn Ring — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "desert-blow",
@@ -4620,7 +4755,6 @@
       "https://interstone.uz/media/images/1280/stones/desert-blow/NM%20102%20Desert%20Blow%20INT%2003.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/desert-blow/NM%20102%20zoom.jpg",
-    "description": "NM-102 Desert blow — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -4640,7 +4774,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3660x760 mm"
+    "size": "3660x760 mm",
+    "description_uz": "NM-102 Desert blow — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "NM-102 Desert blow — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "petro-bloom",
@@ -4654,7 +4790,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NM-108/NM%20108%20Petro%20Bloom%20INT%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NM-108/NM%20108%20zoom.jpg",
-    "description": "NM-108 Petro bloom — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -4674,7 +4809,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3660x760 mm"
+    "size": "3660x760 mm",
+    "description_uz": "NM-108 Petro bloom — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "NM-108 Petro bloom — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "magic-dust",
@@ -4688,7 +4825,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NM-109/NM%20109%20sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NM-109/NM%20109%20zoom.jpg",
-    "description": "NM-109 Magic dust — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -4708,7 +4844,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3660x760 mm"
+    "size": "3660x760 mm",
+    "description_uz": "NM-109 Magic dust — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "NM-109 Magic dust — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "foggy-shell",
@@ -4722,7 +4860,6 @@
       "https://interstone.uz/media/images/1280/stones/foggy-shell/NM%20110%20Foggy%20Shell%20INT%2003.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/foggy-shell/NM%20110%20zoom.jpg",
-    "description": "NM-110 Foggy shell — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -4742,7 +4879,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3660x760 mm"
+    "size": "3660x760 mm",
+    "description_uz": "NM-110 Foggy shell — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "NM-110 Foggy shell — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "calacatta-bianco",
@@ -4756,7 +4895,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NM-201/NM%20201%20sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NM-201/NM%20201%20zoom.jpg",
-    "description": "NM-201 Calacatta Bianco — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -4776,7 +4914,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3660x760 mm"
+    "size": "3660x760 mm",
+    "description_uz": "NM-201 Calacatta Bianco — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "NM-201 Calacatta Bianco — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "nm-208-calacatta-blanca",
@@ -4790,7 +4930,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NM%20208/nm-208-calacatta-blanca-int-03_optimized.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NM%20208/nm-208-calacatta-blanca-zoom_optimized.jpg",
-    "description": "NM-208 Calacatta Blanca — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -4810,7 +4949,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3660x760 mm"
+    "size": "3660x760 mm",
+    "description_uz": "NM-208 Calacatta Blanca — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "NM-208 Calacatta Blanca — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "nm-221-optical-haze",
@@ -4824,7 +4965,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NM%20221/NM%20221%20Optical%20Haze_INT2.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NM%20221/NM%20221%20Optical%20Haze_ZOOM.jpg",
-    "description": "NM-221 Optical Haze — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -4844,7 +4984,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3660x760 mm"
+    "size": "3660x760 mm",
+    "description_uz": "NM-221 Optical Haze — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "NM-221 Optical Haze — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "calacatta-negro",
@@ -4856,7 +4998,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NM%20760/NM%20760%20Calacatta%20Negro%20sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NM%20760/NM%20760%20Calacatta%20Negro%20zoom.jpg",
-    "description": "NM-760 Calacatta Negro — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -4876,7 +5017,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3660x760 mm"
+    "size": "3660x760 mm",
+    "description_uz": "NM-760 Calacatta Negro — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "NM-760 Calacatta Negro — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "calacatta-reef",
@@ -4888,7 +5031,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/NM%20790/NM%20790%20Calacatta%20Reef_sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/NM%20790/NM%20790%20Calacatta%20Reef%20zoom.jpg",
-    "description": "NM-790 Calacatta Reef — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -4908,7 +5050,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3660x760 mm"
+    "size": "3660x760 mm",
+    "description_uz": "NM-790 Calacatta Reef — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "NM-790 Calacatta Reef — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "flex-0280-alpine-white-a",
@@ -4922,7 +5066,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/flex0280/flex%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/flex0280/Flex%200208.jpg",
-    "description": "Flex 0280 Alpine White — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -4942,7 +5085,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "Flex 0280 Alpine White — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "Flex 0280 Alpine White — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "white",
@@ -4956,7 +5101,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20010/N%20010%20White%20sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20010/N%20010%20White%20zoom.jpg",
-    "description": "N-010 White — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -4976,7 +5120,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-010 White — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "N-010 White — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "crystal-beige",
@@ -4990,7 +5136,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20101/N%20101%20Crystal%20Beige%20sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20101/N%20101%20Crystal%20Beige%20zoom.jpg",
-    "description": "N-101 Crystal Beige — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -5010,7 +5155,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-101 Crystal Beige — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "N-101 Crystal Beige — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "gray-onix",
@@ -5024,7 +5171,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20103/N%20103%20Gray%20Onix%20INT%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20103/N%20103%20Gray%20Onix%20zoom.jpg",
-    "description": "N-103 Gray Onix — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -5044,7 +5190,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-103 Gray Onix — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "N-103 Gray Onix — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "clay",
@@ -5058,7 +5206,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20218/N%20218%20Clay%20INT%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20218/N%20218%20Clay%20zoom.jpg",
-    "description": "N-218 Clay — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -5078,7 +5225,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-218 Clay — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "N-218 Clay — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "sanded-cream",
@@ -5092,7 +5241,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20421/N%20421%20Sanded%20Cream%20sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20421/N%20421%20Sanded%20Cream%20zoom.jpg",
-    "description": "N-421 Sanded Cream — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -5112,7 +5260,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-421 Sanded Cream — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "N-421 Sanded Cream — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "sanded-night",
@@ -5126,7 +5276,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20423/N%20423%20Sanded%20Night%20INT%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20423/N%20423%20Sanded%20Night%20zoom.jpg",
-    "description": "N-423 Sanded Night — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -5146,7 +5295,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-423 Sanded Night — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "N-423 Sanded Night — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "n-433-sandy-mist",
@@ -5159,7 +5310,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N433/N-433%20Sandy%20Mist%20INT%202.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N433/N-433%20Sandy%20Mist%20ZOOM.jpg",
-    "description": "N-433 Sandy Mist — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -5179,7 +5329,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-433 Sandy Mist — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "N-433 Sandy Mist — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "sahara",
@@ -5193,7 +5345,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20440/N%20440%20Sahara%20INT%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20440/N%20440%20Sahara%20zoom.jpg",
-    "description": "N-440 Sahara — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -5213,7 +5364,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-440 Sahara — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "N-440 Sahara — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "mettalic-white-a",
@@ -5227,7 +5380,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20510/N%20510%20Mettalic%20White%20INT%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20510/N%20510%20Mettalic%20White%20zoom.jpg",
-    "description": "N-510 Mettalic White — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -5247,7 +5399,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-510 Mettalic White — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "N-510 Mettalic White — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "earl-grey",
@@ -5260,7 +5414,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N%20539%20Earl%20Grey/N%20539.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N%20539%20Earl%20Grey/N%20539%201.jpg",
-    "description": "N-539 Earl Grey — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -5280,7 +5433,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-539 Earl Grey — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "N-539 Earl Grey — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "meteor",
@@ -5293,7 +5448,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-605/N-605.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-605/N-605%20zoom.png",
-    "description": "N-605 Meteor — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -5313,7 +5467,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-605 Meteor — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "N-605 Meteor — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "milk-snow",
@@ -5327,7 +5483,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20610/N%20610%20Milk%20Snow%20INT%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20610/N%20610%20Milk%20Snow%20zoom.jpg",
-    "description": "N-610 Milk Snow — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -5347,7 +5502,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-610 Milk Snow — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "N-610 Milk Snow — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "white-glacier",
@@ -5361,7 +5518,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20612/N%20612%20White%20Glacier%20sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20612/N%20612%20White%20Glacier%20zoom.jpg",
-    "description": "N-612 White Glacier — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -5381,7 +5537,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-612 White Glacier — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "N-612 White Glacier — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "n-800-milk-jelly",
@@ -5394,7 +5552,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-800/N-800%20Milk%20Jelly.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-800/N-800%20Milk%20Jelly%20zoom.png",
-    "description": "N-800 Milk Jelly — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -5414,7 +5571,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-800 Milk Jelly — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "N-800 Milk Jelly — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "cobble-grey",
@@ -5428,7 +5587,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20810/N%20810%20Cobble%20Grey%20INT%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20810/N%20810%20Cobble%20Grey%20zoom.jpg",
-    "description": "N-810 Cobble Grey — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -5448,7 +5606,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-810 Cobble Grey — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "N-810 Cobble Grey — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "cobble-ice",
@@ -5462,7 +5622,6 @@
       "https://interstone.uz/media/images/1280/stones/Neomarm/N%20811/N%20811%20Cobble%20Ice%20sl.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Neomarm/N%20811/N%20811%20Cobble%20Ice%20zoom.jpg",
-    "description": "N-811 Cobble Ice — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
     "features": [
       "Issiqlikka chidamli",
       "Chizilishga bardoshli",
@@ -5482,7 +5641,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-811 Cobble Ice — Yuqori sifatli akril tosh — oshxona stollari, vanna xonalari va bar peshtaxtalari uchun ideal. Chizilishga bardoshli va gigienik sirt.",
+    "description_ru": "N-811 Cobble Ice — Высококачественный акриловый камень — идеален для кухонных столешниц, ванных комнат и барных стоек. Устойчивая к царапинам и гигиеничная поверхность."
   },
   {
     "id": "n-814-space-pattern",
@@ -5495,7 +5656,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-814/N-814%20Space%20Pattern.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-814/N-814%20Space%20Pattern%20%20zoom.png",
-    "description": "N-814 Space Pattern — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
     "features": [
       "Namlikka chidamli",
       "UV barqaror",
@@ -5515,7 +5675,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-814 Space Pattern — Premium akril tosh — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy oshxonalar uchun mukammal tanlov.",
+    "description_ru": "N-814 Space Pattern — Премиум акриловый камень — термостойкая, влагостойкая и легко очищаемая поверхность. Идеальный выбор для современных кухонь."
   },
   {
     "id": "cobble-quartz",
@@ -5528,7 +5690,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N%20820%20Cobble%20Quartz/N-820%203.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N%20820%20Cobble%20Quartz/N-820%202.jpg",
-    "description": "N-820 Cobble Quartz — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
     "features": [
       "Mustahkam",
       "Kam parvarish",
@@ -5548,7 +5709,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-820 Cobble Quartz — Hashamatli akril tosh — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Har qanday interyerga mos keladi.",
+    "description_ru": "N-820 Cobble Quartz — Роскошный акриловый камень — обладает антибактериальными свойствами, служит долгое время. Подходит к любому интерьеру."
   },
   {
     "id": "n-821-beige-universe",
@@ -5561,7 +5724,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-821/N-821.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-821/N-821-Beige%20Universe%20Zoom.jpg",
-    "description": "N-821 Beige Universe — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
     "features": [
       "Premium sifat",
       "Dog'lanishga bardoshli",
@@ -5581,7 +5743,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-821 Beige Universe — Sifatli akril tosh — chizilishga bardoshli, UV barqaror va oson parvarish qilinadigan sirt. Oshxona va vanna uchun eng yaxshi yechim.",
+    "description_ru": "N-821 Beige Universe — Качественный акриловый камень — устойчивая к царапинам, UV-стабильная и лёгкая в уходе поверхность. Лучшее решение для кухни и ванной."
   },
   {
     "id": "n-841-beige-variety",
@@ -5594,7 +5758,6 @@
       "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-841/N-841%20Beige%20Variety%201.png"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/NEOMARM/N-841/N-841%20Beige%20Variety%20%20zoom-1.png",
-    "description": "N-841 Beige Variety — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
     "features": [
       "Chidamli sirt",
       "Oson parvarishlash",
@@ -5614,7 +5777,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3680x760 mm"
+    "size": "3680x760 mm",
+    "description_uz": "N-841 Beige Variety — Zamonaviy akril tosh — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos.",
+    "description_ru": "N-841 Beige Variety — Современный акриловый камень — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений."
   },
   {
     "id": "kalakatta-dofine",
@@ -5628,7 +5793,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7400/7400%20%D0%9A%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0%D1%82%D1%82%D0%B0%20%D0%94%D0%BE%D1%84%D0%B8%D0%BD%D0%B5%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/7400/7400_ZOOM_R.jpg",
-    "description": "7400 Калакатта Дофине — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -5648,7 +5812,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "7400 Калакатта Дофине — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "7400 Калакатта Дофине — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "8100mulen",
@@ -5662,7 +5828,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/8100/8100%20%D0%9C%D1%83%D0%BB%D0%B5%D0%BD%20int%2002.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/8100/8100_ZOOM_R.jpg",
-    "description": "8100 Мулен — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -5682,7 +5847,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "8100 Мулен — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "8100 Мулен — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "provans",
@@ -5696,7 +5863,6 @@
       "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9009/9009%20%D0%9F%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D1%81%20int%2001.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Avant%20Quartz/9009/9009_ZOOM_R.jpg",
-    "description": "9009 Прованс — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -5716,7 +5882,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3050x1440 mm"
+    "size": "3050x1440 mm",
+    "description_uz": "9009 Прованс — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "9009 Прованс — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "q101-gold-sand",
@@ -5729,7 +5897,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q101/Q101%20Gold%20Sand_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q101/Q101%20Gold%20Sand_ZOOM.jpg",
-    "description": "Q101 Gold Sand — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -5749,7 +5916,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q101 Gold Sand — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "Q101 Gold Sand — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "q102-white-sand",
@@ -5762,7 +5931,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q102/Q102%20White%20Sand_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q102/Q102%20White%20Sand_ZOOM.jpg",
-    "description": "Q102 White Sand — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -5782,7 +5950,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q102 White Sand — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "Q102 White Sand — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "q104-white-quartz",
@@ -5795,7 +5965,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q104/Q104_White_Quartz_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q104/Q104_White_Quartz_zoom.jpg",
-    "description": "Q104 White Quartz — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -5815,7 +5984,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q104 White Quartz — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "Q104 White Quartz — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "q112-white-mirror",
@@ -5828,7 +5999,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q112/Q112%20White%20Mirror_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q112/Q112%20White%20Mirror_ZOOM.jpg",
-    "description": "Q112 White Mirror — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -5848,7 +6018,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q112 White Mirror — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "Q112 White Mirror — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "q122-white-salt",
@@ -5861,7 +6033,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q122/Q122_White_Salt_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q122/Q122_White_Salt_zoom.jpg",
-    "description": "Q122 White Salt — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -5881,7 +6052,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q122 White Salt — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "Q122 White Salt — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "q124-black-mirror",
@@ -5894,7 +6067,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q124/Q124%20Black%20Mirror_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q124/Q124%20Black%20Mirror_ZOOM.jpg",
-    "description": "Q124 Black Mirror — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -5914,7 +6086,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q124 Black Mirror — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "Q124 Black Mirror — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "q714-black-marble",
@@ -5927,7 +6101,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q714/Q714%20Black%20Marble_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q714/Q714%20Black%20Marble_ZOOM.jpg",
-    "description": "Q714 Black Marble — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -5947,7 +6120,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q714 Black Marble — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "Q714 Black Marble — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "q716-snowy-rocks",
@@ -5960,7 +6135,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q716/Q716_Snowy_Rocks_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q716/Q716_Snowy_Rocks_zoom.jpg",
-    "description": "Q716 Snowy Rocks — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -5980,7 +6154,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q716 Snowy Rocks — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "Q716 Snowy Rocks — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "q740-calacatta-venato",
@@ -5994,7 +6170,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q740/Q740-Calacatta-Venato_1.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/products-gallery/Noblle/Q740/q740.png",
-    "description": "Q740 Calacatta Venato — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -6014,7 +6189,9 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q740 Calacatta Venato — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "Q740 Calacatta Venato — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   },
   {
     "id": "q746-calacatta-noir",
@@ -6027,7 +6204,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q746/Q746%20Calacatta%20Noir_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q746/Q746%20Calacatta%20Noir_ZOOM.jpg",
-    "description": "Q746 Calacatta Noir — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
     "features": [
       "Tabiiy ko'rinish",
       "Chizilmaydigan",
@@ -6047,7 +6223,9 @@
       "Restoran",
       "Kafe stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q746 Calacatta Noir — Hashamatli kvarts tosh — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi.",
+    "description_ru": "Q746 Calacatta Noir — Роскошный кварцевый камень — tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi."
   },
   {
     "id": "q765-nero-marquina",
@@ -6061,7 +6239,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q765/Q765-Nero-Marquina_1.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q765/Q765%20Nero%20Marquina_ZOOM.jpg",
-    "description": "Q765 Nero Marquina — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
     "features": [
       "Marmar effekt",
       "Uzoq xizmat muddati",
@@ -6081,7 +6258,9 @@
       "Zinapoya",
       "Derazaband"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q765 Nero Marquina — Sifatli kvarts tosh — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun.",
+    "description_ru": "Q765 Nero Marquina — Качественный кварцевый камень — UV barqaror, namlikka chidamli va uzoq xizmat muddatiga ega. Premium interyerlar uchun."
   },
   {
     "id": "q770-calacatta-oro",
@@ -6094,7 +6273,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q770/Q770_Calacatta%20Oro_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q770/Q770_Calacatta_Oro_zoom.jpg",
-    "description": "Q770 Calacatta Oro — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
     "features": [
       "Kuchli va bardoshli",
       "Issiqlikka to'liq chidamli",
@@ -6114,7 +6292,9 @@
       "Tibbiy mebel",
       "Spa markaz"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q770 Calacatta Oro — Zamonaviy kvarts tosh — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal.",
+    "description_ru": "Q770 Calacatta Oro — Современный кварцевый камень — chizilmaydigan va dog'lanmaydigan sirt. Oshxona, vanna va tijorat binolari uchun ideal."
   },
   {
     "id": "q771-calacatta-brass",
@@ -6127,7 +6307,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q771/Q771_Calacatta_Brass_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q771/Q771_Calacatta_Brass_zoom.jpg",
-    "description": "Q771 Calacatta Brass — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
     "features": [
       "Issiqlikka chidamli",
       "Dog'lanmaydi",
@@ -6147,7 +6326,9 @@
       "Bar peshtaxta",
       "Devor paneli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q771 Calacatta Brass — Premium kvarts tosh — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov.",
+    "description_ru": "Q771 Calacatta Brass — Премиум кварцевый камень — tabiiy toshning go'zalligi sun'iy toshning mustahkamligi bilan birlashgan. Oshxona va vanna uchun ideal tanlov."
   },
   {
     "id": "q785-calacatta-gold",
@@ -6160,7 +6341,6 @@
       "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q785/Q785_Calacatta%20Gold_int.jpg"
     ],
     "thumbnail": "https://interstone.uz/media/images/1280/stones/Noblle%20Quartz/Q785/Q785_Calacatta_Gold_zoom.jpg",
-    "description": "Q785 Calacatta Gold — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "features": [
       "Yuqori mustahkamlik",
       "UV barqaror",
@@ -6180,6 +6360,8 @@
       "Mehmonxona",
       "Ofis stoli"
     ],
-    "size": "3200x1600 mm"
+    "size": "3200x1600 mm",
+    "description_uz": "Q785 Calacatta Gold — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
+    "description_ru": "Q785 Calacatta Gold — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
   }
 ]
