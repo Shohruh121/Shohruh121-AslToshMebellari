@@ -6363,5 +6363,4293 @@
     "size": "3200x1600 mm",
     "description_uz": "Q785 Calacatta Gold — Yuqori sifatli kvarts tosh — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal.",
     "description_ru": "Q785 Calacatta Gold — Высококачественный кварцевый камень — issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt. Zamonaviy dizayn uchun mukammal."
+  },
+  {
+    "id": "granit-ps-13",
+    "name": "PS-13",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/5hb0RDYW/PS-13.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/5hb0RDYW/PS-13.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-13 — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-13 — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-49",
+    "name": "MS-49",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/KpYL5MXR/MS-49.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/KpYL5MXR/MS-49.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-49 — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-49 — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-50",
+    "name": "MS-50",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/W4Z56g95/MS-50.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/W4Z56g95/MS-50.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-50 — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-50 — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-48",
+    "name": "MS-48",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/V0SztjNX/MS-48.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/V0SztjNX/MS-48.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-48 — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-48 — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-47",
+    "name": "MS-47",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/HLmhbsGc/MS-47.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/HLmhbsGc/MS-47.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-47 — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-47 — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-28",
+    "name": "MS-28",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/5WyXFXGC/MS-28.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/5WyXFXGC/MS-28.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-28 — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-28 — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-22",
+    "name": "MS-22",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/tp8C4Gy2/MS-22.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/tp8C4Gy2/MS-22.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-22 — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-22 — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-19",
+    "name": "MS-19",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/tTM7jVx1/MS-19.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/tTM7jVx1/MS-19.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-19 — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-19 — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-16",
+    "name": "MS-16",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/dJP5P081/MS-16.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/dJP5P081/MS-16.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-16 — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-16 — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-15",
+    "name": "MS-15",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/Lz1PpSvG/MS-15.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Lz1PpSvG/MS-15.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-15 — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-15 — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-11",
+    "name": "MS-11",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/RkbJyV1B/MS-11.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/RkbJyV1B/MS-11.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-11 — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-11 — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-09",
+    "name": "MS-09",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/wrSFsSh4/MS-09.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/wrSFsSh4/MS-09.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-09 — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-09 — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-08",
+    "name": "MS-08",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/HDmNTGfW/MS-08.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/HDmNTGfW/MS-08.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-08 — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-08 — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-07",
+    "name": "MS-07",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/SDw3LvRV/MS-07.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/SDw3LvRV/MS-07.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-07 — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-07 — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-06",
+    "name": "MS-06",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/XrPG5qdZ/MS-06.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/XrPG5qdZ/MS-06.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-06 — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-06 — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-03",
+    "name": "MS-03",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/j9Np9Jn4/MS-03.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/j9Np9Jn4/MS-03.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-03 — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-03 — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ms-01",
+    "name": "MS-01",
+    "type": "granit",
+    "category": "MS Series",
+    "images": [
+      "https://i.ibb.co/8D7Hk5Gz/MS-01.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/8D7Hk5Gz/MS-01.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "MS-01 — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "MS-01 — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-gs-21",
+    "name": "GS-21",
+    "type": "granit",
+    "category": "GS Series",
+    "images": [
+      "https://i.ibb.co/C5bYQ1Sy/GS-21.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/C5bYQ1Sy/GS-21.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "GS-21 — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "GS-21 — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-gs-20",
+    "name": "GS-20",
+    "type": "granit",
+    "category": "GS Series",
+    "images": [
+      "https://i.ibb.co/sJCqx99L/GS-20.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/sJCqx99L/GS-20.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "GS-20 — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "GS-20 — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-gs-17-1",
+    "name": "GS-17/1",
+    "type": "granit",
+    "category": "GS Series",
+    "images": [
+      "https://i.ibb.co/BVPrQLNQ/GS-17-1.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/BVPrQLNQ/GS-17-1.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "GS-17/1 — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "GS-17/1 — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-gs-15",
+    "name": "GS-15",
+    "type": "granit",
+    "category": "GS Series",
+    "images": [
+      "https://i.ibb.co/Q37ttNCc/GS-15.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Q37ttNCc/GS-15.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "GS-15 — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "GS-15 — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-gs-11-1",
+    "name": "GS-11/1",
+    "type": "granit",
+    "category": "GS Series",
+    "images": [
+      "https://i.ibb.co/hx2JGjBq/GS-11-1.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/hx2JGjBq/GS-11-1.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "GS-11/1 — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "GS-11/1 — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-gs-03-1",
+    "name": "GS-03/1",
+    "type": "granit",
+    "category": "GS Series",
+    "images": [
+      "https://i.ibb.co/Ps8mmysT/GS-03-1.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Ps8mmysT/GS-03-1.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "GS-03/1 — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "GS-03/1 — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-gs-03",
+    "name": "GS-03",
+    "type": "granit",
+    "category": "GS Series",
+    "images": [
+      "https://i.ibb.co/dsxKh7rS/GS-03.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/dsxKh7rS/GS-03.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "GS-03 — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "GS-03 — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-gs-02",
+    "name": "GS-02",
+    "type": "granit",
+    "category": "GS Series",
+    "images": [
+      "https://i.ibb.co/mZWKCMD/GS-02.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/mZWKCMD/GS-02.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "GS-02 — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "GS-02 — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-as-48",
+    "name": "AS-48",
+    "type": "granit",
+    "category": "AS Series",
+    "images": [
+      "https://i.ibb.co/0VzkpZFS/AS-48.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/0VzkpZFS/AS-48.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "AS-48 — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "AS-48 — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-as-47",
+    "name": "AS-47",
+    "type": "granit",
+    "category": "AS Series",
+    "images": [
+      "https://i.ibb.co/BK6Gkdx4/AS-47.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/BK6Gkdx4/AS-47.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "AS-47 — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "AS-47 — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-as-46",
+    "name": "AS-46",
+    "type": "granit",
+    "category": "AS Series",
+    "images": [
+      "https://i.ibb.co/JWTSTNDm/AS-46.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/JWTSTNDm/AS-46.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "AS-46 — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "AS-46 — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-as-45",
+    "name": "AS-45",
+    "type": "granit",
+    "category": "AS Series",
+    "images": [
+      "https://i.ibb.co/svgX87kf/AS-45.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/svgX87kf/AS-45.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "AS-45 — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "AS-45 — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-as-44",
+    "name": "AS-44",
+    "type": "granit",
+    "category": "AS Series",
+    "images": [
+      "https://i.ibb.co/cSrYy0GJ/AS-44.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/cSrYy0GJ/AS-44.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "AS-44 — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "AS-44 — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-as-19",
+    "name": "AS-19",
+    "type": "granit",
+    "category": "AS Series",
+    "images": [
+      "https://i.ibb.co/NgjrM5L8/AS-19.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/NgjrM5L8/AS-19.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "AS-19 — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "AS-19 — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-as-12",
+    "name": "AS-12",
+    "type": "granit",
+    "category": "AS Series",
+    "images": [
+      "https://i.ibb.co/8L3vmhMj/AS-12.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/8L3vmhMj/AS-12.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "AS-12 — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "AS-12 — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-as-08",
+    "name": "AS-08",
+    "type": "granit",
+    "category": "AS Series",
+    "images": [
+      "https://i.ibb.co/q3SvdN4r/AS-08.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/q3SvdN4r/AS-08.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "AS-08 — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "AS-08 — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-818",
+    "name": "818 БЛЭК",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/tTgLq6cS/818.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/tTgLq6cS/818.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "818 БЛЭК — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "818 БЛЭК — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-817",
+    "name": "817 ЭЛЕГИЯ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/XrXRwRKN/817.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/XrXRwRKN/817.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "817 ЭЛЕГИЯ — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "817 ЭЛЕГИЯ — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-812",
+    "name": "812 ШЕЛЕСТ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/p6yZ5WSm/812.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/p6yZ5WSm/812.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "812 ШЕЛЕСТ — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "812 ШЕЛЕСТ — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-801",
+    "name": "801 ВУАЛЬ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/scngm4Q/801.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/scngm4Q/801.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "801 ВУАЛЬ — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "801 ВУАЛЬ — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-718",
+    "name": "718 АЛМАЗ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/zHJvBB61/718.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/zHJvBB61/718.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "718 АЛМАЗ — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "718 АЛМАЗ — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-709",
+    "name": "709 ФУКСИЯ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/yLB20vG/709.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/yLB20vG/709.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "709 ФУКСИЯ — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "709 ФУКСИЯ — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-704",
+    "name": "704 БЛАНЖ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/KjgWKhQH/704.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/KjgWKhQH/704.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "704 БЛАНЖ — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "704 БЛАНЖ — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-624",
+    "name": "624 ТЕНЬ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/Kx6P9TB5/624.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Kx6P9TB5/624.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "624 ТЕНЬ — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "624 ТЕНЬ — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-622",
+    "name": "622 ГАЛАКТИКА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/s96jrGsc/622.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/s96jrGsc/622.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "622 ГАЛАКТИКА — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "622 ГАЛАКТИКА — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-621",
+    "name": "621 СИЛЬВЕР",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/tpHDBgbs/621.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/tpHDBgbs/621.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "621 СИЛЬВЕР — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "621 СИЛЬВЕР — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-620",
+    "name": "620 ЛЕОПАРД",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/HpHVJ7Rs/620.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/HpHVJ7Rs/620.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "620 ЛЕОПАРД — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "620 ЛЕОПАРД — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-609",
+    "name": "609 СУФЛЕ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/7632N2r/609.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/7632N2r/609.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "609 СУФЛЕ — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "609 СУФЛЕ — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-608",
+    "name": "608 РУНО",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/jvxzGYGR/608.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/jvxzGYGR/608.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "608 РУНО — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "608 РУНО — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-607",
+    "name": "607 КЕШЬЮ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/4ZMSxpwF/607.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/4ZMSxpwF/607.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "607 КЕШЬЮ — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "607 КЕШЬЮ — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-606",
+    "name": "606 ЛИЛИЯ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/tTnXMhhb/606.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/tTnXMhhb/606.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "606 ЛИЛИЯ — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "606 ЛИЛИЯ — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-605",
+    "name": "605 СЛИВКИ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/hxsnt42H/605.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/hxsnt42H/605.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "605 СЛИВКИ — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "605 СЛИВКИ — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-520",
+    "name": "520 ЯБЛОКО",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/yBgMvWtG/520.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/yBgMvWtG/520.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "520 ЯБЛОКО — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "520 ЯБЛОКО — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-506",
+    "name": "506 ЛАНДЫШ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/d04YgnbY/506.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/d04YgnbY/506.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "506 ЛАНДЫШ — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "506 ЛАНДЫШ — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-504",
+    "name": "504 ТАНЕЦ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/ZRcFccKJ/504.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/ZRcFccKJ/504.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "504 ТАНЕЦ — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "504 ТАНЕЦ — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-502",
+    "name": "502 КРАП",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/Cshbf4SR/502.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Cshbf4SR/502.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "502 КРАП — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "502 КРАП — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-310",
+    "name": "310 САПФИР",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/xt83hpDy/310.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/xt83hpDy/310.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "310 САПФИР — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "310 САПФИР — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-309",
+    "name": "309 ЛАДЬЯ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/Vcq8S0Dq/309.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Vcq8S0Dq/309.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "309 ЛАДЬЯ — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "309 ЛАДЬЯ — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-308",
+    "name": "308 БАРС",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/Xrvn0x50/308.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Xrvn0x50/308.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "308 БАРС — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "308 БАРС — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-307",
+    "name": "307 КАИР",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/CKmJYmnh/307.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/CKmJYmnh/307.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "307 КАИР — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "307 КАИР — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-303",
+    "name": "303 КАРЕЛИЯ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/yccKJSXZ/303.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/yccKJSXZ/303.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "303 КАРЕЛИЯ — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "303 КАРЕЛИЯ — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-301",
+    "name": "301 ВЕНГЕ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/x8LP3JZV/301.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/x8LP3JZV/301.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "301 ВЕНГЕ — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "301 ВЕНГЕ — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-230",
+    "name": "230 АБРИКОС",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/XkL54W7J/230.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/XkL54W7J/230.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "230 АБРИКОС — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "230 АБРИКОС — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-227",
+    "name": "227 ЧЕРНИКА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/S7n0pRfc/227.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/S7n0pRfc/227.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "227 ЧЕРНИКА — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "227 ЧЕРНИКА — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-226",
+    "name": "226 КАМЫШ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/0Rz0140f/226.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/0Rz0140f/226.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "226 КАМЫШ — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "226 КАМЫШ — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-225",
+    "name": "225 ХАКИ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/gZ7Mntwb/225.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/gZ7Mntwb/225.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "225 ХАКИ — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "225 ХАКИ — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-220",
+    "name": "220 МИШЕЛЬ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/qMqD31ss/220.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/qMqD31ss/220.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "220 МИШЕЛЬ — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "220 МИШЕЛЬ — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-219",
+    "name": "219 МЕРЛИН",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/TMmPRrkk/219.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/TMmPRrkk/219.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "219 МЕРЛИН — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "219 МЕРЛИН — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-218",
+    "name": "218 ПРИЛИВ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/M59WcQrd/218.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/M59WcQrd/218.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "218 ПРИЛИВ — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "218 ПРИЛИВ — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-217",
+    "name": "217 КОФЕ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/kggK5Swv/217.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/kggK5Swv/217.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "217 КОФЕ — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "217 КОФЕ — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-212",
+    "name": "212 КИПАРИС",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/6JNtBzQV/212.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/6JNtBzQV/212.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "212 КИПАРИС — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "212 КИПАРИС — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-211",
+    "name": "211 ГРОТ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/bMDN6B0w/211.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/bMDN6B0w/211.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "211 ГРОТ — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "211 ГРОТ — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-208",
+    "name": "208 ЗВЕЗДА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/DD6qsVbj/208.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/DD6qsVbj/208.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "208 ЗВЕЗДА — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "208 ЗВЕЗДА — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-205",
+    "name": "205 ЛАЗУРЬ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/BH1hgcgZ/205.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/BH1hgcgZ/205.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "205 ЛАЗУРЬ — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "205 ЛАЗУРЬ — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-203",
+    "name": "203 СМОРОДИНА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/B5JFr5Gn/203.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/B5JFr5Gn/203.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "203 СМОРОДИНА — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "203 СМОРОДИНА — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-127",
+    "name": "127 ГРАНИТ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/SX3pMZ33/127.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/SX3pMZ33/127.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "127 ГРАНИТ — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "127 ГРАНИТ — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-124",
+    "name": "124 ТУМАН",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/DfyvHYLH/124.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/DfyvHYLH/124.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "124 ТУМАН — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "124 ТУМАН — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-122",
+    "name": "122 ЛАГУНА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/0TF2636/122.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/0TF2636/122.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "122 ЛАГУНА — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "122 ЛАГУНА — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-123",
+    "name": "123 ПЛАТИНА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/4wS4PH5y/123.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/4wS4PH5y/123.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "123 ПЛАТИНА — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "123 ПЛАТИНА — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-117",
+    "name": "117 АФРИКА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/pB6wskvw/117.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/pB6wskvw/117.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "117 АФРИКА — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "117 АФРИКА — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-116",
+    "name": "116 РОЗА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/LX8mnrvq/116.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/LX8mnrvq/116.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "116 РОЗА — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "116 РОЗА — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-113",
+    "name": "113 ИЗУМРУД",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/bg846Y1w/113.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/bg846Y1w/113.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "113 ИЗУМРУД — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "113 ИЗУМРУД — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-111",
+    "name": "111 МЕНТОЛ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/7xpgpf7B/111.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/7xpgpf7B/111.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "111 МЕНТОЛ — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "111 МЕНТОЛ — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-109",
+    "name": "109 КОРА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/Qj9VmdPv/109.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Qj9VmdPv/109.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "109 КОРА — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "109 КОРА — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-108",
+    "name": "108 НОРКА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/rf0hZXKC/108.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/rf0hZXKC/108.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "108 НОРКА — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "108 НОРКА — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-104",
+    "name": "104 ПАПРИКА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/vxKd7NMx/104.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/vxKd7NMx/104.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "104 ПАПРИКА — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "104 ПАПРИКА — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-14-06",
+    "name": "14-06 МУСКАТ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/W4vFvR2Z/14-06.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/W4vFvR2Z/14-06.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "14-06 МУСКАТ — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "14-06 МУСКАТ — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-14-03",
+    "name": "14-03 ЭЛЬБРУС",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/tdMv7ST/14-03.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/tdMv7ST/14-03.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "14-03 ЭЛЬБРУС — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "14-03 ЭЛЬБРУС — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-014",
+    "name": "014 ЖАСМИН",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/fdK1TFGk/014.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/fdK1TFGk/014.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "014 ЖАСМИН — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "014 ЖАСМИН — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-12-28",
+    "name": "12-28 ВИЗАРД",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/zV6CG0w3/12-28.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/zV6CG0w3/12-28.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "12-28 ВИЗАРД — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "12-28 ВИЗАРД — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-13-09",
+    "name": "13-09 АНТРАЦИТ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/hFDkVJ7q/13-09.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/hFDkVJ7q/13-09.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "13-09 АНТРАЦИТ — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "13-09 АНТРАЦИТ — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-12-27",
+    "name": "12-27 АККОРД",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/ymR9nFk5/12-27.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/ymR9nFk5/12-27.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "12-27 АККОРД — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "12-27 АККОРД — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-12-22",
+    "name": "12-22 ШЕЛЛА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/N2WcRVBB/12-22.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/N2WcRVBB/12-22.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "12-22 ШЕЛЛА — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "12-22 ШЕЛЛА — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-12-08",
+    "name": "12-08 МАЛИБУ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/rKDmyLF1/12-08.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/rKDmyLF1/12-08.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "12-08 МАЛИБУ — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "12-08 МАЛИБУ — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-12-07",
+    "name": "12-07 САФАРИ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/PZBJcvjZ/12-07.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/PZBJcvjZ/12-07.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "12-07 САФАРИ — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "12-07 САФАРИ — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-12-06",
+    "name": "12-06 МЕДЕЯ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/23mnpqR2/12-06.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/23mnpqR2/12-06.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "12-06 МЕДЕЯ — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "12-06 МЕДЕЯ — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-11-24",
+    "name": "11-24 ГОЛИАФ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/wr8ygGYM/11-24.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/wr8ygGYM/11-24.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "11-24 ГОЛИАФ — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "11-24 ГОЛИАФ — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-11-22",
+    "name": "11-22 НОРД",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/FbfFnG2H/11-22.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/FbfFnG2H/11-22.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "11-22 НОРД — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "11-22 НОРД — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-11-07",
+    "name": "11-07 БЭЛЛЬ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/Ng0J3qpp/11-07.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Ng0J3qpp/11-07.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "11-07 БЭЛЛЬ — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "11-07 БЭЛЛЬ — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-11-04",
+    "name": "11-04 ЭСТЕЛЬ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/fVNhC9Z5/11-04.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/fVNhC9Z5/11-04.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "11-04 ЭСТЕЛЬ — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "11-04 ЭСТЕЛЬ — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-11-03",
+    "name": "11-03 ВЕНЕЦИЯ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/4Zrvvnc2/11-03.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/4Zrvvnc2/11-03.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "11-03 ВЕНЕЦИЯ — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "11-03 ВЕНЕЦИЯ — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-10-33",
+    "name": "10-33 АЛЬТ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/8L2pbmVQ/10-33.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/8L2pbmVQ/10-33.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "10-33 АЛЬТ — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "10-33 АЛЬТ — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-10-22",
+    "name": "10-22 СТЭП",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/m1G9rt8/10-22.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/m1G9rt8/10-22.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "10-22 СТЭП — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "10-22 СТЭП — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-10-12",
+    "name": "10-12 ПАПИРУС",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/k6chcLf7/10-12.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/k6chcLf7/10-12.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "10-12 ПАПИРУС — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "10-12 ПАПИРУС — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-10-09",
+    "name": "10-09 ЭНДРЮ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/N27Bh6bG/10-09.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/N27Bh6bG/10-09.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "10-09 ЭНДРЮ — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "10-09 ЭНДРЮ — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-10-08",
+    "name": "10-08 САТИН",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/Gftfy7YJ/10-08.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Gftfy7YJ/10-08.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "10-08 САТИН — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "10-08 САТИН — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-10-07",
+    "name": "10-07 ПРАЛИНЕ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/99stg7CR/10-07.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/99stg7CR/10-07.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "10-07 ПРАЛИНЕ — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "10-07 ПРАЛИНЕ — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-09-18",
+    "name": "09-18 МОРФЕЙ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/nM7mYFjD/09-18.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/nM7mYFjD/09-18.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "09-18 МОРФЕЙ — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "09-18 МОРФЕЙ — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-09-08",
+    "name": "09-08 ЧЕЛСИ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/Q7h0PJGd/09-08.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/Q7h0PJGd/09-08.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "09-08 ЧЕЛСИ — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "09-08 ЧЕЛСИ — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-009",
+    "name": "009 ГРАФ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/wFRrrMHC/009.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/wFRrrMHC/009.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "009 ГРАФ — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "009 ГРАФ — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-008",
+    "name": "008 ГРАНД",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/rfbm2gQ5/8.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/rfbm2gQ5/8.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "008 ГРАНД — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "008 ГРАНД — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-008b",
+    "name": "008 ГРАНД (B)",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/1GnpWSnv/008.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/1GnpWSnv/008.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "008 ГРАНД (B) — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "008 ГРАНД (B) — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-007",
+    "name": "007 СЕРЕБРО",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/kVh23KLv/7.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/kVh23KLv/7.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "007 СЕРЕБРО — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "007 СЕРЕБРО — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-007b",
+    "name": "007 СЕРЕБРО (B)",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/DHY9PXGc/007.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/DHY9PXGc/007.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "007 СЕРЕБРО (B) — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "007 СЕРЕБРО (B) — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-006",
+    "name": "006 ГРЕЙ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/fVtPzvk0/6.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/fVtPzvk0/6.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "006 ГРЕЙ — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "006 ГРЕЙ — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-005",
+    "name": "005 КОРАЛЛ",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/jPNmvv1P/5.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/jPNmvv1P/5.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "005 КОРАЛЛ — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "005 КОРАЛЛ — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-004",
+    "name": "004 АПЕЛЬСИН",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/gZL0StwF/4.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/gZL0StwF/4.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "004 АПЕЛЬСИН — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "004 АПЕЛЬСИН — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-004b",
+    "name": "004 АПЕЛЬСИН (B)",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/9mB9TWQ9/004.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/9mB9TWQ9/004.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "004 АПЕЛЬСИН (B) — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "004 АПЕЛЬСИН (B) — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-003",
+    "name": "003 ГОРЧИЦА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/B5RW627x/3.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/B5RW627x/3.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "003 ГОРЧИЦА — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "003 ГОРЧИЦА — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-002",
+    "name": "002 РОМАШКА",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/kshTxXGf/2.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/kshTxXGf/2.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "002 РОМАШКА — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "002 РОМАШКА — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-img-1",
+    "name": "IMG-1",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/xKtR0Ywk/image.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/xKtR0Ywk/image.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "IMG-1 — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "IMG-1 — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-img-2",
+    "name": "IMG-2",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/0jpkJ1LM/image.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/0jpkJ1LM/image.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "IMG-2 — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "IMG-2 — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-img-3",
+    "name": "IMG-3",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/7tJ3nNv5/image.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/7tJ3nNv5/image.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "IMG-3 — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "IMG-3 — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-img-4",
+    "name": "IMG-4",
+    "type": "granit",
+    "category": "Classic",
+    "images": [
+      "https://i.ibb.co/prjYrGsB/image.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/prjYrGsB/image.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "IMG-4 — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "IMG-4 — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-50",
+    "name": "PS-50",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/qM4R847R/PS-50.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/qM4R847R/PS-50.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-50 — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-50 — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-49",
+    "name": "PS-49",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/yBWt9f0V/PS-49.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/yBWt9f0V/PS-49.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-49 — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-49 — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-48",
+    "name": "PS-48",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/fdp70mfY/PS-48.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/fdp70mfY/PS-48.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-48 — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-48 — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-47",
+    "name": "PS-47",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/gZnbj8rL/PS-47.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/gZnbj8rL/PS-47.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-47 — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-47 — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-46",
+    "name": "PS-46",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/5XD129HJ/PS-46.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/5XD129HJ/PS-46.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-46 — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-46 — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-39",
+    "name": "PS-39",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/99xc84Rz/PS-39.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/99xc84Rz/PS-39.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-39 — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-39 — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-34",
+    "name": "PS-34",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/CsMS2MJb/PS-34.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/CsMS2MJb/PS-34.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-34 — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-34 — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-26",
+    "name": "PS-26",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/CKWZz4yP/PS-26.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/CKWZz4yP/PS-26.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-26 — Hashamatli suyuq granit — antibakterial xususiyatga ega, uzoq muddat xizmat qiladi. Klassik va zamonaviy dizaynlarga mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-26 — Роскошный жидкий гранит — обладает антибактериальными свойствами, служит долгое время. Подходит для классических и современных дизайнов. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-23",
+    "name": "PS-23",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/PZLp5jzg/PS-23.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/PZLp5jzg/PS-23.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-23 — Sifatli suyuq granit — chizilishga bardoshli, UV barqaror va gigienik. Oshxona va vanna uchun eng yaxshi yechim. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-23 — Качественный жидкий гранит — устойчивый к царапинам, UV-стабильный и гигиеничный. Лучшее решение для кухни и ванной. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-21",
+    "name": "PS-21",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/qL2rKJr0/PS-21.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/qL2rKJr0/PS-21.jpg",
+    "features": [
+      "Mustahkam",
+      "Kam parvarish",
+      "Uzoq xizmat muddati",
+      "Ekologik toza"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Bar peshtaxta",
+      "Restoran",
+      "Kafe stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-21 — Zamonaviy suyuq granit — mustahkam va chiroyli. Keng rang tanlovi va turli dizayn yechimlari uchun mos. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-21 — Современный жидкий гранит — прочный и красивый. Подходит для широкого выбора цветов и различных дизайнерских решений. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-20",
+    "name": "PS-20",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/QvnRCR2s/PS-20.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/QvnRCR2s/PS-20.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Namlikka chidamli",
+      "Chizilishga bardoshli",
+      "Antibakterial"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Devor paneli",
+      "Pol qoplamasi"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-20 — Eksklyuziv suyuq granit — tabiiy tosh ko'rinishi va yuqori mustahkamlik. Har qanday interyerga mos keladi. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-20 — Эксклюзивный жидкий гранит — натуральный вид камня и высокая прочность. Подходит к любому интерьеру. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-14",
+    "name": "PS-14",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/nW6xxRQ/PS-14.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/nW6xxRQ/PS-14.jpg",
+    "features": [
+      "Issiqlikka chidamli",
+      "Chizilishga bardoshli",
+      "Oson tozalash",
+      "Gigienik sirt"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna xonasi",
+      "Bar peshtaxta",
+      "Devor paneli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-14 — Yuqori sifatli suyuq granit — oshxona stollari, vanna xonalari va peshtaxtalar uchun ideal. Chidamli va chiroyli sirt. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-14 — Высококачественный жидкий гранит — идеален для кухонных столешниц, ванных комнат и барных стоек. Прочная и красивая поверхность. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
+  },
+  {
+    "id": "granit-ps-18",
+    "name": "PS-18",
+    "type": "granit",
+    "category": "PS Series",
+    "images": [
+      "https://i.ibb.co/nNL03NT9/PS-18.jpg"
+    ],
+    "thumbnail": "https://i.ibb.co/nNL03NT9/PS-18.jpg",
+    "features": [
+      "Namlikka chidamli",
+      "UV barqaror",
+      "Antibakterial",
+      "Oson tozalash"
+    ],
+    "thickness": [
+      "12mm"
+    ],
+    "finish": [
+      "Silliq"
+    ],
+    "origin": "O'zbekiston",
+    "applications": [
+      "Oshxona stoli",
+      "Vanna stoli",
+      "Mehmonxona",
+      "Ofis stoli"
+    ],
+    "size": "3000x760 mm",
+    "description_uz": "PS-18 — Premium suyuq granit — issiqlikka chidamli, namlikka bardoshli va oson tozalanadigan sirt. Zamonaviy interyerlar uchun. Aksiya! Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg'a sifatida beriladi!",
+    "description_ru": "PS-18 — Премиум жидкий гранит — термостойкая, влагостойкая и легко очищаемая поверхность. Для современных интерьеров. Акция! При заказе столешницы из жидкого гранита — интегрированная мойка в подарок!"
   }
 ]

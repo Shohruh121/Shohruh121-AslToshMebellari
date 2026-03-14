@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect x="10" y="10" width="180" height="180" stroke="currentColor" stroke-width="6" fill="none" rx="2"/>
+  <rect x="18" y="18" width="164" height="164" stroke="currentColor" stroke-width="2" fill="none" rx="1"/>
+  <!-- A -->
+  <path d="M62 55 L80 55 L97 110 L90 110 L86 97 L56 97 L52 110 L45 110 Z M59 90 L83 90 L71 58 Z" fill="currentColor"/>
+  <!-- T overlapping -->
+  <path d="M75 55 L125 55 L125 63 L104 63 L104 110 L96 110 L96 63 L75 63 Z" fill="currentColor"/>
+  <!-- M -->
+  <path d="M108 55 L122 55 L140 95 L158 55 L172 55 L172 110 L164 110 L164 66 L146 107 L134 107 L116 66 L116 110 L108 110 Z" fill="currentColor"/>
+  <!-- Horizontal line -->
+  <line x1="30" y1="120" x2="170" y2="120" stroke="currentColor" stroke-width="2"/>
+  <!-- ASL TOSH text -->
+  <text x="100" y="142" text-anchor="middle" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="22" fill="currentColor" letter-spacing="4">ASL TOSH</text>
+  <!-- Horizontal line -->
+  <line x1="50" y1="150" x2="150" y2="150" stroke="currentColor" stroke-width="1.5"/>
+  <!-- MEBELLARI text -->
+  <text x="100" y="170" text-anchor="middle" font-family="'Arial', sans-serif" font-weight="600" font-size="14" fill="currentColor" letter-spacing="6">MEBELLARI</text>
+</svg>

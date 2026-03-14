@@ -2,3 +2,10 @@ node_modules
 dist
 .DS_Store
 *.local
+add_granit.cjs
+scrape_granit.cjs
+rebuild_granit.cjs
+update_desc.cjs
+granistone_all.json
+html_snippet.txt
+granistone_html.txt

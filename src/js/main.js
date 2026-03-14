@@ -4,6 +4,26 @@ import stones from '../data/stones.json';
 const TELEGRAM_BOT_TOKEN = '8149591957:AAHXf76-EEPoqWB6tIfW8B7xjmE3o9fKvB8';
 const TELEGRAM_CHAT_IDS = ['1093264285', '5114247292', '1032173492'];
 
+// ============ THEME SYSTEM ============
+function initTheme() {
+  const savedTheme = localStorage.getItem('siteTheme') || 'dark';
+  if (savedTheme === 'light') document.body.classList.add('light-mode');
+}
+initTheme();
+
+function toggleTheme() {
+  document.body.classList.toggle('light-mode');
+  const isLight = document.body.classList.contains('light-mode');
+  localStorage.setItem('siteTheme', isLight ? 'light' : 'dark');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const t1 = document.getElementById('themeToggle');
+  const t2 = document.getElementById('themeToggleMobile');
+  if (t1) t1.addEventListener('click', toggleTheme);
+  if (t2) t2.addEventListener('click', toggleTheme);
+});
+
 // ============ LANGUAGE SYSTEM ============
 let currentLang = localStorage.getItem('siteLang') || 'ru';
 
@@ -250,9 +270,14 @@ function createStoneCard(stone, index) {
   const detailShort = currentLang === 'ru' ? 'Подробнее' : 'Batafsil';
   const collText = currentLang === 'ru' ? 'коллекция' : 'kolleksiya';
 
+  const aksiyaBadge = stone.type === 'granit'
+    ? `<div class="absolute top-2 left-2 bg-red-600 text-white text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full z-10 animate-pulse">${currentLang === 'ru' ? 'Акция' : 'Aksiya'}</div>`
+    : '';
+
   card.innerHTML = `
     <div class="relative overflow-hidden">
       <img src="${stone.thumbnail}" alt="${stone.name}" class="stone-card-image" loading="lazy" />
+      ${aksiyaBadge}
       <div class="stone-card-badge">${stone.category}</div>
       <div class="stone-card-overlay">
         <button class="btn-outline text-xs py-2 px-4 view-details-btn" data-id="${stone.id}">
@@ -292,8 +317,16 @@ function renderStones() {
   if (!stoneGrid) return;
   stoneGrid.innerHTML = '';
 
-  // Main page: show only 9 stones
-  const displayStones = isMainPage ? stones.slice(0, 12) : stones;
+  // Main page: show 12 stones (6 granit + 3 akril + 3 kvarts)
+  let displayStones;
+  if (isMainPage) {
+    const granitStones = stones.filter(s => s.type === 'granit').slice(0, 6);
+    const akrilStones = stones.filter(s => s.type === 'akril').slice(0, 3);
+    const kvarsStones = stones.filter(s => s.type === 'kvars').slice(0, 3);
+    displayStones = [...granitStones, ...akrilStones, ...kvarsStones];
+  } else {
+    displayStones = stones;
+  }
 
   displayStones.forEach((stone, index) => {
     stoneGrid.appendChild(createStoneCard(stone, index));
@@ -341,17 +374,20 @@ function openStoneModal(stone) {
   const thickLabel = currentLang === 'ru' ? 'Толщина' : 'Qalinlik';
   const finishLabel = currentLang === 'ru' ? 'Обработка' : 'Ishlov turi';
   const originLabel = currentLang === 'ru' ? 'Происхождение' : 'Kelib chiqishi';
-  const typeLabel = stone.type === 'akril' ? (currentLang === 'ru' ? 'Акрил' : 'Akril') : (currentLang === 'ru' ? 'Кварц' : 'Kvarts');
+  const typeLabel = stone.type === 'akril' ? (currentLang === 'ru' ? 'Акрил' : 'Akril') : stone.type === 'granit' ? (currentLang === 'ru' ? 'Жидкий гранит' : 'Suyuq granit') : (currentLang === 'ru' ? 'Кварц' : 'Kvarts');
 
   modalBody.innerHTML = `
     <div class="modal-image-container" id="galleryContainer">
       <div class="gallery-swipe" id="gallerySwipe" style="display:flex;width:${stone.images.length * 100}%;transition:transform 0.3s ease;">
         ${stone.images.map((img, i) => `
           <div style="width:${100 / stone.images.length}%;flex-shrink:0;">
-            <img src="${img}" alt="${stone.name}" class="modal-image gallery-slide-img" data-index="${i}" style="width:100%;height:100%;object-fit:cover;cursor:zoom-in;" />
+            <img src="${img}" alt="${stone.name}" class="modal-image gallery-slide-img" data-index="${i}" style="width:100%;height:100%;object-fit:cover;" />
           </div>
         `).join('')}
       </div>
+      <button class="absolute top-3 right-3 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/50 backdrop-blur-sm border border-white/20 text-white/80 hover:text-white hover:bg-black/70 transition-all cursor-pointer" id="fullscreenBtn" title="${currentLang === 'ru' ? 'Увеличить' : 'Kattalashtirish'}">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+      </button>
       ${stone.images.length > 1 ? `
         <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2" id="galleryDots">
           ${stone.images.map((_, i) => `
@@ -363,24 +399,6 @@ function openStoneModal(stone) {
         </div>
         <div class="absolute top-1/2 -translate-y-1/2 right-2 z-10">
           <button class="gallery-arrow" id="galleryNext"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
-        </div>
-      ` : ''}
-    </div>
-    <!-- Fullscreen overlay -->
-    <div class="fullscreen-overlay" id="fullscreenOverlay">
-      <button class="fullscreen-close" id="fullscreenClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
-      <div class="fullscreen-swipe" id="fullscreenSwipe" style="display:flex;width:${stone.images.length * 100}%;transition:transform 0.3s ease;">
-        ${stone.images.map((img, i) => `
-          <div style="width:${100 / stone.images.length}%;flex-shrink:0;display:flex;align-items:center;justify-content:center;height:100%;">
-            <img src="${img}" alt="${stone.name}" style="max-width:100%;max-height:100%;object-fit:contain;" />
-          </div>
-        `).join('')}
-      </div>
-      ${stone.images.length > 1 ? `
-        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3" id="fullscreenDots">
-          ${stone.images.map((_, i) => `
-            <span class="gallery-dot fullscreen-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>
-          `).join('')}
         </div>
       ` : ''}
     </div>
@@ -396,6 +414,15 @@ function openStoneModal(stone) {
       </div>
 
       <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">${stone.name}</h2>
+      ${stone.type === 'granit' ? `
+      <div class="mb-6 p-4 rounded-lg border border-red-500/30 bg-red-600/10">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">${currentLang === 'ru' ? 'Акция' : 'Aksiya'}</span>
+          <span class="text-red-400 font-semibold text-sm">${currentLang === 'ru' ? 'Мойка в подарок!' : 'Moyka sovg\'a!'}</span>
+        </div>
+        <p class="text-[#ccc] text-sm leading-relaxed">${currentLang === 'ru' ? 'При заказе столешницы из жидкого гранита — интегрированная мойка в подарок! Мойка изготавливается из того же материала, что и столешница, и встраивается бесшовно.' : 'Suyuq granitdan stol buyurtma berganingizda — integratsiyalangan moyka sovg\'a! Moyka xuddi shu materialdan tayyorlanadi va stolga chegsiz (bezshovniy) o\'rnatiladi.'}</p>
+      </div>
+      ` : ''}
       <p class="text-[#a8a8a8] leading-relaxed mb-8">${getDesc(stone)}</p>
 
       <div class="grid sm:grid-cols-2 gap-8 mb-8">
@@ -491,25 +518,52 @@ function openStoneModal(stone) {
   }
 
   // ---- Fullscreen logic ----
-  const fullscreenOverlay = document.getElementById('fullscreenOverlay');
-  const fullscreenSwipe = document.getElementById('fullscreenSwipe');
+  // Remove old fullscreen overlay if exists
+  const oldFs = document.getElementById('fullscreenOverlay');
+  if (oldFs) oldFs.remove();
+
+  // Create fullscreen overlay on document.body (avoids overflow:auto clipping)
+  const fullscreenOverlay = document.createElement('div');
+  fullscreenOverlay.id = 'fullscreenOverlay';
+  fullscreenOverlay.className = 'fullscreen-overlay';
+  fullscreenOverlay.innerHTML = `
+    <button class="fullscreen-close" id="fullscreenClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <img id="fullscreenImg" src="" alt="" style="max-width:90vw;max-height:85vh;object-fit:contain;" />
+    ${stone.images.length > 1 ? `
+      <div style="position:absolute;top:50%;left:12px;transform:translateY(-50%);z-index:9002;">
+        <button class="gallery-arrow" id="fsPrev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+      </div>
+      <div style="position:absolute;top:50%;right:12px;transform:translateY(-50%);z-index:9002;">
+        <button class="gallery-arrow" id="fsNext"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+      <div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:12px;" id="fullscreenDots">
+        ${stone.images.map((_, i) => `
+          <span class="gallery-dot fullscreen-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>
+        `).join('')}
+      </div>
+    ` : ''}
+  `;
+  document.body.appendChild(fullscreenOverlay);
+
+  const fullscreenImg = document.getElementById('fullscreenImg');
   const fullscreenDots = document.querySelectorAll('#fullscreenDots .fullscreen-dot');
   let fsSlide = 0;
 
   function goToFsSlide(idx) {
     fsSlide = Math.max(0, Math.min(idx, totalSlides - 1));
-    if (fullscreenSwipe) fullscreenSwipe.style.transform = `translateX(-${fsSlide * (100 / totalSlides)}%)`;
+    if (fullscreenImg) fullscreenImg.src = stone.images[fsSlide];
     fullscreenDots.forEach((d, i) => d.classList.toggle('active', i === fsSlide));
   }
 
-  // Click image to open fullscreen
-  modalBody.querySelectorAll('.gallery-slide-img').forEach(img => {
-    img.addEventListener('click', () => {
+  // Click scale button to open fullscreen
+  const fullscreenBtn = document.getElementById('fullscreenBtn');
+  if (fullscreenBtn) {
+    fullscreenBtn.addEventListener('click', () => {
       fsSlide = currentSlide;
       goToFsSlide(fsSlide);
       fullscreenOverlay.classList.add('active');
     });
-  });
+  }
 
   // Close fullscreen
   document.getElementById('fullscreenClose').addEventListener('click', () => {
@@ -519,6 +573,12 @@ function openStoneModal(stone) {
     if (e.target === fullscreenOverlay) fullscreenOverlay.classList.remove('active');
   });
 
+  // Fullscreen arrows
+  const fsPrev = document.getElementById('fsPrev');
+  const fsNext = document.getElementById('fsNext');
+  if (fsPrev) fsPrev.addEventListener('click', () => goToFsSlide(fsSlide - 1));
+  if (fsNext) fsNext.addEventListener('click', () => goToFsSlide(fsSlide + 1));
+
   // Fullscreen dot click
   fullscreenDots.forEach(dot => {
     dot.addEventListener('click', () => goToFsSlide(parseInt(dot.dataset.index)));
@@ -526,16 +586,14 @@ function openStoneModal(stone) {
 
   // Fullscreen touch swipe
   let fsTouchStartX = 0;
-  if (fullscreenOverlay) {
-    fullscreenOverlay.addEventListener('touchstart', (e) => { fsTouchStartX = e.touches[0].clientX; }, { passive: true });
-    fullscreenOverlay.addEventListener('touchend', (e) => {
-      const diff = fsTouchStartX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 40) {
-        if (diff > 0) goToFsSlide(fsSlide + 1);
-        else goToFsSlide(fsSlide - 1);
-      }
-    });
-  }
+  fullscreenOverlay.addEventListener('touchstart', (e) => { fsTouchStartX = e.touches[0].clientX; }, { passive: true });
+  fullscreenOverlay.addEventListener('touchend', (e) => {
+    const diff = fsTouchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) goToFsSlide(fsSlide + 1);
+      else goToFsSlide(fsSlide - 1);
+    }
+  });
 
   // Order button
   modalBody.querySelector('.order-stone-btn').addEventListener('click', () => {
@@ -550,6 +608,8 @@ function openStoneModal(stone) {
 function closeStoneModal() {
   stoneModal.classList.remove('active');
   document.body.style.overflow = '';
+  const fs = document.getElementById('fullscreenOverlay');
+  if (fs) fs.remove();
 }
 
 $('#modalClose').addEventListener('click', closeStoneModal);
