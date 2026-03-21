@@ -1,32 +1,58 @@
-import stones from '../data/stones.json';
-
-// ============ TELEGRAM CONFIG ============
-const TELEGRAM_BOT_TOKEN = '8149591957:AAHXf76-EEPoqWB6tIfW8B7xjmE3o9fKvB8';
-const TELEGRAM_CHAT_IDS = ['1093264285', '5114247292', '1032173492'];
-
-// ============ THEME SYSTEM ============
-function initTheme() {
-  const savedTheme = localStorage.getItem('siteTheme') || 'dark';
+// ============ THEME (apply before DOM ready) ============
+(function() {
+  var savedTheme = localStorage.getItem('siteTheme') || 'dark';
   if (savedTheme === 'light') document.body.classList.add('light-mode');
-}
-initTheme();
+})();
 
+// ============ EVERYTHING INSIDE DOMContentLoaded ============
+document.addEventListener('DOMContentLoaded', async function() {
+
+// ---- Helpers ----
+var $ = function(sel) { return document.querySelector(sel); };
+var $$ = function(sel) { return document.querySelectorAll(sel); };
+
+// ---- Config ----
+var TELEGRAM_BOT_TOKEN = '8149591957:AAHXf76-EEPoqWB6tIfW8B7xjmE3o9fKvB8';
+var TELEGRAM_CHAT_IDS = ['1093264285', '5114247292', '1032173492'];
+
+// ---- State ----
+var stones = [];
+var allStones = [];
+var currentLang = localStorage.getItem('siteLang') || 'ru';
+var currentType = 'all';
+var currentCategory = 'all';
+var searchQuery = '';
+var selectedStone = null;
+var searchTimeout;
+
+// ---- DOM Elements ----
+var stoneGrid = $('#stoneGrid');
+var noResults = $('#noResults');
+var resultsCount = $('#resultsCount');
+var subFiltersEl = $('#subFilters');
+var stoneModal = $('#stoneModal');
+var modalBody = $('#modalBody');
+var orderModal = $('#orderModal');
+
+// ---- Sub-categories ----
+var subCategories = {
+  akril: ['Adventure', 'Carrara', 'Marble', 'Delicious', 'Sand', 'Pure', 'Natural', 'Exotic'],
+  kvars: ['Kvarts', 'Kvarts Premium'],
+  granit: ['PS Series', 'MS Series', 'GS Series', 'AS Series', 'Classic'],
+};
+
+// ---- Theme Toggle ----
 function toggleTheme() {
   document.body.classList.toggle('light-mode');
-  const isLight = document.body.classList.contains('light-mode');
+  var isLight = document.body.classList.contains('light-mode');
   localStorage.setItem('siteTheme', isLight ? 'light' : 'dark');
 }
+var t1 = document.getElementById('themeToggle');
+var t2 = document.getElementById('themeToggleMobile');
+if (t1) t1.addEventListener('click', toggleTheme);
+if (t2) t2.addEventListener('click', toggleTheme);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const t1 = document.getElementById('themeToggle');
-  const t2 = document.getElementById('themeToggleMobile');
-  if (t1) t1.addEventListener('click', toggleTheme);
-  if (t2) t2.addEventListener('click', toggleTheme);
-});
-
-// ============ LANGUAGE SYSTEM ============
-let currentLang = localStorage.getItem('siteLang') || 'ru';
-
+// ---- Language ----
 function getDesc(stone) {
   if (currentLang === 'uz') return stone.description_uz || stone.description_ru || '';
   return stone.description_ru || stone.description_uz || '';
@@ -35,17 +61,17 @@ function getDesc(stone) {
 function switchLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('siteLang', lang);
-  document.querySelectorAll('[data-ru][data-uz]').forEach(el => {
-    const text = el.getAttribute(`data-${lang}`);
+  document.querySelectorAll('[data-ru][data-uz]').forEach(function(el) {
+    var text = el.getAttribute('data-' + lang);
     if (text) {
       if (el.children.length === 0) {
         el.textContent = text;
       } else if (el.tagName === 'A' || el.tagName === 'BUTTON') {
-        const span = el.querySelector('span[data-ru]');
+        var span = el.querySelector('span[data-ru]');
         if (span) {
-          span.textContent = span.getAttribute(`data-${lang}`);
+          span.textContent = span.getAttribute('data-' + lang);
         } else {
-          for (const node of el.childNodes) {
+          for (var node of el.childNodes) {
             if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
               node.textContent = text;
               break;
@@ -56,123 +82,93 @@ function switchLanguage(lang) {
     }
   });
 
-  const newBtnText = lang === 'ru' ? 'UZ' : 'RU';
-  const langBtn = document.getElementById('langToggle');
-  const langBtnMobile = document.getElementById('langToggleMobile');
+  var newBtnText = lang === 'ru' ? 'UZ' : 'RU';
+  var langBtn = document.getElementById('langToggle');
+  var langBtnMobile = document.getElementById('langToggleMobile');
   if (langBtn) langBtn.textContent = newBtnText;
   if (langBtnMobile) langBtnMobile.textContent = newBtnText;
 
-  // Update search placeholder
-  const searchInput = document.getElementById('searchInput');
+  var searchInput = document.getElementById('searchInput');
   if (searchInput) {
     searchInput.placeholder = lang === 'ru' ? 'Поиск по названию...' : 'Tosh nomini qidiring...';
   }
 
-  renderStones();
+  if (stoneGrid) renderStones();
 }
 
-// ============ DOM ELEMENTS ============
-const $ = (sel) => document.querySelector(sel);
-const $$ = (sel) => document.querySelectorAll(sel);
-
-// Apply saved language on page load
-if (currentLang !== 'ru') {
-  switchLanguage(currentLang);
+// ---- Mobile Menu ----
+var hamburger = $('#hamburger');
+var mobileMenu = $('#mobileMenu');
+if (hamburger) {
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+  });
 }
-
-// ============ MOBILE MENU ============
-const hamburger = $('#hamburger');
-const mobileMenu = $('#mobileMenu');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  mobileMenu.classList.toggle('active');
-  document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-});
-
-$$('.mobile-nav-link').forEach((link) => {
-  link.addEventListener('click', () => {
+$$('.mobile-nav-link').forEach(function(link) {
+  link.addEventListener('click', function() {
     hamburger.classList.remove('active');
     mobileMenu.classList.remove('active');
     document.body.style.overflow = '';
   });
 });
 
-// ============ BACK TO TOP ============
-window.addEventListener('scroll', () => {
-  const backToTop = $('#backToTop');
-  if (window.scrollY > 500) {
-    backToTop.classList.add('visible');
-  } else {
-    backToTop.classList.remove('visible');
+// ---- Back to Top ----
+window.addEventListener('scroll', function() {
+  var backToTop = $('#backToTop');
+  if (backToTop) {
+    if (window.scrollY > 500) backToTop.classList.add('visible');
+    else backToTop.classList.remove('visible');
   }
 });
-
-$('#backToTop').addEventListener('click', () => {
+var backToTopBtn = $('#backToTop');
+if (backToTopBtn) backToTopBtn.addEventListener('click', function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ============ STONE CATALOG ============
-const stoneGrid = $('#stoneGrid');
-const noResults = $('#noResults');
-const resultsCount = $('#resultsCount');
-const subFiltersEl = $('#subFilters');
-let currentType = 'all';
-let currentCategory = 'all';
-let searchQuery = '';
-
-// Sub-categories per type
-const subCategories = {
-  akril: ['Adventure', 'Carrara', 'Marble', 'Delicious', 'Sand', 'Pure', 'Natural', 'Exotic'],
-  kvars: ['Kvarts', 'Kvarts Premium'],
-  granit: ['PS Series', 'MS Series', 'GS Series', 'AS Series', 'Classic'],
-};
-
+// ---- Stone Card ----
 function createStoneCard(stone, index) {
-  const card = document.createElement('div');
+  var card = document.createElement('div');
   card.className = 'stone-card reveal active';
   card.dataset.type = stone.type;
   card.dataset.id = stone.id;
 
-  const detailText = currentLang === 'ru' ? 'Подробнее' : "Batafsil ko'rish";
-  const detailShort = currentLang === 'ru' ? 'Подробнее' : 'Batafsil';
-  const collText = currentLang === 'ru' ? 'коллекция' : 'kolleksiya';
+  var detailText = currentLang === 'ru' ? 'Подробнее' : "Batafsil ko'rish";
+  var detailShort = currentLang === 'ru' ? 'Подробнее' : 'Batafsil';
+  var collText = currentLang === 'ru' ? 'коллекция' : 'kolleksiya';
 
-  const aksiyaBadge = stone.type === 'granit'
-    ? `<div class="absolute top-2 left-2 bg-red-600 text-white text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full z-10 animate-pulse">${currentLang === 'ru' ? 'Акция' : 'Aksiya'}</div>`
+  var aksiyaBadge = stone.type === 'granit'
+    ? '<div class="absolute top-2 left-2 bg-red-600 text-white text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full z-10 animate-pulse">' + (currentLang === 'ru' ? 'Акция' : 'Aksiya') + '</div>'
     : '';
 
-  card.innerHTML = `
-    <div class="relative overflow-hidden">
-      <img src="${stone.thumbnail}" alt="${stone.name}" class="stone-card-image" loading="lazy" />
-      ${aksiyaBadge}
-      <div class="stone-card-badge">${stone.category}</div>
-      <div class="stone-card-overlay">
-        <button class="btn-outline text-xs py-2 px-4 view-details-btn" data-id="${stone.id}">
-          ${detailText}
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
-      </div>
-    </div>
-    <div class="stone-card-info">
-      <div class="stone-card-type">${stone.category} ${collText}</div>
-      <h3 class="stone-card-name">${stone.name}</h3>
-      <p class="stone-card-desc">${getDesc(stone)}</p>
-      <button class="stone-card-btn view-details-btn" data-id="${stone.id}">
-        ${detailShort}
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </button>
-    </div>
-  `;
+  card.innerHTML =
+    '<div class="relative overflow-hidden">' +
+      '<img src="' + stone.thumbnail + '" alt="' + stone.name + '" class="stone-card-image" loading="lazy" />' +
+      aksiyaBadge +
+      '<div class="stone-card-badge">' + stone.category + '</div>' +
+      '<div class="stone-card-overlay">' +
+        '<button class="btn-outline text-xs py-2 px-4 view-details-btn" data-id="' + stone.id + '">' +
+          detailText +
+          ' <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>' +
+        '</button>' +
+      '</div>' +
+    '</div>' +
+    '<div class="stone-card-info">' +
+      '<div class="stone-card-type">' + stone.category + ' ' + collText + '</div>' +
+      '<h3 class="stone-card-name">' + stone.name + '</h3>' +
+      '<p class="stone-card-desc">' + getDesc(stone) + '</p>' +
+      '<button class="stone-card-btn view-details-btn" data-id="' + stone.id + '">' +
+        detailShort +
+        ' <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>' +
+      '</button>' +
+    '</div>';
 
-  card.addEventListener('click', (e) => {
-    if (!e.target.closest('.view-details-btn')) {
-      openStoneModal(stone);
-    }
+  card.addEventListener('click', function(e) {
+    if (!e.target.closest('.view-details-btn')) openStoneModal(stone);
   });
-
-  card.querySelectorAll('.view-details-btn').forEach((btn) => {
-    btn.addEventListener('click', (e) => {
+  card.querySelectorAll('.view-details-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
       e.stopPropagation();
       openStoneModal(stone);
     });
@@ -181,40 +177,41 @@ function createStoneCard(stone, index) {
   return card;
 }
 
+// ---- Render Stones ----
 function renderStones() {
+  if (!stoneGrid) return;
   stoneGrid.innerHTML = '';
 
-  const filtered = stones.filter((stone) => {
-    const matchesType = currentType === 'all' || stone.type === currentType;
-    const matchesCategory = currentCategory === 'all' || stone.category === currentCategory;
-    const desc = getDesc(stone).toLowerCase();
-    const q = searchQuery.toLowerCase();
-    const matchesSearch = stone.name.toLowerCase().includes(q) ||
-                          desc.includes(q) ||
-                          stone.type.toLowerCase().includes(q) ||
-                          stone.category.toLowerCase().includes(q);
+  var filtered = allStones.filter(function(stone) {
+    var matchesType = currentType === 'all' || stone.type === currentType;
+    var matchesCategory = currentCategory === 'all' || stone.category === currentCategory;
+    var desc = getDesc(stone).toLowerCase();
+    var q = searchQuery.toLowerCase();
+    var matchesSearch = stone.name.toLowerCase().includes(q) ||
+                        desc.includes(q) ||
+                        stone.type.toLowerCase().includes(q) ||
+                        stone.category.toLowerCase().includes(q);
     return matchesType && matchesCategory && matchesSearch;
   });
 
-  // Update results count
-  const countText = currentLang === 'ru'
-    ? `Показано ${filtered.length} из ${stones.length} декоров`
-    : `${filtered.length} / ${stones.length} ta dekor ko'rsatilmoqda`;
-  resultsCount.textContent = countText;
+  var countText = currentLang === 'ru'
+    ? 'Показано ' + filtered.length + ' из ' + allStones.length + ' декоров'
+    : filtered.length + ' / ' + allStones.length + " ta dekor ko'rsatilmoqda";
+  if (resultsCount) resultsCount.textContent = countText;
 
   if (filtered.length === 0) {
-    noResults.classList.remove('hidden');
+    if (noResults) noResults.classList.remove('hidden');
     return;
   }
 
-  noResults.classList.add('hidden');
+  if (noResults) noResults.classList.add('hidden');
 
-  filtered.forEach((stone, index) => {
+  filtered.forEach(function(stone, index) {
     stoneGrid.appendChild(createStoneCard(stone, index));
   });
 }
 
-// Build sub-category buttons for a given type
+// ---- Sub Filters ----
 function buildSubFilters(type) {
   subFiltersEl.innerHTML = '';
   currentCategory = 'all';
@@ -224,24 +221,23 @@ function buildSubFilters(type) {
   }
   subFiltersEl.classList.remove('hidden');
 
-  const allBtn = document.createElement('button');
+  var allBtn = document.createElement('button');
   allBtn.className = 'filter-btn sub-filter-btn active';
   allBtn.textContent = currentLang === 'ru' ? 'Все' : 'Barchasi';
   allBtn.dataset.category = 'all';
   subFiltersEl.appendChild(allBtn);
 
-  subCategories[type].forEach(cat => {
-    const btn = document.createElement('button');
+  subCategories[type].forEach(function(cat) {
+    var btn = document.createElement('button');
     btn.className = 'filter-btn sub-filter-btn';
     btn.textContent = cat;
     btn.dataset.category = cat;
     subFiltersEl.appendChild(btn);
   });
 
-  // Add click handlers for sub-filter buttons
-  subFiltersEl.querySelectorAll('.sub-filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      subFiltersEl.querySelectorAll('.sub-filter-btn').forEach(b => b.classList.remove('active'));
+  subFiltersEl.querySelectorAll('.sub-filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      subFiltersEl.querySelectorAll('.sub-filter-btn').forEach(function(b) { b.classList.remove('active'); });
       btn.classList.add('active');
       currentCategory = btn.dataset.category;
       animateRender();
@@ -252,20 +248,17 @@ function buildSubFilters(type) {
 function animateRender() {
   stoneGrid.style.opacity = '0';
   stoneGrid.style.transform = 'translateY(20px)';
-  setTimeout(() => {
+  setTimeout(function() {
     renderStones();
     stoneGrid.style.opacity = '1';
     stoneGrid.style.transform = 'translateY(0)';
   }, 300);
 }
 
-// Initial render
-renderStones();
-
-// Type filter buttons
-$$('#typeFilters .filter-btn').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    $$('#typeFilters .filter-btn').forEach((b) => b.classList.remove('active'));
+// ---- Type filter buttons ----
+$$('#typeFilters .filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    $$('#typeFilters .filter-btn').forEach(function(b) { b.classList.remove('active'); });
     btn.classList.add('active');
     currentType = btn.dataset.type;
     buildSubFilters(currentType);
@@ -273,32 +266,32 @@ $$('#typeFilters .filter-btn').forEach((btn) => {
   });
 });
 
-// Search
-let searchTimeout;
-$('#searchInput').addEventListener('input', (e) => {
-  clearTimeout(searchTimeout);
-  searchTimeout = setTimeout(() => {
-    searchQuery = e.target.value;
-    renderStones();
-  }, 300);
-});
-
-// Language toggle
-const langToggle = document.getElementById('langToggle');
-const langToggleMobile = document.getElementById('langToggleMobile');
-
-function handleLangToggle() {
-  const newLang = currentLang === 'ru' ? 'uz' : 'ru';
-  switchLanguage(newLang);
+// ---- Search ----
+var searchInputEl = $('#searchInput');
+if (searchInputEl) {
+  searchInputEl.addEventListener('input', function(e) {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(function() {
+      searchQuery = e.target.value;
+      renderStones();
+    }, 300);
+  });
 }
 
+// ---- Language toggle buttons ----
+var langToggle = document.getElementById('langToggle');
+var langToggleMobile = document.getElementById('langToggleMobile');
+function handleLangToggle() {
+  var newLang = currentLang === 'ru' ? 'uz' : 'ru';
+  switchLanguage(newLang);
+}
 if (langToggle) langToggle.addEventListener('click', handleLangToggle);
 if (langToggleMobile) langToggleMobile.addEventListener('click', handleLangToggle);
 
-// ============ STONE MODAL ============
-const stoneModal = $('#stoneModal');
-const modalBody = $('#modalBody');
+// ---- Transition style ----
+if (stoneGrid) stoneGrid.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
 
+// ============ STONE MODAL ============
 function openStoneModal(stone) {
   const orderText = currentLang === 'ru' ? 'Заказать' : 'Buyurtma berish';
   const featTitle = currentLang === 'ru' ? 'Характеристики' : 'Xususiyatlari';
@@ -535,20 +528,17 @@ function closeStoneModal() {
   if (fs) fs.remove();
 }
 
-$('#modalClose').addEventListener('click', closeStoneModal);
-stoneModal.addEventListener('click', (e) => {
+if ($('#modalClose')) $('#modalClose').addEventListener('click', closeStoneModal);
+if (stoneModal) stoneModal.addEventListener('click', function(e) {
   if (e.target === stoneModal) closeStoneModal();
 });
 
 // ============ ORDER MODAL ============
-const orderModal = $('#orderModal');
-let selectedStone = null;
-
 // Populate stone type select with unique types
 function populateOrderStoneTypes() {
   const typeSelect = $('#orderStoneType');
   if (!typeSelect) return;
-  const types = [...new Set(stones.map(s => s.type))];
+  const types = [...new Set(allStones.map(s => s.type))];
   const typeLabels = {
     akril: { ru: 'Акриловый камень', uz: 'Akril tosh' },
     kvars: { ru: 'Кварцевый камень', uz: 'Kvarts tosh' },
@@ -569,7 +559,7 @@ function populateOrderDecors(type) {
     decorSelect.innerHTML = `<option value="">${currentLang === 'ru' ? 'Сначала выберите тип...' : 'Avval turni tanlang...'}</option>`;
     return;
   }
-  const filtered = stones.filter(s => s.type === type);
+  const filtered = allStones.filter(s => s.type === type);
   decorSelect.innerHTML = `<option value="">${currentLang === 'ru' ? 'Выберите декор...' : 'Dekorni tanlang...'}</option>`;
   filtered.forEach(s => {
     decorSelect.innerHTML += `<option value="${s.id}">${s.name} (${s.category})</option>`;
@@ -590,7 +580,7 @@ if (orderDecorSelect) {
   orderDecorSelect.addEventListener('change', (e) => {
     const stoneId = e.target.value;
     if (stoneId) {
-      selectedStone = stones.find(s => s.id === stoneId) || null;
+      selectedStone = allStones.find(s => s.id === stoneId) || null;
       if (selectedStone) {
         $('#orderStoneId').value = selectedStone.id;
         const label = currentLang === 'ru' ? 'Выбранный камень' : 'Tanlangan tosh';
@@ -629,8 +619,8 @@ function closeOrderModal() {
   selectedStone = null;
 }
 
-$('#orderModalClose').addEventListener('click', closeOrderModal);
-orderModal.addEventListener('click', (e) => {
+if ($('#orderModalClose')) $('#orderModalClose').addEventListener('click', closeOrderModal);
+if (orderModal) orderModal.addEventListener('click', function(e) {
   if (e.target === orderModal) closeOrderModal();
 });
 
@@ -689,7 +679,8 @@ async function sendToTelegram(data) {
 }
 
 // ============ ORDER FORM SUBMIT ============
-$('#orderForm').addEventListener('submit', async (e) => {
+var orderFormEl = $('#orderForm');
+if (orderFormEl) orderFormEl.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const formData = new FormData(e.target);
@@ -746,12 +737,41 @@ function showToast(message, type = 'success') {
 }
 
 // ============ KEYBOARD SHORTCUTS ============
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
     closeStoneModal();
     closeOrderModal();
   }
 });
 
-// ============ TRANSITION STYLES ============
-stoneGrid.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+// ============ LOAD STONES DATA & INITIAL RENDER ============
+async function loadStonesData() {
+  try {
+    var response = await fetch('/stones.json');
+    if (response.ok) {
+      stones = await response.json();
+      console.log('Stones loaded:', stones.length);
+      return true;
+    }
+    console.error('Failed to load stones:', response.status);
+    return false;
+  } catch (error) {
+    console.error('Error loading stones:', error);
+    return false;
+  }
+}
+
+var loaded = await loadStonesData();
+if (loaded) {
+  allStones = stones.slice();
+  renderStones();
+} else {
+  console.error('Failed to load stones data');
+}
+
+// Apply saved language
+if (currentLang !== 'ru') {
+  switchLanguage(currentLang);
+}
+
+}); // end DOMContentLoaded

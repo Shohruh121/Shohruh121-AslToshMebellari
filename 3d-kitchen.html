@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Кухня — Asl Tosh Mebellari</title>
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="stylesheet" href="/front/css/visual.css?ver=32" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Scope interstone footer/nav hide - only inside vizContainer */
+    #vizContainer nav.sticky, #vizContainer footer,
+    #vizContainer .breadcrumbs, #vizContainer .burger-menu_pop_up,
+    #vizContainer .pop_up-wrapp, #vizContainer .site-preloader,
+    #vizContainer header, #vizContainer .header,
+    #vizContainer .about_cookie_banner { display: none !important; }
+
+    /* Base styles for vizContainer (normally from style.css) */
+    #vizContainer * { box-sizing: border-box; }
+    #vizContainer {
+      font-family: 'Raleway', 'Inter', sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #222729;
+    }
+
+    /* Our interior tabs */
+    .viz-tabs {
+      display: flex;
+      gap: 0;
+      background: #0f0f0f;
+      border-bottom: 1px solid rgba(200, 164, 92, 0.15);
+      overflow-x: auto;
+      flex-shrink: 0;
+      z-index: 10;
+      margin-top: 72px;
+      justify-content: center;
+    }
+    .viz-tab {
+      padding: 12px 22px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #8a8578;
+      cursor: pointer;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+      letter-spacing: 0.3px;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      font-family: 'Inter', sans-serif;
+    }
+    .viz-tab:hover { color: #c8a45c; }
+    .viz-tab.active {
+      color: #c8a45c;
+      border-bottom-color: #c8a45c;
+      background: rgba(200, 164, 92, 0.05);
+    }
+
+    /* Override interstone controls to gold */
+    .visual-controls .control-check,
+    .visual-controls .control-download,
+    .visual-controls .control-share,
+    .visual-controls .control-share .share-link a div {
+      background: linear-gradient(135deg, #c8a45c 0%, #b8943c 100%) !important;
+      color: #0a0a0a !important;
+    }
+    .visual-controls .control-check div,
+    .visual-controls .control-download div,
+    .visual-controls .control-share > div:first-child {
+      background: linear-gradient(135deg, #c8a45c 0%, #b8943c 100%) !important;
+      color: #0a0a0a !important;
+    }
+    .visual-controls .control-check p,
+    .visual-controls .control-download p,
+    .visual-controls .control-share p {
+      color: #0a0a0a !important;
+    }
+    .visual-controls .control-check svg path,
+    .visual-controls .control-download svg path,
+    .visual-controls .control-share svg path {
+      fill: #0a0a0a !important;
+    }
+
+    /* Hide favorites button */
+    .visual-controls .control-favorites,
+    .visual-controls a#addFavoriteLink {
+      display: none !important;
+    }
+
+    /* Roll-up block (expand/collapse editor) gold */
+    .roll-up_block {
+      background: linear-gradient(135deg, #c8a45c 0%, #b8943c 100%) !important;
+      color: #0a0a0a !important;
+    }
+    .roll-up_block p.text {
+      color: #0a0a0a !important;
+    }
+    .roll-up_block svg path {
+      stroke: #0a0a0a !important;
+    }
+
+    /* Hide Интерьеры and Избранное tabs */
+    .tab_navigation li[data-attr="tab2"],
+    .tab_navigation li[data-attr="tab3"] {
+      display: none !important;
+    }
+    #tab2, #tab3 { display: none !important; }
+
+    /* Sidebar — white/light background (like interstone default) */
+    .visual-data_wrapp,
+    .visual-data,
+    .tab_content,
+    .tab_block,
+    #tab1 {
+      background: #fff !important;
+      color: #222 !important;
+    }
+
+    /* Stone cards — light */
+    .stone_card {
+      background: #fff !important;
+      color: #333 !important;
+    }
+    .stone_card.active {
+      border-color: #c8a45c !important;
+    }
+    .stone_card p,
+    .stone_card span {
+      color: #444 !important;
+    }
+
+    /* Dropdown & part selector — light */
+    .dropdown,
+    .dropdown-list,
+    .dropdown-toggle {
+      background: #fff !important;
+      color: #333 !important;
+    }
+    .dropdown-toggle svg circle { fill: #c8a45c !important; }
+    .dropdown-open .dropdown-body {
+      background: #fff !important;
+    }
+
+    /* Part list items */
+    .item_wrapp,
+    [data-part-id] {
+      background: #fff !important;
+      color: #333 !important;
+    }
+
+    /* Tabs navigation */
+    .tab_navigation {
+      background: #fff !important;
+    }
+    .tab_navigation li.active {
+      color: #c8a45c !important;
+      border-color: #c8a45c !important;
+    }
+
+    /* Filter buttons & block */
+    .filter_block {
+      background: #fff !important;
+    }
+    .filter-trigger,
+    [data-trigger="filter_block"] {
+      color: #c8a45c !important;
+    }
+    #applyFilterForm,
+    #resetFiltersForm {
+      background: linear-gradient(135deg, #c8a45c 0%, #b8943c 100%) !important;
+      color: #0a0a0a !important;
+      border: none !important;
+    }
+
+    /* Share link dropdown */
+    .control-share .share-link {
+      background: #fff !important;
+      border: 1px solid rgba(0,0,0,0.1) !important;
+    }
+    .control-share .share-link a div {
+      border-radius: 6px;
+    }
+
+    /* Used material popup */
+    .used-material_popup {
+      background: #fff !important;
+      color: #333 !important;
+    }
+
+    /* Loading overlay */
+    .viz-loading-overlay {
+      position: fixed;
+      inset: 0;
+      background: #0a0a0a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+    .viz-loading-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .viz-loading-overlay .spinner {
+      color: #c8a45c;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Light mode overrides */
+    body.light-mode .viz-tabs {
+      background: #f5f5f0;
+      border-color: rgba(0,0,0,0.08);
+    }
+    body.light-mode .viz-tab { color: #888; }
+    body.light-mode .viz-tab.active {
+      color: #b8943c;
+      background: rgba(200, 164, 92, 0.06);
+    }
+    body.light-mode .visual-data_wrapp,
+    body.light-mode .visual-data,
+    body.light-mode .tab_content,
+    body.light-mode .tab_block,
+    body.light-mode #tab1 {
+      background: #f5f5f0 !important;
+      color: #333 !important;
+    }
+    body.light-mode .stone_card {
+      background: #fff !important;
+      border-color: rgba(0,0,0,0.08) !important;
+      color: #333 !important;
+    }
+    body.light-mode .stone_card p,
+    body.light-mode .stone_card span {
+      color: #444 !important;
+    }
+    body.light-mode .stone_card.active {
+      border-color: #b8943c !important;
+    }
+    body.light-mode .dropdown,
+    body.light-mode .dropdown-list,
+    body.light-mode .dropdown-toggle {
+      background: #fff !important;
+      color: #333 !important;
+      border-color: rgba(0,0,0,0.1) !important;
+    }
+    body.light-mode .dropdown-body li,
+    body.light-mode .dropdown-body a { color: #444 !important; }
+    body.light-mode .item_wrapp,
+    body.light-mode [data-part-id] {
+      background: #fff !important;
+      color: #333 !important;
+      border-color: rgba(0,0,0,0.08) !important;
+    }
+    body.light-mode .tab_navigation {
+      background: #f5f5f0 !important;
+    }
+    body.light-mode .tab_navigation li { color: #888 !important; }
+    body.light-mode .tab_navigation li.active { color: #b8943c !important; }
+    body.light-mode .filter_block {
+      background: #f5f5f0 !important;
+    }
+    body.light-mode .filter_block label,
+    body.light-mode .filter_block span,
+    body.light-mode .filter_block p { color: #333 !important; }
+    body.light-mode .preloader { background: rgba(245,245,240,0.85) !important; }
+    body.light-mode .viz-loading-overlay { background: #f5f5f0; }
+    body.light-mode #vizContainer { color: #333; }
+    body.light-mode #vizOrderSection { background: #f5f5f0 !important; }
+
+    @media (max-width: 768px) {
+      .viz-tabs {
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 0 4px;
+      }
+      .viz-tabs::-webkit-scrollbar { display: none; }
+      .viz-tab {
+        padding: 10px 12px;
+        font-size: 10px;
+        flex-shrink: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-white font-sans">
+
+  <!-- Loading overlay -->
+  <div class="viz-loading-overlay" id="vizLoadingOverlay">
+    <svg class="spinner" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" style="z-index:9990;">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 text-decoration-none">
+        <img src="/public/logo-new.png" alt="Asl Tosh Mebellari" class="navbar-logo" />
+      </a>
+      <div class="hidden md:flex items-center gap-10">
+        <a href="/" class="nav-link" data-ru="Главная" data-uz="Bosh sahifa">Главная</a>
+        <a href="/#about" class="nav-link" data-ru="О нас" data-uz="Biz haqimizda">О нас</a>
+        <a href="/catalog.html" class="nav-link" data-ru="Каталог" data-uz="Katalog">Каталог</a>
+        <a href="/#process" class="nav-link" data-ru="Процесс" data-uz="Jarayon">Процесс</a>
+        <a href="/#contact" class="nav-link" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
+        <a href="/3d-kitchen.html" class="nav-link active" data-ru="3D Кухня" data-uz="3D Oshxona">3D Кухня</a>
+      </div>
+      <div class="hidden md:flex items-center gap-3">
+        <button id="themeToggle" class="theme-toggle" title="Light/Dark mode" aria-label="Toggle theme">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="langToggle" class="px-3 py-1.5 text-xs font-semibold tracking-wider uppercase border border-[#c8a45c]/40 text-[#c8a45c] hover:bg-[#c8a45c] hover:text-[#0a0a0a] transition-all duration-300">UZ</button>
+        <a href="/#contact" class="btn-primary text-sm py-3 px-6" data-ru="Заказать" data-uz="Buyurtma berish">Заказать</a>
+      </div>
+      <div class="flex md:hidden items-center gap-3">
+        <button id="themeToggleMobile" class="theme-toggle" title="Light/Dark mode" aria-label="Toggle theme">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="langToggleMobile" class="px-3 py-1.5 text-xs font-semibold tracking-wider uppercase border border-[#c8a45c]/40 text-[#c8a45c] hover:bg-[#c8a45c] hover:text-[#0a0a0a] transition-all duration-300">UZ</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/" class="nav-link mobile-nav-link" data-ru="Главная" data-uz="Bosh sahifa">Главная</a>
+    <a href="/#about" class="nav-link mobile-nav-link" data-ru="О нас" data-uz="Biz haqimizda">О нас</a>
+    <a href="/catalog.html" class="nav-link mobile-nav-link" data-ru="Каталог" data-uz="Katalog">Каталог</a>
+    <a href="/#process" class="nav-link mobile-nav-link" data-ru="Процесс" data-uz="Jarayon">Процесс</a>
+    <a href="/#contact" class="nav-link mobile-nav-link" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
+    <a href="/3d-kitchen.html" class="nav-link mobile-nav-link" data-ru="3D Кухня" data-uz="3D Oshxona">3D Кухня</a>
+    <a href="/#contact" class="btn-primary mt-4" data-ru="Заказать" data-uz="Buyurtma berish">Заказать</a>
+  </div>
+
+  <!-- Interior Tabs -->
+  <div class="viz-tabs" id="vizTabs">
+    <button class="viz-tab active" data-slug="classic-kitchen" data-id="3" data-ru="Кухня. Классический стиль" data-uz="Oshxona. Klassik uslub">Кухня. Классический стиль</button>
+    <button class="viz-tab" data-slug="kitchen-modern" data-id="4" data-ru="Кухня. Современный стиль" data-uz="Oshxona. Zamonaviy uslub">Кухня. Современный стиль</button>
+    <button class="viz-tab" data-slug="bathroom" data-id="5" data-ru="Ванная комната" data-uz="Vannaxona">Ванная комната</button>
+    <button class="viz-tab" data-slug="restaurant" data-id="6" data-ru="Ресторан" data-uz="Restoran">Ресторан</button>
+    <button class="viz-tab" data-slug="reception" data-id="2" data-ru="Рецепция" data-uz="Retseptsiya">Рецепция</button>
+  </div>
+
+  <!-- Visualizer container — will be filled by fetched HTML -->
+  <div id="vizContainer"></div>
+
+  <!-- ORDER BUTTON under visualizer -->
+  <div id="vizOrderSection" class="flex justify-center py-8" style="background:#0a0a0a;">
+    <button id="vizOrderBtn" class="btn-primary text-lg py-4 px-10 flex items-center gap-3" data-ru="Заказать по визуализации" data-uz="Vizualizatsiya bo'yicha buyurtma berish">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      <span>Заказать по визуализации</span>
+    </button>
+  </div>
+
+  <!-- 3D ORDER MODAL -->
+  <div class="order-form-overlay" id="vizOrderModal">
+    <div class="modal-content relative max-w-lg">
+      <button class="modal-close" id="vizOrderModalClose">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="p-8 md:p-10">
+        <h3 class="font-heading text-2xl font-semibold text-white mb-2" data-ru="Заказать по визуализации" data-uz="Vizualizatsiya bo'yicha buyurtma">Заказать по визуализации</h3>
+        <p class="text-[#8a8578] text-sm mb-4" id="vizOrderInfo" data-ru="Выбранные материалы будут отправлены вместе с вашим заказом" data-uz="Tanlangan materiallar buyurtmangiz bilan yuboriladi">Выбранные материалы будут отправлены вместе с вашим заказом</p>
+        <!-- Preview of current 3D image -->
+        <div class="mb-4 rounded overflow-hidden border border-white/10" id="vizOrderPreview" style="max-height:200px;overflow:hidden;">
+          <img id="vizOrderImage" src="" alt="3D Preview" class="w-full object-cover" style="display:none;" />
+        </div>
+        <!-- Materials list summary -->
+        <div id="vizOrderMaterials" class="text-sm text-[#ccc] mb-4 space-y-1"></div>
+        <form id="vizOrderForm" class="space-y-5">
+          <div>
+            <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Ваше имя *" data-uz="Ismingiz *">Ваше имя *</label>
+            <input type="text" name="name" class="form-input" placeholder="Ваше имя" required />
+          </div>
+          <div>
+            <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Телефон *" data-uz="Telefon *">Телефон *</label>
+            <input type="tel" name="phone" class="form-input" placeholder="+998 90 123 45 67" required />
+          </div>
+          <div>
+            <label class="block text-[#8a8578] text-xs font-medium tracking-wider uppercase mb-2" data-ru="Сообщение" data-uz="Xabar">Сообщение</label>
+            <textarea name="message" class="form-input form-textarea" placeholder="Дополнительная информация..." rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full justify-center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span data-ru="Отправить заказ" data-uz="Buyurtma yuborish">Отправить заказ</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="toastMessage">Сообщение отправлено!</span>
+  </div>
+
+  <!-- OUR FOOTER -->
+  <footer class="footer py-12" id="ourFooter" style="display:none;">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 mb-10">
+        <div>
+          <span class="font-heading text-2xl font-bold tracking-wider text-white"><span class="text-[#c8a45c]">Asl</span> Tosh <span class="text-[#c8a45c]">Mebellari</span></span>
+          <p class="text-[#8a8578] text-sm mt-4 leading-relaxed max-w-sm" data-ru="Премиум изделия из искусственного камня. Столешницы из кварца, акрила и гранита для кухни и ванной." data-uz="Premium sifatli sun'iy tosh mahsulotlari. Oshxona va vanna xonasi uchun kvars, granit va marmar toshlar.">Премиум изделия из искусственного камня. Столешницы из кварца, акрила и гранита для кухни и ванной.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4" data-ru="Быстрые ссылки" data-uz="Tezkor havolalar">Быстрые ссылки</h4>
+          <div class="space-y-3">
+            <a href="/" class="footer-link block" data-ru="Главная" data-uz="Bosh sahifa">Главная</a>
+            <a href="/#about" class="footer-link block" data-ru="О нас" data-uz="Biz haqimizda">О нас</a>
+            <a href="/catalog.html" class="footer-link block" data-ru="Каталог" data-uz="Katalog">Каталог</a>
+            <a href="/#contact" class="footer-link block" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm tracking-wider uppercase mb-4" data-ru="Рабочее время" data-uz="Ish vaqti">Рабочее время</h4>
+          <div class="space-y-3 text-[#8a8578] text-sm">
+            <p data-ru="Понедельник - Суббота: 09:00 - 20:00" data-uz="Dushanba - Shanba: 09:00 - 20:00">Понедельник - Суббота: 09:00 - 20:00</p>
+            <p data-ru="Воскресенье: Выходной" data-uz="Yakshanba: Dam olish kuni">Воскресенье: Выходной</p>
+            <a href="tel:+998702720907" class="mt-4 text-[#c8a45c] block hover:underline">+998 77 272 09 07</a>
+            <a href="tel:+998973162220" class="text-[#c8a45c] block hover:underline">+998 97 316 22 20</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col items-center gap-4">
+        <div class="flex items-center gap-4 mb-2">
+          <a href="https://t.me/ASL_TOSH_MEBELLARI" target="_blank" class="w-10 h-10 flex items-center justify-center border border-white/10 text-[#8a8578] hover:border-[#c8a45c] hover:text-[#c8a45c] transition-all" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <a href="https://instagram.com/asl_tosh_mebellari" target="_blank" class="w-10 h-10 flex items-center justify-center border border-white/10 text-[#8a8578] hover:border-[#c8a45c] hover:text-[#c8a45c] transition-all" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+        <p class="text-[#5a5a5a] text-sm text-center">&copy; 2026 AslToshMebel. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- jQuery (interstone vizualizator uchun kerak) -->
+  <script src="/front/js/jquery-3.5.1.min.js?ver=32"></script>
+
+  <script>
+    // Theme init
+    (function() {
+      var savedTheme = localStorage.getItem('siteTheme') || 'dark';
+      if (savedTheme === 'light') document.body.classList.add('light-mode');
+    })();
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var $ = function(s) { return document.querySelector(s); };
+      var $$ = function(s) { return document.querySelectorAll(s); };
+
+      // Theme
+      function toggleTheme() {
+        document.body.classList.toggle('light-mode');
+        localStorage.setItem('siteTheme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+      }
+      if ($('#themeToggle')) $('#themeToggle').addEventListener('click', toggleTheme);
+      if ($('#themeToggleMobile')) $('#themeToggleMobile').addEventListener('click', toggleTheme);
+
+      // Language
+      var currentLang = localStorage.getItem('siteLang') || 'ru';
+      function switchLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('siteLang', lang);
+        document.querySelectorAll('[data-ru][data-uz]').forEach(function(el) {
+          var text = el.getAttribute('data-' + lang);
+          if (text && el.children.length === 0) el.textContent = text;
+        });
+        if ($('#langToggle')) $('#langToggle').textContent = lang === 'ru' ? 'UZ' : 'RU';
+        if ($('#langToggleMobile')) $('#langToggleMobile').textContent = lang === 'ru' ? 'UZ' : 'RU';
+      }
+      function handleLangToggle() { switchLanguage(currentLang === 'ru' ? 'uz' : 'ru'); }
+      if ($('#langToggle')) $('#langToggle').addEventListener('click', handleLangToggle);
+      if ($('#langToggleMobile')) $('#langToggleMobile').addEventListener('click', handleLangToggle);
+
+      // Mobile Menu
+      var hamburger = $('#hamburger');
+      var mobileMenu = $('#mobileMenu');
+      if (hamburger) hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+      });
+      $$('.mobile-nav-link').forEach(function(l) {
+        l.addEventListener('click', function() {
+          if (hamburger) hamburger.classList.remove('active');
+          if (mobileMenu) mobileMenu.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+
+      // Back to Top
+      window.addEventListener('scroll', function() {
+        var b = $('#backToTop');
+        if (b) { if (window.scrollY > 300) b.classList.add('visible'); else b.classList.remove('visible'); }
+      });
+      if ($('#backToTop')) $('#backToTop').addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // ========== VISUALIZER LOADING ==========
+      var vizContainer = $('#vizContainer');
+      var vizLoading = $('#vizLoadingOverlay');
+
+      function loadVisualizer(slug, interiorId) {
+        vizLoading.classList.remove('hidden');
+
+        // Fetch the visualizer page HTML via proxy
+        fetch('/visualizer/' + slug)
+          .then(function(res) { return res.text(); })
+          .then(function(html) {
+            // Parse HTML
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(html, 'text/html');
+
+            // Extract only <main class="visual-container">
+            var mainEl = doc.querySelector('main.visual-container');
+            if (!mainEl) {
+              vizContainer.innerHTML = '<p style="color:red;padding:40px;">Vizualizator yuklanmadi</p>';
+              vizLoading.classList.add('hidden');
+              return;
+            }
+
+            // Convert interstone absolute URLs to relative (proxy handles them)
+            mainEl.querySelectorAll('img[src], img[srcset]').forEach(function(img) {
+              if (img.getAttribute('src')) img.setAttribute('src', img.getAttribute('src').replace('https://interstone.uz', ''));
+              if (img.getAttribute('srcset')) img.setAttribute('srcset', img.getAttribute('srcset').replace(/https:\/\/interstone\.uz/g, ''));
+            });
+            mainEl.querySelectorAll('a[href]').forEach(function(a) {
+              var href = a.getAttribute('href');
+              if (href && href.indexOf('interstone.uz') !== -1) a.setAttribute('href', href.replace('https://interstone.uz', ''));
+            });
+
+            // Remove favorites button
+            var favBtn = mainEl.querySelector('#addFavoriteLink');
+            if (favBtn) favBtn.style.display = 'none';
+            var favDiv = mainEl.querySelector('.control-favorites');
+            if (favDiv) favDiv.style.display = 'none';
+
+            // Remove Интерьеры and Избранное tabs
+            var tabNav = mainEl.querySelectorAll('.tab_navigation li');
+            tabNav.forEach(function(li) {
+              var attr = li.getAttribute('data-attr');
+              if (attr === 'tab2' || attr === 'tab3') li.style.display = 'none';
+            });
+            var tab2 = mainEl.querySelector('#tab2');
+            if (tab2) tab2.style.display = 'none';
+            var tab3 = mainEl.querySelector('#tab3');
+            if (tab3) tab3.style.display = 'none';
+
+            // Insert into page
+            vizContainer.innerHTML = '';
+            vizContainer.appendChild(mainEl);
+
+            // Show our footer
+            var ourFooter = document.getElementById('ourFooter');
+            if (ourFooter) ourFooter.style.display = '';
+
+            // Now run the visualizer inline script
+            runVisualizerLogic(interiorId);
+          })
+          .catch(function(err) {
+            console.error('Vizualizator yuklashda xatolik:', err);
+            vizContainer.innerHTML = '<p style="color:red;padding:40px;">Xatolik: ' + err.message + '</p>';
+            vizLoading.classList.add('hidden');
+          });
+      }
+
+      function runVisualizerLogic(interiorId) {
+        var svg = document.getElementById('svg');
+        var navigation_tabs = document.querySelector('.tab_navigation');
+        var route_filters = '/api/front/interiors/' + interiorId + '/filters';
+        var route_defaults = '/api/front/interiors/' + interiorId + '/default';
+        var route_generate = '/api/front/interiors/' + interiorId + '/generate';
+        var route_materials = '/api/front/interiors/' + interiorId + '/materials';
+
+        var parentVisual = document.querySelector('.visual');
+        var parentVisualBlock = document.querySelector('.visual-container');
+        var rollUp = document.querySelector('.roll-up_block');
+        var visualDataSide = document.querySelector('.visual-data');
+        var visualWrapp = document.querySelector('.visual_wrapp');
+        var helpMask = document.querySelector('img.help__mask');
+        var dopdownData = '';
+
+        function svgHeight() {
+          if (!svg) return;
+          var sw = svg.getBoundingClientRect().width;
+          var h = sw * 651 / 1360 + 3;
+          if (window.innerWidth >= 768 && parentVisualBlock) {
+            parentVisualBlock.style.height = h + 'px';
+          } else if (parentVisualBlock) {
+            parentVisualBlock.style.height = '';
+          }
+        }
+        svgHeight();
+        window.onresize = svgHeight;
+
+        function cleanSvgElems(parent) {
+          if (!parent) return;
+          Array.from(parent.children).forEach(function(el) { el.classList.remove('outline'); });
+        }
+
+        function setDataAttr(id, numb) {
+          numb = numb || '01';
+          var el1 = document.querySelector('.tab_content[data-part]');
+          var el2 = document.querySelector('.tab_content[data-group]');
+          if (el1) el1.setAttribute('data-part', id);
+          if (el2) el2.setAttribute('data-group', numb);
+        }
+
+        function setOverflowBody() {
+          if (window.innerWidth <= 768) document.body.style.overflow = 'hidden';
+        }
+        function unsetOverflowBody() {
+          if (window.innerWidth <= 768) document.body.style.overflow = '';
+        }
+
+        // Roll up toggle
+        if (rollUp) {
+          rollUp.addEventListener('click', function() {
+            if (helpMask) helpMask.style.display = 'none';
+            if (!rollUp.classList.contains('hidden')) {
+              rollUp.classList.add('hidden');
+              if (visualDataSide) visualDataSide.classList.add('hide');
+              if (parentVisual) parentVisual.classList.remove('less');
+            } else {
+              rollUp.classList.remove('hidden');
+              if (parentVisual) parentVisual.classList.add('less');
+              if (visualDataSide) visualDataSide.classList.remove('hide');
+            }
+          });
+        }
+
+        // Tab navigation (only tab1 should work since we hide tab2/tab3)
+        var liTabNav = document.querySelectorAll('.tab_block li[data-attr]');
+        liTabNav.forEach(function(el) {
+          el.addEventListener('click', function() {
+            var tabId = el.getAttribute('data-attr');
+            liTabNav.forEach(function(li) {
+              li.classList.remove('active');
+              var tid = li.getAttribute('data-attr');
+              var tabEl = document.getElementById(tid);
+              if (tabEl) tabEl.classList.remove('show');
+            });
+            el.classList.add('active');
+            var targetTab = document.getElementById(tabId);
+            if (targetTab) targetTab.classList.add('show');
+          });
+        });
+
+        // Materials popup
+        var materialsBtn = document.querySelector('.control-check');
+        if (materialsBtn) {
+          materialsBtn.addEventListener('click', function() {
+            var popup = document.getElementById('usedMaterialPopup');
+            if (popup) {
+              popup.classList.add('show');
+              setOverflowBody();
+            }
+          });
+        }
+
+        // Share links — point to OUR site
+        function set_share_links(params) {
+          var title = 'Asl Tosh Mebellari - 3D Визуализация';
+          var ourUrl = window.location.origin + '/3d-kitchen.html';
+          var link = encodeURIComponent(ourUrl);
+
+          var tgLink = document.getElementById('telegramShareLink');
+          if (tgLink) tgLink.setAttribute('href', 'https://telegram.me/share/url?url=' + link + '&text=' + encodeURIComponent(title));
+
+          // Hide non-relevant share links (vk, ok, twitter, facebook, mail)
+          ['mailShareLink','vkShareLink','okShareLink','twitterShareLink','facebookShareLink'].forEach(function(id) {
+            var el = document.getElementById(id);
+            if (el) el.style.display = 'none';
+          });
+        }
+
+        // Remove brand names from stone card text
+        var brandsToRemove = ['GRANDEX', 'NEOMARM', 'Avant Quartz', 'Noblle Quartz', 'Avant quartz', 'Noblle quartz', 'avant quartz', 'noblle quartz'];
+        var filterLabelsToRemove = ['Бренд', 'бренд', 'Brand', 'brand'];
+
+        function cleanBrandNames(container) {
+          // Remove brand text from stone card names/descriptions
+          container.querySelectorAll('.stone_card p, .stone_card span, .stone_card-name, .stone_card-brand, .stone_card-info, .stone_card .name, .stone_card .brand').forEach(function(el) {
+            var text = el.textContent;
+            brandsToRemove.forEach(function(brand) {
+              text = text.replace(new RegExp(brand, 'gi'), '').trim();
+            });
+            // Clean up extra spaces and leading/trailing commas, dashes
+            text = text.replace(/^[\s,\-–]+|[\s,\-–]+$/g, '').replace(/\s{2,}/g, ' ');
+            if (el.textContent !== text) el.textContent = text;
+          });
+          // Also remove brand names from filter checkboxes/labels
+          container.querySelectorAll('.filter_block label, .filter_block span, .filter_block option').forEach(function(el) {
+            var text = el.textContent;
+            brandsToRemove.forEach(function(brand) {
+              text = text.replace(new RegExp(brand, 'gi'), '').trim();
+            });
+            text = text.replace(/^[\s,\-–]+|[\s,\-–]+$/g, '').replace(/\s{2,}/g, ' ');
+            if (el.textContent !== text) el.textContent = text;
+          });
+          // Hide "Бренд" filter section entirely
+          container.querySelectorAll('.filter_block h4, .filter_block .title, .filter_block legend, .filter_block > div > p, .filter_block > p').forEach(function(el) {
+            var t = el.textContent.trim();
+            filterLabelsToRemove.forEach(function(lbl) {
+              if (t === lbl) {
+                // hide the whole parent filter group
+                var parent = el.closest('.filter_group') || el.closest('.filter_block > div') || el.parentElement;
+                if (parent) parent.style.display = 'none';
+              }
+            });
+          });
+          // Convert interstone image URLs to relative for proxy
+          container.querySelectorAll('img[src]').forEach(function(img) {
+            var src = img.getAttribute('src');
+            if (src && src.indexOf('interstone.uz') !== -1) {
+              img.setAttribute('src', src.replace('https://interstone.uz', ''));
+            }
+          });
+        }
+
+        function load_filters(area, callable, query) {
+          area = area || '';
+          query = query || '';
+          var params = '?lang=ru&area=' + area + query;
+          fetch(route_filters + params, {
+            method: 'get', cache: 'no-cache',
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+          })
+          .then(function(r) { return r.text(); })
+          .then(function(html) {
+            var tab1 = document.getElementById('tab1');
+            if (tab1) {
+              tab1.innerHTML = html;
+              cleanBrandNames(tab1);
+            }
+            if (callable) callable();
+          })
+          .catch(function(e) { console.log(e); });
+        }
+
+        function load_defaults(callable) {
+          fetch(route_defaults + '?lang=ru', {
+            method: 'get', cache: 'no-cache',
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+          })
+          .then(function(r) { return r.json(); })
+          .then(function(data) { callable(data); })
+          .catch(function(e) { console.log(e); });
+        }
+
+        function generate(params) {
+          show_preloader();
+          fetch(route_generate + '?lang=ru&' + params, {
+            method: 'get', cache: 'no-cache',
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+          })
+          .then(function(r) { return r.blob(); })
+          .then(function(blob) {
+            if (blob) {
+              var resource = URL.createObjectURL(blob);
+              var resultImage = document.getElementById('resultImage');
+              if (resultImage) {
+                resultImage.removeAttribute('srcset');
+                resultImage.src = resource;
+              }
+              var downloadLink = document.getElementById('downloadLink');
+              if (downloadLink) downloadLink.href = route_generate + '?lang=ru&' + params;
+
+              fill_used_materials_popup(params);
+              set_share_links(params);
+              hide_preloader();
+            }
+          })
+          .catch(function(e) { console.log(e); });
+        }
+
+        function elements_to_query_string(elements) {
+          var parts = [];
+          for (var key in elements) {
+            parts.push('elements[' + elements[key][0] + ']=' + elements[key][1]);
+          }
+          return parts.join('&');
+        }
+
+        function set_active_cards(elements) {
+          var cards = document.querySelectorAll('#tab1 .stone_card');
+          if (cards) {
+            for (var key in elements) {
+              cards.forEach(function(card) {
+                var area = card.getAttribute('data-area');
+                var value = card.getAttribute('data-attr');
+                if (area == elements[key][0] && value == elements[key][1]) {
+                  card.classList.add('active');
+                  var svgEl = document.getElementById(area);
+                  if (svgEl) svgEl.classList.add('outline');
+                }
+              });
+            }
+            cards.forEach(function(card) {
+              card.addEventListener('click', function() {
+                cards.forEach(function(c) { c.classList.remove('active'); });
+                var area = card.getAttribute('data-area');
+                var value = card.getAttribute('data-attr');
+                card.classList.add('active');
+                for (var k in elements) {
+                  if (elements[k][0] == area) elements[k][1] = value;
+                }
+                generate(elements_to_query_string(elements));
+
+                if (parentVisual) {
+                  parentVisual.classList.add('no-outline');
+                  setTimeout(function() { parentVisual.classList.remove('no-outline'); }, 2000);
+                }
+              });
+            });
+          }
+        }
+
+        function load_materials(query, callable) {
+          query = query || '';
+          var params = '?lang=ru&' + query;
+          fetch(route_materials + params, {
+            method: 'get', cache: 'no-cache',
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+          })
+          .then(function(r) { return r.text(); })
+          .then(function(html) { if (callable) callable(html); })
+          .catch(function(e) { console.log(e); });
+        }
+
+        function fill_used_materials_popup(params) {
+          load_materials(params, function(html) {
+            var popup = document.getElementById('usedMaterialPopup');
+            if (popup) {
+              popup.innerHTML = html;
+              cleanBrandNames(popup);
+              var closeIcon = popup.querySelector('.close-icon');
+              if (closeIcon) {
+                closeIcon.addEventListener('click', function() {
+                  popup.classList.remove('show');
+                  unsetOverflowBody();
+                });
+              }
+            }
+          });
+        }
+
+        function hide_preloader() {
+          var preloader = document.getElementById('preloader');
+          var vc = document.getElementById('visualContainer');
+          if (vc) vc.classList.add('animate');
+          if (preloader) { preloader.classList.remove('show'); preloader.classList.add('hidden'); }
+          vizLoading.classList.add('hidden');
+        }
+
+        function show_preloader() {
+          var preloader = document.getElementById('preloader');
+          if (preloader) { preloader.classList.remove('hidden'); preloader.classList.add('show'); }
+        }
+
+        // ---- START ----
+        load_defaults(function(elements) {
+          if (!elements) return;
+          var query = elements_to_query_string(elements);
+          generate(query);
+
+          var prevAttrId = null;
+          if (svg) {
+            svg.addEventListener('click', function(e) {
+              var attrId = e.target.getAttribute('id');
+              if (attrId != 'svg' && prevAttrId != attrId) {
+                prevAttrId = attrId;
+                load_filters(attrId, function() { after_load_filters(elements); });
+              }
+              if (rollUp && rollUp.classList.contains('hidden') && attrId !== 'svg') {
+                rollUp.classList.remove('hidden');
+                if (parentVisual) parentVisual.classList.add('less');
+                if (visualDataSide) visualDataSide.classList.remove('hide');
+              }
+            });
+          }
+
+          // Set tab1 as active
+          if (navigation_tabs) {
+            navigation_tabs.querySelectorAll('li').forEach(function(item) {
+              var tabId = item.getAttribute('data-attr');
+              if (tabId == 'tab1') {
+                item.classList.add('active');
+                var tabEl = document.getElementById(tabId);
+                if (tabEl) tabEl.classList.add('show');
+              } else {
+                item.classList.remove('active');
+                var tabEl2 = document.getElementById(tabId);
+                if (tabEl2) tabEl2.classList.remove('show');
+              }
+            });
+          }
+
+          load_filters('', function() { after_load_filters(elements); });
+
+          function after_load_filters(elements) {
+            set_active_cards(elements);
+            if (visualWrapp) visualWrapp.removeAttribute('style');
+
+            var filterTrigger = document.querySelectorAll('[data-trigger="filter_block"]');
+            var closeFilter = document.querySelectorAll('.filter_block-close');
+
+            filterTrigger.forEach(function(el) {
+              el.addEventListener('click', function() {
+                var fb = document.querySelector('.filter_block');
+                if (fb) fb.classList.add('show');
+                if (window.innerWidth <= 768 && visualWrapp) visualWrapp.style.zIndex = '99';
+                setOverflowBody();
+              });
+            });
+
+            closeFilter.forEach(function(el) {
+              el.addEventListener('click', function() {
+                var fb = document.querySelector('.filter_block');
+                if (fb) fb.classList.remove('show');
+                setTimeout(function() {
+                  if (window.innerWidth <= 768 && visualWrapp) visualWrapp.style.zIndex = '';
+                }, 200);
+                unsetOverflowBody();
+              });
+            });
+
+            var applyBtn = document.getElementById('applyFilterForm');
+            if (applyBtn) {
+              applyBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                var filterForm = document.getElementById('filterForm');
+                var area = filterForm ? filterForm.getAttribute('data-area') : '';
+                var data = new FormData(filterForm);
+                var q = '&' + Array.from(data, function(e) { return e.map(encodeURIComponent).join('='); }).join('&');
+                load_filters(area, function() { after_load_filters(elements); unsetOverflowBody(); }, q);
+              });
+            }
+
+            var resetBtn = document.getElementById('resetFiltersForm');
+            if (resetBtn) {
+              resetBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                var filterForm = document.getElementById('filterForm');
+                var area = filterForm ? filterForm.getAttribute('data-area') : '';
+                load_filters(area, function() { after_load_filters(elements); });
+              });
+            }
+
+            try {
+              document.querySelectorAll('.color_input').forEach(function(el) {
+                el.addEventListener('click', function() {
+                  el.classList.toggle('checked');
+                });
+              });
+            } catch(e) {}
+
+            document.querySelectorAll('[data-part-id]').forEach(function(el) {
+              var id = el.getAttribute('data-part-id');
+              el.addEventListener('click', function() {
+                cleanSvgElems(svg);
+                var elem = svg ? svg.getElementById(id) : null;
+                if (elem) {
+                  var gn = elem.getAttribute('data-group-numb');
+                  elem.classList.add('outline');
+                  setDataAttr(id, gn);
+                }
+                load_filters(id, function() { after_load_filters(elements); });
+              });
+            });
+
+            var dropdown = document.querySelector('.dropdown-list');
+            if (dropdown) {
+              dropdown.addEventListener('click', function() {
+                var dd = dropdown.closest('.dropdown');
+                if (dd) {
+                  dd.classList.toggle('dropdown-open');
+                  dropdown.classList.toggle('active');
+                }
+              });
+            }
+
+            if (svg) {
+              svg.addEventListener('click', function(e) {
+                if (helpMask) helpMask.style.display = 'none';
+                svgHeight();
+                var partId = e.target.getAttribute('id');
+                var groupNumb = e.target.getAttribute('data-group-numb');
+                setDataAttr(partId, groupNumb);
+                if (partId !== 'svg') {
+                  cleanSvgElems(svg);
+                  e.target.classList.add('outline');
+                  dopdownData = e.target.getAttribute('title') || '';
+                }
+              });
+            }
+
+            document.querySelectorAll('#tab1 .stone_card').forEach(function(el) {
+              el.addEventListener('click', function() {
+                document.querySelectorAll('#tab1 .stone_card').forEach(function(c) { c.classList.remove('active'); });
+                el.classList.add('active');
+                if (parentVisual) {
+                  parentVisual.classList.add('no-outline');
+                  setTimeout(function() { parentVisual.classList.remove('no-outline'); }, 2000);
+                }
+              });
+            });
+          }
+        });
+      }
+
+      // ========== INTERIOR TABS ==========
+      $$('.viz-tab').forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          $$('.viz-tab').forEach(function(t) { t.classList.remove('active'); });
+          tab.classList.add('active');
+          var slug = tab.dataset.slug;
+          var id = tab.dataset.id;
+          loadVisualizer(slug, id);
+        });
+      });
+
+      // Load default interior
+      loadVisualizer('classic-kitchen', '3');
+
+      // Apply saved language
+      if (currentLang !== 'ru') switchLanguage(currentLang);
+
+      // ========== 3D ORDER MODAL & TELEGRAM ==========
+      var TELEGRAM_BOT_TOKEN = '8149591957:AAHXf76-EEPoqWB6tIfW8B7xjmE3o9fKvB8';
+      var TELEGRAM_CHAT_IDS = ['1093264285', '5114247292', '1032173492'];
+
+      var vizOrderModal = document.getElementById('vizOrderModal');
+      var vizOrderBtn = document.getElementById('vizOrderBtn');
+      var vizOrderModalClose = document.getElementById('vizOrderModalClose');
+      var vizOrderImage = document.getElementById('vizOrderImage');
+      var vizOrderMaterials = document.getElementById('vizOrderMaterials');
+      var vizOrderForm = document.getElementById('vizOrderForm');
+      var vizCurrentImageBlob = null;
+
+      function showToast(msg, type) {
+        var toast = document.getElementById('toast');
+        var toastMsg = document.getElementById('toastMessage');
+        if (!toast || !toastMsg) return;
+        var svg = toast.querySelector('svg');
+        if (svg) svg.setAttribute('stroke', type === 'success' ? '#22c55e' : '#ef4444');
+        toastMsg.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(function() { toast.classList.remove('show'); }, 3500);
+      }
+
+      // Capture current visualizer image as blob
+      function captureVizImage() {
+        var resultImg = document.getElementById('resultImage');
+        if (!resultImg || !resultImg.src) return null;
+        return resultImg.src;
+      }
+
+      // Get currently active stone names from stone cards
+      function getActiveMaterials() {
+        var materials = [];
+        var activeCards = document.querySelectorAll('#tab1 .stone_card.active, .stone_card.active');
+        activeCards.forEach(function(card) {
+          var nameEl = card.querySelector('p') || card.querySelector('.stone_card-name') || card.querySelector('.name');
+          if (nameEl) {
+            var name = nameEl.textContent.trim();
+            if (name) materials.push(name);
+          }
+        });
+        // Also try dropdown parts
+        document.querySelectorAll('[data-part-id]').forEach(function(el) {
+          var partName = el.textContent.trim();
+          if (partName) {
+            var partStone = '';
+            // find associated stone
+            var activeInGroup = el.closest('.item_wrapp');
+            if (activeInGroup) {
+              var stoneText = activeInGroup.querySelector('.stone-name, .name, p');
+              if (stoneText) partStone = stoneText.textContent.trim();
+            }
+          }
+        });
+        return materials;
+      }
+
+      // Get current interior name
+      function getCurrentInteriorName() {
+        var activeTab = document.querySelector('.viz-tab.active');
+        if (activeTab) {
+          return activeTab.getAttribute('data-' + currentLang) || activeTab.textContent.trim();
+        }
+        return '';
+      }
+
+      // Open order modal
+      if (vizOrderBtn) {
+        vizOrderBtn.addEventListener('click', function() {
+          // Capture current 3D image
+          var imgSrc = captureVizImage();
+          if (imgSrc) {
+            vizOrderImage.src = imgSrc;
+            vizOrderImage.style.display = 'block';
+          } else {
+            vizOrderImage.style.display = 'none';
+          }
+
+          // Try to get image as blob for Telegram
+          var resultImg = document.getElementById('resultImage');
+          if (resultImg && resultImg.src && resultImg.src.indexOf('blob:') === 0) {
+            fetch(resultImg.src).then(function(r) { return r.blob(); }).then(function(b) {
+              vizCurrentImageBlob = b;
+            }).catch(function() { vizCurrentImageBlob = null; });
+          }
+
+          // Get materials info
+          var materials = getActiveMaterials();
+          var interiorName = getCurrentInteriorName();
+          var matHtml = '';
+          if (interiorName) {
+            var label = currentLang === 'ru' ? 'Интерьер' : 'Interer';
+            matHtml += '<p><strong>' + label + ':</strong> ' + interiorName + '</p>';
+          }
+          if (materials.length > 0) {
+            var label2 = currentLang === 'ru' ? 'Материалы' : 'Materiallar';
+            matHtml += '<p><strong>' + label2 + ':</strong> ' + materials.join(', ') + '</p>';
+          }
+          vizOrderMaterials.innerHTML = matHtml;
+
+          vizOrderModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+          switchLanguage(currentLang);
+        });
+      }
+
+      function closeVizOrderModal() {
+        vizOrderModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      if (vizOrderModalClose) vizOrderModalClose.addEventListener('click', closeVizOrderModal);
+      if (vizOrderModal) vizOrderModal.addEventListener('click', function(e) {
+        if (e.target === vizOrderModal) closeVizOrderModal();
+      });
+
+      // Send to Telegram with image
+      if (vizOrderForm) {
+        vizOrderForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var formData = new FormData(e.target);
+          var name = formData.get('name');
+          var phone = formData.get('phone');
+          var message = formData.get('message') || '';
+          var interiorName = getCurrentInteriorName();
+          var materials = getActiveMaterials();
+
+          var btn = e.target.querySelector('button[type="submit"]');
+          var originalHTML = btn.innerHTML;
+          var loadingText = currentLang === 'ru' ? 'Отправка...' : 'Yuborilmoqda...';
+          btn.innerHTML = '<svg class="animate-spin" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> ' + loadingText;
+          btn.disabled = true;
+
+          var text = '🏗 *3D VIZUALIZATSIYA BUYURTMASI!*\n\n';
+          text += '👤 *Ism:* ' + name + '\n';
+          text += '📱 *Telefon:* ' + phone + '\n';
+          if (interiorName) text += '🏠 *Interer:* ' + interiorName + '\n';
+          if (materials.length > 0) text += '🪨 *Materiallar:* ' + materials.join(', ') + '\n';
+          if (message) text += '\n💬 *Xabar:* ' + message + '\n';
+          text += '\n📅 *Sana:* ' + new Date().toLocaleString('uz-UZ');
+
+          var promises = [];
+
+          TELEGRAM_CHAT_IDS.forEach(function(chatId) {
+            // Send text message
+            var p = fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ chat_id: chatId, text: text, parse_mode: 'Markdown' })
+            });
+            promises.push(p);
+
+            // Send 3D visualization image
+            if (vizCurrentImageBlob) {
+              var fd = new FormData();
+              fd.append('chat_id', chatId);
+              fd.append('photo', vizCurrentImageBlob, '3d-visualization.png');
+              fd.append('caption', '🏠 3D Vizualizatsiya: ' + interiorName);
+              var p2 = fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendPhoto', {
+                method: 'POST',
+                body: fd
+              });
+              promises.push(p2);
+            } else {
+              // Try sending image URL if available (download link)
+              var dlLink = document.getElementById('downloadLink');
+              if (dlLink && dlLink.href) {
+                var imgUrl = window.location.origin + dlLink.getAttribute('href');
+                var p3 = fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendPhoto', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ chat_id: chatId, photo: imgUrl, caption: '🏠 3D Vizualizatsiya: ' + interiorName })
+                });
+                promises.push(p3);
+              }
+            }
+          });
+
+          Promise.all(promises).then(function() {
+            var msg = currentLang === 'ru' ? 'Ваш заказ принят! Мы скоро свяжемся.' : "Buyurtmangiz qabul qilindi! Tez orada bog'lanamiz.";
+            showToast(msg, 'success');
+            e.target.reset();
+            closeVizOrderModal();
+          }).catch(function(err) {
+            console.error('Telegram error:', err);
+            var msg = currentLang === 'ru' ? 'Ошибка. Попробуйте ещё раз.' : "Xatolik. Qayta urinib ko'ring.";
+            showToast(msg, 'error');
+          }).finally(function() {
+            btn.innerHTML = originalHTML;
+            btn.disabled = false;
+          });
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

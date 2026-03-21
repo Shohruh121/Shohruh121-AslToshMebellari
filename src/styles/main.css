@@ -1149,21 +1149,18 @@
 
 /* ============ NAVBAR LOGO ============ */
 .navbar-logo {
-  height: 40px;
+  height: 44px;
   width: auto;
-  color: #fff;
-  filter: brightness(0) invert(1);
-  transition: filter 0.3s ease, height 0.3s ease;
+  transition: height 0.3s ease;
 }
 
 .navbar.scrolled .navbar-logo {
-  height: 34px;
+  height: 38px;
 }
 
 .preloader-logo-img {
-  height: clamp(60px, 15vw, 120px);
+  height: clamp(80px, 15vw, 150px);
   width: auto;
-  filter: brightness(0) invert(1);
   animation: pulseText 1.5s ease-in-out infinite;
 }
 
@@ -1228,10 +1225,6 @@ body.light-mode .preloader {
   background: #f5f3ef;
 }
 
-body.light-mode .preloader-logo-img {
-  filter: brightness(0);
-}
-
 /* Cursor */
 body.light-mode .custom-cursor {
   border-color: #8a7440;
@@ -1246,10 +1239,6 @@ body.light-mode .navbar.scrolled {
   background: rgba(245, 243, 239, 0.95);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(200, 164, 92, 0.15);
-}
-
-body.light-mode .navbar-logo {
-  filter: brightness(0);
 }
 
 body.light-mode .nav-link {
@@ -1281,13 +1270,14 @@ body.light-mode .hero {
 }
 
 body.light-mode .hero-bg {
-  opacity: 0.25;
+  opacity: 1;
   background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.8) 100%),
     url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80') center/cover no-repeat;
 }
 
 body.light-mode .hero-particles canvas {
-  opacity: 0;
+  opacity: 0.3;
 }
 
 body.light-mode .hero-badge {
@@ -1301,7 +1291,7 @@ body.light-mode .hero-title {
 }
 
 body.light-mode .hero-title .accent {
-  background: linear-gradient(135deg, #8a7440, #6a5a30, #8a7440);
+  background: linear-gradient(135deg, #b8860b, #daa520, #b8860b);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -313,6 +313,36 @@ function createStoneCard(stone, index) {
   return card;
 }
 
+let allStones = [...stones];
+
+async function loadExtraStones() {
+  try {
+    const response = await fetch('/granistone_all.json');
+    if (response.ok) {
+      const extra = await response.json();
+      const formatted = extra.map((s, i) => ({
+        id: `extra-${i}`,
+        name: s.name,
+        type: 'granit',
+        category: 'Classic',
+        thumbnail: s.img,
+        images: [s.img],
+        features: ["Mustahkam", "Dog'lanmaydi"],
+        thickness: ["12mm"],
+        finish: ["Glyantsli"],
+        origin: "Rossiya",
+        applications: ["Oshxona", "Vanna"],
+        description_uz: s.name + " dekorativ toshi.",
+        description_ru: s.name + " декоративный камень."
+      }));
+      allStones = [...stones, ...formatted];
+      renderStones();
+    }
+  } catch (err) {
+    console.error('Error loading extra stones:', err);
+  }
+}
+
 function renderStones() {
   if (!stoneGrid) return;
   stoneGrid.innerHTML = '';
@@ -320,12 +350,12 @@ function renderStones() {
   // Main page: show 12 stones (6 granit + 3 akril + 3 kvarts)
   let displayStones;
   if (isMainPage) {
-    const granitStones = stones.filter(s => s.type === 'granit').slice(0, 6);
-    const akrilStones = stones.filter(s => s.type === 'akril').slice(0, 3);
-    const kvarsStones = stones.filter(s => s.type === 'kvars').slice(0, 3);
+    const granitStones = allStones.filter(s => s.type === 'granit').slice(0, 6);
+    const akrilStones = allStones.filter(s => s.type === 'akril').slice(0, 3);
+    const kvarsStones = allStones.filter(s => s.type === 'kvars').slice(0, 3);
     displayStones = [...granitStones, ...akrilStones, ...kvarsStones];
   } else {
-    displayStones = stones;
+    displayStones = allStones;
   }
 
   displayStones.forEach((stone, index) => {
@@ -346,6 +376,9 @@ function renderStones() {
 
   stoneGrid.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 }
+
+// Start loading extra stones
+loadExtraStones();
 
 // Initial render
 renderStones();
