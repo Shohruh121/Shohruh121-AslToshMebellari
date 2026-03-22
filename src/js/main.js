@@ -314,6 +314,7 @@ function createStoneCard(stone, index) {
 }
 
 let allStones = [...stones];
+let homeFeatured = []; // Bosh sahifa uchun featured dekorlar
 
 async function loadExtraStones() {
   try {
@@ -348,23 +349,28 @@ async function loadExtraStones() {
     if (sbRes.ok) {
       const sbDecors = await sbRes.json();
       if (Array.isArray(sbDecors) && sbDecors.length > 0) {
-        const formatted = sbDecors.map(d => ({
-          id: 'sb-' + d.id,
-          name: d.name || '',
-          type: d.type || '',
-          category: d.category || '',
-          thumbnail: d.thumbnail || (Array.isArray(d.images) ? d.images[0] : ''),
-          images: Array.isArray(d.images) ? d.images : (typeof d.images === 'string' ? JSON.parse(d.images) : []),
-          features: Array.isArray(d.features) ? d.features : [],
-          thickness: Array.isArray(d.thickness) ? d.thickness : [],
-          finish: Array.isArray(d.finish) ? d.finish : [],
-          origin: d.origin || '',
-          applications: Array.isArray(d.applications) ? d.applications : [],
-          description_uz: d.description_uz || '',
-          description_ru: d.description_ru || '',
-          featured: d.featured === true
-        }));
-        // Add Supabase decors at the beginning
+        const formatted = sbDecors.map(d => {
+          var imgs = Array.isArray(d.images) ? d.images : (typeof d.images === 'string' ? JSON.parse(d.images) : []);
+          return {
+            id: 'sb-' + d.id,
+            name: d.name || '',
+            type: d.type || '',
+            category: d.category || '',
+            thumbnail: d.thumbnail || (imgs.length > 0 ? imgs[0] : ''),
+            images: imgs,
+            features: Array.isArray(d.features) ? d.features : [],
+            thickness: Array.isArray(d.thickness) ? d.thickness : [],
+            finish: Array.isArray(d.finish) ? d.finish : [],
+            origin: d.origin || '',
+            applications: Array.isArray(d.applications) ? d.applications : [],
+            description_uz: d.description_uz || '',
+            description_ru: d.description_ru || '',
+            featured: d.featured === true
+          };
+        });
+        // Collect featured decors for homepage
+        homeFeatured = formatted.filter(d => d.featured === true);
+        // Add all Supabase decors to catalog list
         allStones = [...formatted, ...allStones];
         renderStones();
       }
@@ -381,9 +387,9 @@ function renderStones() {
   // Main page: show featured decors (admin tanlagan), fallback to 2 per type
   let displayStones;
   if (isMainPage) {
-    const featured = allStones.filter(s => s.featured === true);
-    if (featured.length > 0) {
-      displayStones = featured.slice(0, 6);
+    // Use homeFeatured if loaded from Supabase, otherwise fallback
+    if (homeFeatured.length > 0) {
+      displayStones = homeFeatured.slice(0, 6);
     } else {
       const kvarsStones = allStones.filter(s => s.type === 'kvars').slice(0, 2);
       const akrilStones = allStones.filter(s => s.type === 'akril').slice(0, 2);
