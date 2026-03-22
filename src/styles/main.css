@@ -964,6 +964,17 @@
     visibility: visible;
   }
 
+  /* Granit (жидкий гранит) rasmlarida pastdagi brend logosini yashirish */
+  .granit-crop {
+    object-fit: cover !important;
+    object-position: center 20% !important;
+  }
+  .granit-crop-fs {
+    max-height: 80vh !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+  }
+
   .fullscreen-swipe {
     height: 100vh;
   }

@@ -468,8 +468,8 @@ function openStoneModal(stone) {
     <div class="modal-image-container" id="galleryContainer">
       <div class="gallery-swipe" id="gallerySwipe" style="display:flex;width:${stone.images.length * 100}%;transition:transform 0.3s ease;">
         ${stone.images.map((img, i) => `
-          <div style="width:${100 / stone.images.length}%;flex-shrink:0;">
-            <img src="${img}" alt="${stone.name}" class="modal-image gallery-slide-img" data-index="${i}" style="width:100%;height:100%;object-fit:cover;" />
+          <div style="width:${100 / stone.images.length}%;flex-shrink:0;overflow:hidden;">
+            <img src="${img}" alt="${stone.name}" class="modal-image gallery-slide-img${stone.type === 'granit' ? ' granit-crop' : ''}" data-index="${i}" style="width:100%;height:100%;object-fit:cover;${stone.type === 'granit' ? 'object-position:center 20%;' : ''}" />
           </div>
         `).join('')}
       </div>
@@ -616,7 +616,7 @@ function openStoneModal(stone) {
   fullscreenOverlay.className = 'fullscreen-overlay';
   fullscreenOverlay.innerHTML = `
     <button class="fullscreen-close" id="fullscreenClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
-    <img id="fullscreenImg" src="" alt="" style="max-width:90vw;max-height:85vh;object-fit:contain;" />
+    <img id="fullscreenImg" src="" alt="" class="${stone.type === 'granit' ? 'granit-crop-fs' : ''}" style="max-width:90vw;max-height:85vh;object-fit:${stone.type === 'granit' ? 'cover' : 'contain'};${stone.type === 'granit' ? 'object-position:center 20%;' : ''}" />
     ${stone.images.length > 1 ? `
       <div style="position:absolute;top:50%;left:12px;transform:translateY(-50%);z-index:9002;">
         <button class="gallery-arrow" id="fsPrev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
