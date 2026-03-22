@@ -590,6 +590,9 @@
             vizContainer.innerHTML = '';
             vizContainer.appendChild(mainEl);
 
+            // Hide loading overlay — HTML is loaded
+            vizLoading.classList.add('hidden');
+
             // Show our footer
             var ourFooter = document.getElementById('ourFooter');
             if (ourFooter) ourFooter.style.display = '';
