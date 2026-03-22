@@ -573,12 +573,31 @@
       var vizContainer = $('#vizContainer');
       var vizLoading = $('#vizLoadingOverlay');
       var currentAbortController = null;
+      var vizCache = {};       // DOM cache per slug
+      var currentSlug = null;  // Currently active slug
 
       function loadVisualizer(slug, interiorId) {
         // Cancel any previous fetch
         if (currentAbortController) {
           currentAbortController.abort();
         }
+
+        // Save current tab DOM to cache before switching
+        if (currentSlug && vizContainer.firstElementChild) {
+          vizCache[currentSlug] = vizContainer.firstElementChild;
+        }
+
+        currentSlug = slug;
+
+        // If this tab was already loaded, restore from cache (no re-fetch)
+        if (vizCache[slug]) {
+          vizContainer.innerHTML = '';
+          vizContainer.appendChild(vizCache[slug]);
+          vizLoading.classList.add('hidden');
+          return;
+        }
+
+        // Fresh load — show loading overlay
         currentAbortController = new AbortController();
         var signal = currentAbortController.signal;
 
@@ -594,6 +613,9 @@
             return res.text();
           })
           .then(function(html) {
+            // If user already switched to another tab, ignore this response
+            if (currentSlug !== slug) return;
+
             if (!html || html.length < 100) {
               vizContainer.innerHTML = '<p style="color:#c8a45c;padding:40px;text-align:center;">Vizualizator javob bermadi (empty response)</p>';
               vizLoading.classList.add('hidden');
@@ -607,7 +629,6 @@
             // Extract only <main class="visual-container">
             var mainEl = doc.querySelector('main.visual-container');
             if (!mainEl) {
-              // Try alternative selectors
               mainEl = doc.querySelector('.visual-container') || doc.querySelector('.visual');
             }
             if (!mainEl) {
@@ -648,18 +669,15 @@
               el.style.display = 'none';
             });
 
-            // Insert into page
+            // Insert into page (loading overlay stays until generate() completes)
             vizContainer.innerHTML = '';
             vizContainer.appendChild(mainEl);
-
-            // Hide loading overlay immediately after content is inserted
-            vizLoading.classList.add('hidden');
 
             // Show our footer
             var ourFooter = document.getElementById('ourFooter');
             if (ourFooter) ourFooter.style.display = '';
 
-            // Now run the visualizer inline script
+            // Now run the visualizer inline script — loading hides after generate()
             runVisualizerLogic(interiorId);
           })
           .catch(function(err) {
