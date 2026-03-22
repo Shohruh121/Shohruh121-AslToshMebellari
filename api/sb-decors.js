@@ -19,6 +19,11 @@ export default async function handler(req, res) {
         headers: { 'Content-Type': 'application/json', 'apikey': SB_KEY, 'Authorization': `Bearer ${SB_KEY}`, 'Prefer': 'return=representation' },
         body: JSON.stringify(req.body)
       });
+      if (!r.ok) {
+        const errText = await r.text();
+        res.status(r.status).json({ error: errText });
+        return;
+      }
       const data = await r.json();
       res.status(200).json(data);
     } catch (e) {

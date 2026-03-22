@@ -90,6 +90,13 @@ export default defineConfig(({ mode }) => {
                     headers: { 'Content-Type': 'application/json', 'apikey': SB_KEY, 'Authorization': `Bearer ${SB_KEY}`, 'Prefer': 'return=representation' },
                     body
                   });
+                  if (!r.ok) {
+                    const errText = await r.text();
+                    res.statusCode = r.status;
+                    res.setHeader('Content-Type', 'application/json');
+                    res.end(JSON.stringify({ error: errText }));
+                    return;
+                  }
                   const data = await r.json();
                   res.setHeader('Content-Type', 'application/json');
                   res.end(JSON.stringify(data));

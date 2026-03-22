@@ -182,31 +182,53 @@ let deleteTargetIndex = -1;
 let modalImages = []; // current images being edited in modal
 
 async function loadDecors() {
-  // Load from Supabase decors table
+  allDecors = [];
+
+  // 1) Load stones.json (katalog dekorlari)
+  try {
+    const res = await fetch('/stones.json');
+    if (res.ok) {
+      const stones = await res.json();
+      if (Array.isArray(stones)) {
+        allDecors = stones.map(d => ({
+          ...d,
+          _source: 'json'
+        }));
+      }
+    }
+  } catch (e) {
+    console.error('stones.json load error:', e);
+  }
+
+  // 2) Load Supabase decors (admin qo'shgan dekorlar)
   try {
     const res = await fetch('/sb/decors');
-    if (!res.ok) throw new Error('Supabase xatolik');
-    const data = await res.json();
-    if (Array.isArray(data)) {
-      // Parse images from JSONB if needed
-      allDecors = data.map(d => ({
-        ...d,
-        images: typeof d.images === 'string' ? JSON.parse(d.images) : (d.images || []),
-        thumbnail: d.thumbnail || (Array.isArray(d.images) ? d.images[0] : ''),
-        features: typeof d.features === 'string' ? JSON.parse(d.features) : (d.features || []),
-        thickness: typeof d.thickness === 'string' ? JSON.parse(d.thickness) : (d.thickness || []),
-        finish: typeof d.finish === 'string' ? JSON.parse(d.finish) : (d.finish || []),
-        applications: typeof d.applications === 'string' ? JSON.parse(d.applications) : (d.applications || [])
-      }));
-    } else {
-      allDecors = [];
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data)) {
+        const sbDecors = data.map(d => ({
+          ...d,
+          images: typeof d.images === 'string' ? JSON.parse(d.images) : (d.images || []),
+          thumbnail: d.thumbnail || (Array.isArray(d.images) ? d.images[0] : ''),
+          features: typeof d.features === 'string' ? JSON.parse(d.features) : (d.features || []),
+          thickness: typeof d.thickness === 'string' ? JSON.parse(d.thickness) : (d.thickness || []),
+          finish: typeof d.finish === 'string' ? JSON.parse(d.finish) : (d.finish || []),
+          applications: typeof d.applications === 'string' ? JSON.parse(d.applications) : (d.applications || []),
+          _source: 'supabase'
+        }));
+        // Supabase dekorlar boshiga qo'shiladi
+        allDecors = [...sbDecors, ...allDecors];
+      }
     }
-    applyFilters();
-    updateDecorCount();
-  } catch (err) {
-    console.error('loadDecors error:', err);
+  } catch (e) {
+    console.error('Supabase decors load error:', e);
+  }
+
+  if (allDecors.length === 0) {
     document.getElementById('decorGrid').innerHTML = '<p style="color:#ef4444;padding:2rem;text-align:center;">Ma\'lumotlarni yuklashda xatolik</p>';
   }
+  applyFilters();
+  updateDecorCount();
 }
 
 function updateDecorCount() {
@@ -491,23 +513,32 @@ document.getElementById('decorModalSave').addEventListener('click', async () => 
   };
 
   try {
-    if (idx === -1) {
-      // INSERT new decor to Supabase
+    if (idx === -1 || (idx >= 0 && allDecors[idx]._source === 'json')) {
+      // INSERT new decor to Supabase (or copy from stones.json)
       const res = await fetch('/sb/decors', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(decor)
       });
       const data = await res.json();
+      if (data.error) {
+        throw new Error(typeof data.error === 'string' ? data.error : JSON.stringify(data.error));
+      }
       if (Array.isArray(data) && data.length > 0) {
-        allDecors.unshift(data[0]);
+        data[0]._source = 'supabase';
+        if (idx >= 0) {
+          // Replacing a json decor — update in place
+          allDecors[idx] = data[0];
+        } else {
+          allDecors.unshift(data[0]);
+        }
         addActivity('Yangi dekor qo\'shildi', name);
         showToast('Декор добавлен');
       } else {
-        throw new Error('Insert failed');
+        throw new Error('Insert javob bo\'sh qaytdi: ' + JSON.stringify(data));
       }
     } else {
-      // UPDATE existing decor in Supabase
+      // UPDATE existing Supabase decor
       const existingId = allDecors[idx].id;
       const res = await fetch('/sb/decor-update?id=' + existingId, {
         method: 'POST',
@@ -515,7 +546,11 @@ document.getElementById('decorModalSave').addEventListener('click', async () => 
         body: JSON.stringify(decor)
       });
       const data = await res.json();
+      if (data.error) {
+        throw new Error(typeof data.error === 'string' ? data.error : JSON.stringify(data.error));
+      }
       if (Array.isArray(data) && data.length > 0) {
+        data[0]._source = 'supabase';
         allDecors[idx] = data[0];
       } else {
         allDecors[idx] = { ...allDecors[idx], ...decor };
@@ -524,8 +559,8 @@ document.getElementById('decorModalSave').addEventListener('click', async () => 
       showToast('Декор обновлен');
     }
   } catch (err) {
-    showToast('Xatolik yuz berdi: ' + err.message, 'error');
-    console.error(err);
+    showToast('Xatolik: ' + err.message, 'error');
+    console.error('Save error:', err);
   }
 
   updateDecorCount();
