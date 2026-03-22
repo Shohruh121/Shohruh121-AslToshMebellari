@@ -383,15 +383,33 @@ decorFileInput.addEventListener('change', () => {
   if (decorFileInput.files.length) handleFiles(decorFileInput.files);
 });
 
-function handleFiles(files) {
-  Array.from(files).forEach(file => {
-    if (!file.type.startsWith('image/') || modalImages.length >= MAX_IMAGES) return;
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      addImageToModal(e.target.result);
-    };
-    reader.readAsDataURL(file);
-  });
+async function handleFiles(files) {
+  for (const file of Array.from(files)) {
+    if (!file.type.startsWith('image/') || modalImages.length >= MAX_IMAGES) continue;
+    const ext = file.name.split('.').pop() || 'jpg';
+    const filename = 'decors/' + Date.now() + '-' + Math.random().toString(36).substr(2, 6) + '.' + ext;
+    try {
+      const res = await fetch('/sb/upload?filename=' + encodeURIComponent(filename), {
+        method: 'POST',
+        headers: { 'Content-Type': file.type },
+        body: file
+      });
+      const data = await res.json();
+      if (data.ok && data.url) {
+        addImageToModal(data.url);
+      } else {
+        // Fallback to base64 if upload fails
+        const reader = new FileReader();
+        reader.onload = (e) => addImageToModal(e.target.result);
+        reader.readAsDataURL(file);
+      }
+    } catch (e) {
+      // Fallback to base64
+      const reader = new FileReader();
+      reader.onload = (ev) => addImageToModal(ev.target.result);
+      reader.readAsDataURL(file);
+    }
+  }
   decorFileInput.value = '';
 }
 

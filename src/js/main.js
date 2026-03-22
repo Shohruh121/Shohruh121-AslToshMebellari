@@ -347,13 +347,13 @@ function renderStones() {
   if (!stoneGrid) return;
   stoneGrid.innerHTML = '';
 
-  // Main page: show 12 stones (6 granit + 3 akril + 3 kvarts)
+  // Main page: show 6 stones (2 from each type: kvars, akril, granit)
   let displayStones;
   if (isMainPage) {
-    const granitStones = allStones.filter(s => s.type === 'granit').slice(0, 6);
-    const akrilStones = allStones.filter(s => s.type === 'akril').slice(0, 3);
-    const kvarsStones = allStones.filter(s => s.type === 'kvars').slice(0, 3);
-    displayStones = [...granitStones, ...akrilStones, ...kvarsStones];
+    const kvarsStones = allStones.filter(s => s.type === 'kvars').slice(0, 2);
+    const akrilStones = allStones.filter(s => s.type === 'akril').slice(0, 2);
+    const granitStones = allStones.filter(s => s.type === 'granit').slice(0, 2);
+    displayStones = [...kvarsStones, ...akrilStones, ...granitStones];
   } else {
     displayStones = allStones;
   }

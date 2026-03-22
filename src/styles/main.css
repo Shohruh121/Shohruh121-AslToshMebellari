@@ -1159,7 +1159,7 @@
 }
 
 .preloader-logo-img {
-  height: clamp(80px, 15vw, 150px);
+  height: clamp(120px, 25vw, 220px);
   width: auto;
   animation: pulseText 1.5s ease-in-out infinite;
 }

@@ -8,6 +8,7 @@
     { "source": "/sb/decor-update", "destination": "/api/sb-decor-update" },
     { "source": "/sb/decor-delete", "destination": "/api/sb-decor-delete" },
     { "source": "/sb/activity", "destination": "/api/sb-activity" },
+    { "source": "/sb/upload", "destination": "/api/sb-upload" },
     { "source": "/visualizer/:path*", "destination": "https://interstone.uz/visualizer/:path*" },
     { "source": "/front/:path*", "destination": "https://interstone.uz/front/:path*" },
     { "source": "/storage/:path*", "destination": "https://interstone.uz/storage/:path*" },

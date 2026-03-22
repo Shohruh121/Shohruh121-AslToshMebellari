@@ -182,6 +182,44 @@ export default defineConfig(({ mode }) => {
             }
           });
 
+          // POST /sb/upload?filename=xxx — upload file to Supabase Storage bucket "Tosh"
+          server.middlewares.use('/sb/upload', async (req, res) => {
+            if (req.method !== 'POST') { res.statusCode = 405; res.end('Method not allowed'); return; }
+            const chunks = [];
+            req.on('data', chunk => chunks.push(chunk));
+            req.on('end', async () => {
+              try {
+                const rawBody = Buffer.concat(chunks);
+                const contentType = req.headers['content-type'] || 'application/octet-stream';
+                const url = new URL(req.url, 'http://localhost');
+                const filename = url.searchParams.get('filename') || ('decor-' + Date.now() + '.jpg');
+                const uploadUrl = `${SB_URL}/storage/v1/object/Tosh/${filename}`;
+                const r = await fetch(uploadUrl, {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': contentType,
+                    'apikey': SB_KEY,
+                    'Authorization': `Bearer ${SB_KEY}`,
+                    'x-upsert': 'true'
+                  },
+                  body: rawBody
+                });
+                if (!r.ok) {
+                  const errText = await r.text();
+                  res.statusCode = r.status;
+                  res.end(JSON.stringify({ error: errText }));
+                  return;
+                }
+                const publicUrl = `${SB_URL}/storage/v1/object/public/Tosh/${filename}`;
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ ok: true, url: publicUrl }));
+              } catch (e) {
+                res.statusCode = 500;
+                res.end(JSON.stringify({ ok: false, error: e.message }));
+              }
+            });
+          });
+
           // ---- Telegram proxy endpoints ----
 
           // POST /tg/sendMessage — proxy text messages
