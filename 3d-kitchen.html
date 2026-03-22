@@ -526,11 +526,23 @@
 
       function loadVisualizer(slug, interiorId) {
         vizLoading.classList.remove('hidden');
+        vizContainer.innerHTML = '';
 
         // Fetch the visualizer page HTML via proxy
         fetch('/visualizer/' + slug)
-          .then(function(res) { return res.text(); })
+          .then(function(res) {
+            if (!res.ok) {
+              throw new Error('HTTP ' + res.status + ' ' + res.statusText);
+            }
+            return res.text();
+          })
           .then(function(html) {
+            if (!html || html.length < 100) {
+              vizContainer.innerHTML = '<p style="color:#c8a45c;padding:40px;text-align:center;">Vizualizator javob bermadi (empty response)</p>';
+              vizLoading.classList.add('hidden');
+              return;
+            }
+
             // Parse HTML
             var parser = new DOMParser();
             var doc = parser.parseFromString(html, 'text/html');
@@ -538,7 +550,11 @@
             // Extract only <main class="visual-container">
             var mainEl = doc.querySelector('main.visual-container');
             if (!mainEl) {
-              vizContainer.innerHTML = '<p style="color:red;padding:40px;">Vizualizator yuklanmadi</p>';
+              // Try alternative selectors
+              mainEl = doc.querySelector('.visual-container') || doc.querySelector('.visual');
+            }
+            if (!mainEl) {
+              vizContainer.innerHTML = '<p style="color:#c8a45c;padding:40px;text-align:center;">Vizualizator yuklanmadi<br><small style="color:#888;font-size:11px;">Response: ' + html.length + ' chars, no .visual-container found</small></p>';
               vizLoading.classList.add('hidden');
               return;
             }
