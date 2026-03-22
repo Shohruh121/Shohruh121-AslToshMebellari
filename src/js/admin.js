@@ -457,6 +457,23 @@ const decorEditId = document.getElementById('decorEditId');
 const decorInputName = document.getElementById('decorInputName');
 const decorInputType = document.getElementById('decorInputType');
 const decorInputCategory = document.getElementById('decorInputCategory');
+const decorInputDescUz = document.getElementById('decorInputDescUz');
+const decorInputDescRu = document.getElementById('decorInputDescRu');
+const decorInputSize = document.getElementById('decorInputSize');
+const decorInputOrigin = document.getElementById('decorInputOrigin');
+const decorInputThickness = document.getElementById('decorInputThickness');
+const decorInputFinish = document.getElementById('decorInputFinish');
+const decorInputFeatures = document.getElementById('decorInputFeatures');
+const decorInputApplications = document.getElementById('decorInputApplications');
+
+function arrToStr(arr) {
+  if (Array.isArray(arr)) return arr.join(', ');
+  return arr || '';
+}
+function strToArr(str) {
+  if (!str) return [];
+  return str.split(',').map(s => s.trim()).filter(Boolean);
+}
 
 function openAddModal() {
   decorModalTitle.textContent = 'Добавить декор';
@@ -464,6 +481,14 @@ function openAddModal() {
   decorInputName.value = '';
   decorInputType.value = '';
   decorInputCategory.value = '';
+  decorInputDescUz.value = '';
+  decorInputDescRu.value = '';
+  decorInputSize.value = '';
+  decorInputOrigin.value = '';
+  decorInputThickness.value = '';
+  decorInputFinish.value = '';
+  decorInputFeatures.value = '';
+  decorInputApplications.value = '';
   modalImages = [];
   renderModalImages();
   imgInputArea.style.display = 'none';
@@ -478,6 +503,14 @@ function openEditModal(idx) {
   decorInputName.value = d.name || '';
   decorInputType.value = d.type || '';
   decorInputCategory.value = d.category || '';
+  decorInputDescUz.value = d.description_uz || '';
+  decorInputDescRu.value = d.description_ru || '';
+  decorInputSize.value = d.size || '';
+  decorInputOrigin.value = d.origin || '';
+  decorInputThickness.value = arrToStr(d.thickness);
+  decorInputFinish.value = arrToStr(d.finish);
+  decorInputFeatures.value = arrToStr(d.features);
+  decorInputApplications.value = arrToStr(d.applications);
   modalImages = getDecorImages(d).slice(0, MAX_IMAGES);
   renderModalImages();
   imgInputArea.style.display = 'none';
@@ -509,7 +542,15 @@ document.getElementById('decorModalSave').addEventListener('click', async () => 
     type: decorInputType.value || '',
     category: decorInputCategory.value || '',
     images: modalImages.slice(),
-    thumbnail: modalImages[0]
+    thumbnail: modalImages[0],
+    description_uz: decorInputDescUz.value.trim(),
+    description_ru: decorInputDescRu.value.trim(),
+    size: decorInputSize.value.trim(),
+    origin: decorInputOrigin.value.trim(),
+    thickness: strToArr(decorInputThickness.value),
+    finish: strToArr(decorInputFinish.value),
+    features: strToArr(decorInputFeatures.value),
+    applications: strToArr(decorInputApplications.value)
   };
 
   try {
