@@ -8,6 +8,7 @@
     { "source": "/sb/decor-update", "destination": "/api/sb-decor-update" },
     { "source": "/sb/decor-delete", "destination": "/api/sb-decor-delete" },
     { "source": "/sb/activity", "destination": "/api/sb-activity" },
-    { "source": "/sb/upload", "destination": "/api/sb-upload" }
+    { "source": "/sb/upload", "destination": "/api/sb-upload" },
+    { "source": "/sb/config", "destination": "/api/sb-config" }
   ]
 }

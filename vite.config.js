@@ -227,6 +227,54 @@ export default defineConfig(({ mode }) => {
             });
           });
 
+          // GET/POST /sb/config — site config (featured_ids etc.)
+          server.middlewares.use('/sb/config', async (req, res) => {
+            if (req.method === 'GET') {
+              try {
+                const r = await fetch(`${SB_URL}/rest/v1/site_config?key=eq.featured_ids&limit=1`, {
+                  headers: { 'apikey': SB_KEY, 'Authorization': `Bearer ${SB_KEY}` }
+                });
+                const data = await r.json();
+                res.setHeader('Content-Type', 'application/json');
+                if (Array.isArray(data) && data.length > 0) {
+                  res.end(JSON.stringify(data[0]));
+                } else {
+                  res.end(JSON.stringify({ key: 'featured_ids', value: [] }));
+                }
+              } catch (e) {
+                res.statusCode = 500;
+                res.end(JSON.stringify({ error: e.message }));
+              }
+            } else if (req.method === 'POST') {
+              let body = '';
+              req.on('data', chunk => { body += chunk; });
+              req.on('end', async () => {
+                try {
+                  const parsed = JSON.parse(body);
+                  const r = await fetch(`${SB_URL}/rest/v1/site_config?on_conflict=key`, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                      'apikey': SB_KEY,
+                      'Authorization': `Bearer ${SB_KEY}`,
+                      'Prefer': 'resolution=merge-duplicates,return=representation'
+                    },
+                    body: JSON.stringify({ key: 'featured_ids', value: parsed.value || [] })
+                  });
+                  const data = await r.json();
+                  res.setHeader('Content-Type', 'application/json');
+                  res.end(JSON.stringify(Array.isArray(data) ? data[0] : data));
+                } catch (e) {
+                  res.statusCode = 500;
+                  res.end(JSON.stringify({ error: e.message }));
+                }
+              });
+            } else {
+              res.statusCode = 405;
+              res.end('Method not allowed');
+            }
+          });
+
           // ---- Telegram proxy endpoints ----
 
           // POST /tg/sendMessage — proxy text messages

@@ -314,9 +314,20 @@ function createStoneCard(stone, index) {
 }
 
 let allStones = [...stones];
-let homeFeatured = []; // Bosh sahifa uchun featured dekorlar
+let homeFeaturedIds = []; // Bosh sahifa uchun featured dekor ID lari (site_config dan)
 
 async function loadExtraStones() {
+  // Load featured IDs from Supabase site_config
+  try {
+    const cfgRes = await fetch('/sb/config');
+    if (cfgRes.ok) {
+      const cfg = await cfgRes.json();
+      homeFeaturedIds = Array.isArray(cfg.value) ? cfg.value : [];
+    }
+  } catch (e) {
+    console.error('Error loading featured config:', e);
+  }
+
   try {
     const response = await fetch('/granistone_all.json');
     if (response.ok) {
@@ -368,8 +379,6 @@ async function loadExtraStones() {
             featured: d.featured === true
           };
         });
-        // Collect featured decors for homepage
-        homeFeatured = formatted.filter(d => d.featured === true);
         // Add all Supabase decors to catalog list
         allStones = [...formatted, ...allStones];
         renderStones();
@@ -387,10 +396,14 @@ function renderStones() {
   // Main page: show featured decors (admin tanlagan), fallback to 2 per type
   let displayStones;
   if (isMainPage) {
-    // Use homeFeatured if loaded from Supabase, otherwise fallback
-    if (homeFeatured.length > 0) {
-      displayStones = homeFeatured.slice(0, 6);
-    } else {
+    if (homeFeaturedIds.length > 0) {
+      // Filter allStones by featured IDs, preserving order
+      const featured = homeFeaturedIds
+        .map(id => allStones.find(s => s.id === id))
+        .filter(Boolean);
+      displayStones = featured.length > 0 ? featured.slice(0, 6) : null;
+    }
+    if (!displayStones) {
       const kvarsStones = allStones.filter(s => s.type === 'kvars').slice(0, 2);
       const akrilStones = allStones.filter(s => s.type === 'akril').slice(0, 2);
       const granitStones = allStones.filter(s => s.type === 'granit').slice(0, 2);

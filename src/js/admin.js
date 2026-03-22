@@ -28,6 +28,7 @@ async function showApp() {
   loginScreen.classList.add('hidden');
   appLayout.classList.remove('locked');
   try { await initDashboard(); } catch (e) { console.error('initDashboard error:', e); }
+  try { await loadFeaturedIds(); } catch (e) { console.error('loadFeaturedIds error:', e); }
   try { await loadDecors(); } catch (e) { console.error('loadDecors error:', e); }
 }
 function hideApp() {
@@ -187,7 +188,6 @@ async function loadDecors() {
   grid.innerHTML = '<p style="color:#c8a45c;padding:2rem;text-align:center;">Yuklanmoqda...</p>';
 
   // 1) Load stones.json (katalog dekorlari)
-  const featuredJson = JSON.parse(localStorage.getItem('featuredDecors') || '{}');
   try {
     const res = await fetch('/stones.json');
     console.log('stones.json status:', res.status);
@@ -197,7 +197,6 @@ async function loadDecors() {
       if (Array.isArray(stones)) {
         allDecors = stones.map(d => ({
           ...d,
-          featured: featuredJson[d.id] === true,
           _source: 'json'
         }));
       }
@@ -279,7 +278,7 @@ function renderDecorGrid() {
     const imgCount = getDecorImages(d).length;
     const typeBadge = d.type ? `<div class="d-type">${d.type}</div>` : '';
     const imgBadge = imgCount > 1 ? `<div class="img-count-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>${imgCount}</div>` : '';
-    const isFeatured = d.featured === true;
+    const isFeatured = isDecorFeatured(d);
     const starClass = isFeatured ? ' featured-active' : '';
     const starTitle = isFeatured ? 'Bosh sahifadan olib tashlash' : 'Bosh sahifaga chiqarish';
     return `<div class="decor-card${isFeatured ? ' card-featured' : ''}">
@@ -352,41 +351,59 @@ function renderPagination(totalPages, total) {
 }
 
 // ========== FEATURED TOGGLE ==========
+let featuredIds = []; // Supabase site_config dan yuklanadi
+
+async function loadFeaturedIds() {
+  try {
+    const res = await fetch('/sb/config');
+    if (res.ok) {
+      const data = await res.json();
+      featuredIds = Array.isArray(data.value) ? data.value : [];
+    }
+  } catch (e) {
+    console.error('loadFeaturedIds error:', e);
+    featuredIds = [];
+  }
+}
+
+async function saveFeaturedIds() {
+  try {
+    await fetch('/sb/config', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ value: featuredIds })
+    });
+  } catch (e) {
+    console.error('saveFeaturedIds error:', e);
+    showToast('Featured saqlashda xatolik', 'error');
+  }
+}
+
+function isDecorFeatured(d) {
+  return featuredIds.includes(d.id);
+}
+
 async function toggleFeatured(idx) {
   const d = allDecors[idx];
   if (!d) return;
-  const newVal = !d.featured;
 
-  if (d._source === 'supabase') {
-    // Update in Supabase
-    try {
-      await fetch('/sb/decor-update?id=' + d.id, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ featured: newVal })
-      });
-    } catch (e) {
-      console.error('Featured toggle error:', e);
-      showToast('Xatolik yuz berdi', 'error');
+  const isFeat = featuredIds.includes(d.id);
+  if (isFeat) {
+    featuredIds = featuredIds.filter(x => x !== d.id);
+  } else {
+    if (featuredIds.length >= 6) {
+      showToast('Maksimum 6 ta dekor tanlash mumkin!', 'error');
       return;
     }
-  } else {
-    // stones.json dekor — featured holatini localStorage da saqlash
-    const featuredJson = JSON.parse(localStorage.getItem('featuredDecors') || '{}');
-    if (newVal) {
-      featuredJson[d.id] = true;
-    } else {
-      delete featuredJson[d.id];
-    }
-    localStorage.setItem('featuredDecors', JSON.stringify(featuredJson));
+    featuredIds.push(d.id);
   }
 
-  d.featured = newVal;
-  const featuredCount = allDecors.filter(x => x.featured === true).length;
-  if (newVal) {
-    showToast(`Bosh sahifaga qo'shildi (${featuredCount}/6)`);
+  await saveFeaturedIds();
+
+  if (!isFeat) {
+    showToast(`Bosh sahifaga qo'shildi (${featuredIds.length}/6)`);
   } else {
-    showToast(`Bosh sahifadan olib tashlandi (${featuredCount}/6)`);
+    showToast(`Bosh sahifadan olib tashlandi (${featuredIds.length}/6)`);
   }
   renderDecorGrid();
 }
