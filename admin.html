@@ -185,6 +185,13 @@
         }
         .d-btn:hover { background: var(--accent); color: #000; border-color: var(--accent); }
         .d-btn.del:hover { background: var(--danger); color: #fff; border-color: var(--danger); }
+        .d-btn.featured-active { background: rgba(200,164,92,0.15); border-color: var(--accent); color: var(--accent); }
+        .card-featured { border-color: var(--accent) !important; box-shadow: 0 0 12px rgba(200,164,92,0.15); }
+        .featured-badge {
+            position: absolute; top: 6px; left: 6px; background: var(--accent); color: #000;
+            font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 3px;
+            text-transform: uppercase; letter-spacing: 0.5px; z-index: 2;
+        }
 
         /* Pagination */
         .pagination { display: flex; justify-content: center; align-items: center; gap: 0.5rem; margin-top: 2rem; }

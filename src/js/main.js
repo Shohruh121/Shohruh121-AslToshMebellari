@@ -361,7 +361,8 @@ async function loadExtraStones() {
           origin: d.origin || '',
           applications: Array.isArray(d.applications) ? d.applications : [],
           description_uz: d.description_uz || '',
-          description_ru: d.description_ru || ''
+          description_ru: d.description_ru || '',
+          featured: d.featured === true
         }));
         // Add Supabase decors at the beginning
         allStones = [...formatted, ...allStones];
@@ -377,13 +378,18 @@ function renderStones() {
   if (!stoneGrid) return;
   stoneGrid.innerHTML = '';
 
-  // Main page: show 6 stones (2 from each type: kvars, akril, granit)
+  // Main page: show featured decors (admin tanlagan), fallback to 2 per type
   let displayStones;
   if (isMainPage) {
-    const kvarsStones = allStones.filter(s => s.type === 'kvars').slice(0, 2);
-    const akrilStones = allStones.filter(s => s.type === 'akril').slice(0, 2);
-    const granitStones = allStones.filter(s => s.type === 'granit').slice(0, 2);
-    displayStones = [...kvarsStones, ...akrilStones, ...granitStones];
+    const featured = allStones.filter(s => s.featured === true);
+    if (featured.length > 0) {
+      displayStones = featured.slice(0, 6);
+    } else {
+      const kvarsStones = allStones.filter(s => s.type === 'kvars').slice(0, 2);
+      const akrilStones = allStones.filter(s => s.type === 'akril').slice(0, 2);
+      const granitStones = allStones.filter(s => s.type === 'granit').slice(0, 2);
+      displayStones = [...kvarsStones, ...akrilStones, ...granitStones];
+    }
   } else {
     displayStones = allStones;
   }

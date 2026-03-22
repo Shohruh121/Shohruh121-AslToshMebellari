@@ -187,6 +187,7 @@ async function loadDecors() {
   grid.innerHTML = '<p style="color:#c8a45c;padding:2rem;text-align:center;">Yuklanmoqda...</p>';
 
   // 1) Load stones.json (katalog dekorlari)
+  const featuredJson = JSON.parse(localStorage.getItem('featuredDecors') || '{}');
   try {
     const res = await fetch('/stones.json');
     console.log('stones.json status:', res.status);
@@ -196,6 +197,7 @@ async function loadDecors() {
       if (Array.isArray(stones)) {
         allDecors = stones.map(d => ({
           ...d,
+          featured: featuredJson[d.id] === true,
           _source: 'json'
         }));
       }
@@ -277,15 +279,22 @@ function renderDecorGrid() {
     const imgCount = getDecorImages(d).length;
     const typeBadge = d.type ? `<div class="d-type">${d.type}</div>` : '';
     const imgBadge = imgCount > 1 ? `<div class="img-count-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>${imgCount}</div>` : '';
-    return `<div class="decor-card">
+    const isFeatured = d.featured === true;
+    const starClass = isFeatured ? ' featured-active' : '';
+    const starTitle = isFeatured ? 'Bosh sahifadan olib tashlash' : 'Bosh sahifaga chiqarish';
+    return `<div class="decor-card${isFeatured ? ' card-featured' : ''}">
       <div class="decor-thumb" style="position:relative;">
         <img src="${thumb}" alt="${d.name}" onerror="this.src='https://placehold.co/200x200/1a1a1a/555?text=No+Image'" loading="lazy">
         ${imgBadge}
+        ${isFeatured ? '<div class="featured-badge">Bosh sahifa</div>' : ''}
       </div>
       <div class="decor-body">
         <div class="d-name" title="${d.name}">${d.name}</div>
         ${typeBadge}
         <div class="d-actions">
+          <button class="d-btn${starClass}" data-featured="${realIdx}" title="${starTitle}">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="${isFeatured ? '#c8a45c' : 'none'}" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </button>
           <button class="d-btn" data-edit="${realIdx}" title="Редактировать">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
           </button>
@@ -299,6 +308,9 @@ function renderDecorGrid() {
 
   renderPagination(totalPages, total);
 
+  grid.querySelectorAll('[data-featured]').forEach(btn => {
+    btn.addEventListener('click', () => toggleFeatured(parseInt(btn.dataset.featured)));
+  });
   grid.querySelectorAll('[data-edit]').forEach(btn => {
     btn.addEventListener('click', () => openEditModal(parseInt(btn.dataset.edit)));
   });
@@ -337,6 +349,46 @@ function renderPagination(totalPages, total) {
       }
     });
   });
+}
+
+// ========== FEATURED TOGGLE ==========
+async function toggleFeatured(idx) {
+  const d = allDecors[idx];
+  if (!d) return;
+  const newVal = !d.featured;
+
+  if (d._source === 'supabase') {
+    // Update in Supabase
+    try {
+      await fetch('/sb/decor-update?id=' + d.id, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ featured: newVal })
+      });
+    } catch (e) {
+      console.error('Featured toggle error:', e);
+      showToast('Xatolik yuz berdi', 'error');
+      return;
+    }
+  } else {
+    // stones.json dekor — featured holatini localStorage da saqlash
+    const featuredJson = JSON.parse(localStorage.getItem('featuredDecors') || '{}');
+    if (newVal) {
+      featuredJson[d.id] = true;
+    } else {
+      delete featuredJson[d.id];
+    }
+    localStorage.setItem('featuredDecors', JSON.stringify(featuredJson));
+  }
+
+  d.featured = newVal;
+  const featuredCount = allDecors.filter(x => x.featured === true).length;
+  if (newVal) {
+    showToast(`Bosh sahifaga qo'shildi (${featuredCount}/6)`);
+  } else {
+    showToast(`Bosh sahifadan olib tashlandi (${featuredCount}/6)`);
+  }
+  renderDecorGrid();
 }
 
 // Search & Filter
