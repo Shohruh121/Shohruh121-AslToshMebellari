@@ -192,6 +192,14 @@
       border-radius: 6px;
     }
 
+    /* Hide ALL preloader elements from interstone.uz inside vizContainer */
+    #vizContainer .preloader,
+    #vizContainer .site-preloader,
+    #vizContainer [class*="preloader"],
+    #vizContainerWrap .viz-loading-overlay.hidden {
+      display: none !important;
+    }
+
     /* Used material popup */
     .used-material_popup {
       background: #fff !important;
@@ -212,6 +220,7 @@
     .viz-loading-overlay.hidden {
       opacity: 0;
       pointer-events: none;
+      display: none !important;
     }
     .viz-loading-overlay .spinner {
       color: #c8a45c;
@@ -589,9 +598,6 @@
             // Insert into page
             vizContainer.innerHTML = '';
             vizContainer.appendChild(mainEl);
-
-            // Hide loading overlay — HTML is loaded
-            vizLoading.classList.add('hidden');
 
             // Show our footer
             var ourFooter = document.getElementById('ourFooter');
