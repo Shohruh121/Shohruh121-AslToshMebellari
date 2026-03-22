@@ -773,7 +773,6 @@
         }
 
         function generate(params) {
-          show_preloader();
           fetch(route_generate + '?lang=ru&' + params, {
             method: 'get', cache: 'no-cache',
             headers: { 'X-Requested-With': 'XMLHttpRequest' }
@@ -792,7 +791,8 @@
 
               fill_used_materials_popup(params);
               set_share_links(params);
-              hide_preloader();
+              // Hide initial loading overlay only (no preloader flash on stone select)
+              vizLoading.classList.add('hidden');
             }
           })
           .catch(function(e) { console.log(e); });
