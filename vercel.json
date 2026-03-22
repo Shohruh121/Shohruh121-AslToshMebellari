@@ -9,10 +9,10 @@
     { "source": "/sb/decor-delete", "destination": "/api/sb-decor-delete" },
     { "source": "/sb/activity", "destination": "/api/sb-activity" },
     { "source": "/sb/upload", "destination": "/api/sb-upload" },
-    { "source": "/visualizer/:path*", "destination": "/api/interstone-proxy?path=visualizer/:path*" },
-    { "source": "/front/:path*", "destination": "/api/interstone-proxy?path=front/:path*" },
-    { "source": "/storage/:path*", "destination": "/api/interstone-proxy?path=storage/:path*" },
-    { "source": "/media/:path*", "destination": "/api/interstone-proxy?path=media/:path*" },
-    { "source": "/iapi/:path*", "destination": "/api/interstone-proxy?path=api/:path*" }
+    { "source": "/visualizer/:path*", "destination": "/api/proxy/visualizer/:path*" },
+    { "source": "/front/:path*", "destination": "/api/proxy/front/:path*" },
+    { "source": "/storage/:path*", "destination": "/api/proxy/storage/:path*" },
+    { "source": "/media/:path*", "destination": "/api/proxy/media/:path*" },
+    { "source": "/iapi/:path*", "destination": "/api/proxy/api/:path*" }
   ]
 }

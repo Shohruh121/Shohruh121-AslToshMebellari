@@ -3,16 +3,18 @@ export const config = {
 };
 
 export default async function handler(req, res) {
-  // Extract path from query - Vercel passes it via ?path=...
-  let proxyPath = req.query.path || '';
-  // Also append any extra query params (like lang=ru&area=...)
+  // req.query.path is an array of path segments from [...path]
+  const pathSegments = req.query.path || [];
+  const proxyPath = pathSegments.join('/');
+
+  // Build query string from remaining params (exclude 'path')
   const url = new URL(req.url, 'http://localhost');
-  const extraParams = [];
+  const params = [];
   for (const [key, val] of url.searchParams) {
-    if (key !== 'path') extraParams.push(key + '=' + encodeURIComponent(val));
+    if (key !== 'path') params.push(key + '=' + val);
   }
   let targetUrl = 'https://interstone.uz/' + proxyPath;
-  if (extraParams.length) targetUrl += (targetUrl.includes('?') ? '&' : '?') + extraParams.join('&');
+  if (params.length) targetUrl += '?' + params.join('&');
 
   try {
     const headers = {
@@ -25,14 +27,14 @@ export default async function handler(req, res) {
     }
 
     const response = await fetch(targetUrl, { headers });
-
     const contentType = response.headers.get('content-type') || 'application/octet-stream';
     res.setHeader('Content-Type', contentType);
     res.setHeader('Cache-Control', 'public, max-age=300');
+    res.setHeader('Access-Control-Allow-Origin', '*');
 
     const buffer = Buffer.from(await response.arrayBuffer());
     res.status(response.status).send(buffer);
   } catch (e) {
-    res.status(500).json({ error: e.message, url: targetUrl });
+    res.status(500).json({ error: e.message, targetUrl });
   }
 }
