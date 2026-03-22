@@ -8,11 +8,6 @@
     { "source": "/sb/decor-update", "destination": "/api/sb-decor-update" },
     { "source": "/sb/decor-delete", "destination": "/api/sb-decor-delete" },
     { "source": "/sb/activity", "destination": "/api/sb-activity" },
-    { "source": "/sb/upload", "destination": "/api/sb-upload" },
-    { "source": "/visualizer/:path*", "destination": "/api/proxy/visualizer/:path*" },
-    { "source": "/front/:path*", "destination": "/api/proxy/front/:path*" },
-    { "source": "/storage/:path*", "destination": "/api/proxy/storage/:path*" },
-    { "source": "/media/:path*", "destination": "/api/proxy/media/:path*" },
-    { "source": "/iapi/:path*", "destination": "/api/proxy/api/:path*" }
+    { "source": "/sb/upload", "destination": "/api/sb-upload" }
   ]
 }
