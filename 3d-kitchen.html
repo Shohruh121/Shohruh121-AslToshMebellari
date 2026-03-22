@@ -595,9 +595,17 @@
             var tab3 = mainEl.querySelector('#tab3');
             if (tab3) tab3.style.display = 'none';
 
+            // Hide any preloader elements inside fetched HTML
+            mainEl.querySelectorAll('.preloader, .site-preloader, [class*="preloader"]').forEach(function(el) {
+              el.style.display = 'none';
+            });
+
             // Insert into page
             vizContainer.innerHTML = '';
             vizContainer.appendChild(mainEl);
+
+            // Hide loading overlay immediately after content is inserted
+            vizLoading.classList.add('hidden');
 
             // Show our footer
             var ourFooter = document.getElementById('ourFooter');
