@@ -572,13 +572,21 @@
       // ========== VISUALIZER LOADING ==========
       var vizContainer = $('#vizContainer');
       var vizLoading = $('#vizLoadingOverlay');
+      var currentAbortController = null;
 
       function loadVisualizer(slug, interiorId) {
+        // Cancel any previous fetch
+        if (currentAbortController) {
+          currentAbortController.abort();
+        }
+        currentAbortController = new AbortController();
+        var signal = currentAbortController.signal;
+
         vizLoading.classList.remove('hidden');
         vizContainer.innerHTML = '';
 
         // Fetch the visualizer page HTML via proxy
-        fetch('/visualizer/' + slug)
+        fetch('/visualizer/' + slug, { signal: signal })
           .then(function(res) {
             if (!res.ok) {
               throw new Error('HTTP ' + res.status + ' ' + res.statusText);
@@ -655,8 +663,9 @@
             runVisualizerLogic(interiorId);
           })
           .catch(function(err) {
+            if (err.name === 'AbortError') return; // Tab switched, ignore
             console.error('Vizualizator yuklashda xatolik:', err);
-            vizContainer.innerHTML = '<p style="color:red;padding:40px;">Xatolik: ' + err.message + '</p>';
+            vizContainer.innerHTML = '<p style="color:#c8a45c;padding:40px;text-align:center;">Xatolik: ' + err.message + '</p>';
             vizLoading.classList.add('hidden');
           });
       }
