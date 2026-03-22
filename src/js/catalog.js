@@ -309,7 +309,7 @@ function openStoneModal(stone) {
           </div>
         `).join('')}
       </div>
-      ${!(stone.type === 'granit' && String(stone.id).startsWith('extra-')) ? `
+      ${!(stone.type === 'granit' && String(stone.id).startsWith('extra-') && stone.images.length <= 1) ? `
       <button class="absolute top-3 right-3 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/50 backdrop-blur-sm border border-white/20 text-white/80 hover:text-white hover:bg-black/70 transition-all cursor-pointer" id="fullscreenBtn" title="${currentLang === 'ru' ? 'Увеличить' : 'Kattalashtirish'}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
       </button>
@@ -476,10 +476,16 @@ function openStoneModal(stone) {
     fullscreenDots.forEach((d, i) => d.classList.toggle('active', i === fsSlide));
   }
 
+  const isOldGranit = stone.type === 'granit' && String(stone.id).startsWith('extra-');
   const fullscreenBtn = document.getElementById('fullscreenBtn');
   if (fullscreenBtn) {
     fullscreenBtn.addEventListener('click', () => {
-      fsSlide = currentSlide;
+      // Eski granit dekorlar: 2-rasmdan (index 1) boshlash (1-rasmda logo bor)
+      if (isOldGranit && stone.images.length > 1) {
+        fsSlide = 1;
+      } else {
+        fsSlide = currentSlide;
+      }
       goToFsSlide(fsSlide);
       fullscreenOverlay.classList.add('active');
     });
