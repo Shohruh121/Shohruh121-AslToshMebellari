@@ -761,6 +761,38 @@ if (loaded) {
   console.error('Failed to load stones data');
 }
 
+// Load admin-added decors from Supabase
+try {
+  var sbRes = await fetch('/sb/decors');
+  if (sbRes.ok) {
+    var sbDecors = await sbRes.json();
+    if (Array.isArray(sbDecors) && sbDecors.length > 0) {
+      var formatted = sbDecors.map(function(d) {
+        return {
+          id: 'sb-' + d.id,
+          name: d.name || '',
+          type: d.type || '',
+          category: d.category || '',
+          thumbnail: d.thumbnail || (Array.isArray(d.images) ? d.images[0] : ''),
+          images: Array.isArray(d.images) ? d.images : (typeof d.images === 'string' ? JSON.parse(d.images) : []),
+          features: Array.isArray(d.features) ? d.features : [],
+          thickness: Array.isArray(d.thickness) ? d.thickness : [],
+          finish: Array.isArray(d.finish) ? d.finish : [],
+          origin: d.origin || '',
+          applications: Array.isArray(d.applications) ? d.applications : [],
+          size: d.size || '',
+          description_uz: d.description_uz || '',
+          description_ru: d.description_ru || ''
+        };
+      });
+      allStones = formatted.concat(allStones);
+      renderStones();
+    }
+  }
+} catch (err) {
+  console.error('Error loading Supabase decors:', err);
+}
+
 // Apply saved language
 if (currentLang !== 'ru') {
   switchLanguage(currentLang);
