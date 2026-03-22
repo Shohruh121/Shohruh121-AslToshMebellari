@@ -24,11 +24,11 @@ const pageTitle = document.getElementById('pageTitle');
 function isLoggedIn() {
   return sessionStorage.getItem(STORAGE_KEY_AUTH) === 'true';
 }
-function showApp() {
+async function showApp() {
   loginScreen.classList.add('hidden');
   appLayout.classList.remove('locked');
-  initDashboard();
-  loadDecors();
+  try { await initDashboard(); } catch (e) { console.error('initDashboard error:', e); }
+  try { await loadDecors(); } catch (e) { console.error('loadDecors error:', e); }
 }
 function hideApp() {
   loginScreen.classList.remove('hidden');
@@ -183,12 +183,16 @@ let modalImages = []; // current images being edited in modal
 
 async function loadDecors() {
   allDecors = [];
+  const grid = document.getElementById('decorGrid');
+  grid.innerHTML = '<p style="color:#c8a45c;padding:2rem;text-align:center;">Yuklanmoqda...</p>';
 
   // 1) Load stones.json (katalog dekorlari)
   try {
     const res = await fetch('/stones.json');
+    console.log('stones.json status:', res.status);
     if (res.ok) {
       const stones = await res.json();
+      console.log('stones.json loaded:', stones.length, 'items');
       if (Array.isArray(stones)) {
         allDecors = stones.map(d => ({
           ...d,
@@ -203,8 +207,10 @@ async function loadDecors() {
   // 2) Load Supabase decors (admin qo'shgan dekorlar)
   try {
     const res = await fetch('/sb/decors');
+    console.log('sb/decors status:', res.status);
     if (res.ok) {
       const data = await res.json();
+      console.log('sb/decors loaded:', Array.isArray(data) ? data.length + ' items' : data);
       if (Array.isArray(data)) {
         const sbDecors = data.map(d => ({
           ...d,
@@ -216,16 +222,20 @@ async function loadDecors() {
           applications: typeof d.applications === 'string' ? JSON.parse(d.applications) : (d.applications || []),
           _source: 'supabase'
         }));
-        // Supabase dekorlar boshiga qo'shiladi
         allDecors = [...sbDecors, ...allDecors];
       }
+    } else {
+      const errText = await res.text();
+      console.error('sb/decors error response:', errText);
     }
   } catch (e) {
     console.error('Supabase decors load error:', e);
   }
 
+  console.log('Total allDecors:', allDecors.length);
+
   if (allDecors.length === 0) {
-    document.getElementById('decorGrid').innerHTML = '<p style="color:#ef4444;padding:2rem;text-align:center;">Ma\'lumotlarni yuklashda xatolik</p>';
+    grid.innerHTML = '<p style="color:#ef4444;padding:2rem;text-align:center;">Dekorlar topilmadi. Supabase va stones.json tekshiring.</p>';
   }
   applyFilters();
   updateDecorCount();

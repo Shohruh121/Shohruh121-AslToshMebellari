@@ -2,11 +2,21 @@ export default async function handler(req, res) {
   const SB_URL = process.env.VITE_SUPABASE_URL;
   const SB_KEY = process.env.VITE_SUPABASE_ANON_KEY;
 
+  if (!SB_URL || !SB_KEY) {
+    res.status(500).json({ error: 'Missing VITE_SUPABASE_URL or VITE_SUPABASE_ANON_KEY env vars' });
+    return;
+  }
+
   if (req.method === 'GET') {
     try {
       const r = await fetch(`${SB_URL}/rest/v1/decors?order=created_at.desc&limit=5000`, {
         headers: { 'apikey': SB_KEY, 'Authorization': `Bearer ${SB_KEY}` }
       });
+      if (!r.ok) {
+        const errText = await r.text();
+        res.status(r.status).json({ error: errText });
+        return;
+      }
       const data = await r.json();
       res.status(200).json(data);
     } catch (e) {
