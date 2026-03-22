@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    { "source": "/tg/sendMessage", "destination": "/api/tg-send-message" },
+    { "source": "/tg/sendPhoto", "destination": "/api/tg-send-photo" },
+    { "source": "/sb/increment-visitor", "destination": "/api/sb-increment-visitor" },
+    { "source": "/sb/visitors", "destination": "/api/sb-visitors" },
+    { "source": "/sb/decors", "destination": "/api/sb-decors" },
+    { "source": "/sb/decor-update", "destination": "/api/sb-decor-update" },
+    { "source": "/sb/decor-delete", "destination": "/api/sb-decor-delete" },
+    { "source": "/sb/activity", "destination": "/api/sb-activity" },
+    { "source": "/visualizer/:path*", "destination": "https://interstone.uz/visualizer/:path*" },
+    { "source": "/front/:path*", "destination": "https://interstone.uz/front/:path*" },
+    { "source": "/storage/:path*", "destination": "https://interstone.uz/storage/:path*" },
+    { "source": "/media/:path*", "destination": "https://interstone.uz/media/:path*" },
+    { "source": "/iapi/:path*", "destination": "https://interstone.uz/api/:path*" }
+  ]
+}

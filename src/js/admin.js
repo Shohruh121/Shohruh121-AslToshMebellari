@@ -1,199 +1,517 @@
+// ============================================================
+// Admin Panel — Asl Tosh Mebellari
+// Login, Visitor Analytics, Decor CRUD via Supabase proxy
+// Multi-image support (up to 10 images per decor)
+// Data source: stones.json (same as catalog page)
+// ============================================================
 
-// Admin Panel Logic for Asl Tosh Mebellari
+// ---- CONFIG ----
+const ADMIN_USER = 'admin';
+const ADMIN_PASS = 'asltosh2026';
+const STORAGE_KEY_AUTH = 'aslToshAuth';
+const PER_PAGE = 30;
+const MAX_IMAGES = 10;
 
-const sidebarItems = document.querySelectorAll('.nav-item');
-const sections = document.querySelectorAll('.section-content');
-const decorContainer = document.getElementById('decor-container');
-const decorModal = document.getElementById('decor-modal');
-const modalTitle = document.getElementById('modal-title');
-const decorForm = document.getElementById('decor-form');
-const addDecorBtn = document.getElementById('add-decor-btn');
-const closeModalBtn = document.getElementById('close-modal');
+// ---- DOM ----
+const loginScreen = document.getElementById('loginScreen');
+const appLayout = document.getElementById('appLayout');
+const loginForm = document.getElementById('loginForm');
+const loginError = document.getElementById('loginError');
+const logoutBtn = document.getElementById('logoutBtn');
+const pageTitle = document.getElementById('pageTitle');
 
-let decors = [];
+// ========== AUTH ==========
+function isLoggedIn() {
+  return sessionStorage.getItem(STORAGE_KEY_AUTH) === 'true';
+}
+function showApp() {
+  loginScreen.classList.add('hidden');
+  appLayout.classList.remove('locked');
+  initDashboard();
+  loadDecors();
+}
+function hideApp() {
+  loginScreen.classList.remove('hidden');
+  appLayout.classList.add('locked');
+  sessionStorage.removeItem(STORAGE_KEY_AUTH);
+}
+if (isLoggedIn()) showApp();
 
-// Navigation
-sidebarItems.forEach(item => {
-    item.addEventListener('click', () => {
-        const sectionId = item.getAttribute('data-section');
-        
-        // Update active nav
-        sidebarItems.forEach(i => i.classList.remove('active'));
-        item.classList.add('active');
-        
-        // Show section
-        sections.forEach(s => {
-            s.classList.remove('active');
-            if (s.id === sectionId) s.classList.add('active');
-        });
+loginForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const user = document.getElementById('loginUser').value.trim();
+  const pass = document.getElementById('loginPass').value;
+  if (user === ADMIN_USER && pass === ADMIN_PASS) {
+    sessionStorage.setItem(STORAGE_KEY_AUTH, 'true');
+    loginError.style.display = 'none';
+    showApp();
+  } else {
+    loginError.style.display = 'block';
+  }
+});
+
+logoutBtn.addEventListener('click', () => hideApp());
+
+// ========== NAVIGATION ==========
+const sidebarLinks = document.querySelectorAll('.sidebar-link[data-page]');
+const navPages = { dashboard: 'pageDashboard', decors: 'pageDecors' };
+const pageTitles = { dashboard: 'Дашборд', decors: 'Управление декорами' };
+
+sidebarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const pg = link.dataset.page;
+    sidebarLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    Object.values(navPages).forEach(id => document.getElementById(id).classList.remove('active'));
+    document.getElementById(navPages[pg]).classList.add('active');
+    pageTitle.textContent = pageTitles[pg] || 'Admin';
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('sidebarOverlay').classList.remove('active');
+  });
+});
+
+// Mobile sidebar
+document.getElementById('mobileToggle').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebarOverlay').classList.toggle('active');
+});
+document.getElementById('sidebarOverlay').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebarOverlay').classList.remove('active');
+});
+
+// ========== TOAST ==========
+function showToast(msg, type = 'success') {
+  const toast = document.getElementById('adminToast');
+  const text = document.getElementById('toastText');
+  const icon = document.getElementById('toastIcon');
+  text.textContent = msg;
+  toast.className = 'admin-toast show ' + type;
+  icon.setAttribute('stroke', type === 'success' ? '#22c55e' : '#ef4444');
+  setTimeout(() => { toast.classList.remove('show'); }, 3000);
+}
+
+// ========== HELPERS ==========
+function getDecorImages(d) {
+  if (Array.isArray(d.images) && d.images.length > 0) return d.images;
+  if (d.thumbnail) return [d.thumbnail];
+  if (d.img) return [d.img];
+  return [];
+}
+function getDecorThumb(d) {
+  return d.thumbnail || (Array.isArray(d.images) && d.images[0]) || d.img || '';
+}
+
+// ========== VISITOR ANALYTICS (Supabase via proxy) ==========
+async function initDashboard() {
+  let visitorRows = [];
+  try {
+    const res = await fetch('/sb/visitors?days=30');
+    visitorRows = await res.json();
+    if (!Array.isArray(visitorRows)) visitorRows = [];
+  } catch { visitorRows = []; }
+
+  const visitorMap = {};
+  visitorRows.forEach(r => { visitorMap[r.visit_date] = r.count; });
+
+  const days14 = [];
+  for (let i = 13; i >= 0; i--) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const key = d.toISOString().split('T')[0];
+    const label = d.toLocaleDateString('ru-RU', { day: 'numeric', month: 'short' });
+    days14.push({ date: key, label, count: visitorMap[key] || 0 });
+  }
+
+  const todayKey = new Date().toISOString().split('T')[0];
+  const today = visitorMap[todayKey] || 0;
+  const week = days14.slice(-7).reduce((s, d) => s + d.count, 0);
+  const month = visitorRows.reduce((s, r) => s + (r.count || 0), 0);
+
+  document.getElementById('statToday').textContent = today.toLocaleString();
+  document.getElementById('statWeek').textContent = week.toLocaleString();
+  document.getElementById('statMonth').textContent = month.toLocaleString();
+
+  const chartEl = document.getElementById('visitorChart');
+  const maxCount = Math.max(...days14.map(d => d.count), 1);
+  chartEl.innerHTML = days14.map(d => {
+    const pct = (d.count / maxCount * 100).toFixed(1);
+    return `<div class="chart-bar" style="height:100%">
+      <div class="bar-fill" style="height:${pct}%"></div>
+      <div class="bar-value">${d.count}</div>
+      <div class="bar-label">${d.label}</div>
+    </div>`;
+  }).join('');
+
+  let actLog = [];
+  try {
+    const res = await fetch('/sb/activity');
+    actLog = await res.json();
+    if (!Array.isArray(actLog)) actLog = [];
+  } catch { actLog = []; }
+
+  const actEl = document.getElementById('activityLog');
+  if (actLog.length === 0) {
+    actEl.innerHTML = '<p style="color:#555;font-size:0.85rem;">Пока нет активности</p>';
+  } else {
+    actEl.innerHTML = actLog.slice(0, 10).map(a => {
+      const time = new Date(a.created_at).toLocaleString('ru-RU', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' });
+      return `<div class="activity-item">
+        <div><div class="a-text">${a.text}</div><div class="a-sub">${a.sub || ''}</div></div>
+        <div class="a-time">${time}</div>
+      </div>`;
+    }).join('');
+  }
+}
+
+// ========== ACTIVITY LOG ==========
+async function addActivity(text, sub) {
+  try {
+    await fetch('/sb/activity', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text, sub: sub || '' })
     });
-});
+  } catch {}
+}
 
-// Fetching Decors
+// ========== DECOR CRUD ==========
+let allDecors = [];
+let filteredDecors = [];
+let currentPage = 1;
+let deleteTargetIndex = -1;
+let modalImages = []; // current images being edited in modal
+
 async function loadDecors() {
-    try {
-        const response = await fetch('/granistone_all.json');
-        if (!response.ok) throw new Error('Could not fetch decors');
-        decors = await response.json();
-        renderDecors(decors);
-        document.getElementById('stat-decors').innerText = decors.length;
-    } catch (err) {
-        console.error(err);
-        decorContainer.innerHTML = `<div class="p-8 text-center col-span-full text-red-500">Error loading decors: ${err.message}</div>`;
-    }
+  // Load from stones.json (same data as catalog page)
+  try {
+    const res = await fetch('/stones.json');
+    if (!res.ok) throw new Error('Failed');
+    allDecors = await res.json();
+    applyFilters();
+    updateDecorCount();
+  } catch (err) {
+    document.getElementById('decorGrid').innerHTML = '<p style="color:#ef4444;padding:2rem;text-align:center;">Ma\'lumotlarni yuklashda xatolik</p>';
+  }
 }
 
-function renderDecors(data) {
-    if (data.length === 0) {
-        decorContainer.innerHTML = `<div class="p-8 text-center col-span-full opacity-50">Ничего не найдено</div>`;
-        return;
-    }
+function updateDecorCount() {
+  document.getElementById('statDecors').textContent = allDecors.length.toLocaleString();
+}
 
-    decorContainer.innerHTML = data.map((decor, index) => `
-        <div class="decor-card" data-index="${index}">
-            <div class="decor-img-container">
-                <img src="${decor.img}" alt="${decor.name}" onerror="this.src='https://placehold.co/200x200?text=No+Image'">
-            </div>
-            <div class="decor-info">
-                <div class="decor-name" title="${decor.name}">${decor.name}</div>
-                <div class="decor-actions">
-                    <button class="btn-icon btn-edit" onclick="editDecor(${index})">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-                    </button>
-                    <button class="btn-icon btn-delete" onclick="deleteDecor(${index})">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
-                    </button>
-                </div>
-            </div>
+function applyFilters() {
+  const search = (document.getElementById('decorSearch').value || '').toLowerCase();
+  const typeFilter = document.getElementById('decorTypeFilter').value;
+  filteredDecors = allDecors.filter(d => {
+    const matchName = (d.name || '').toLowerCase().includes(search);
+    const matchType = typeFilter === 'all' || (d.type || '') === typeFilter;
+    return matchName && matchType;
+  });
+  currentPage = 1;
+  renderDecorGrid();
+}
+
+function renderDecorGrid() {
+  const grid = document.getElementById('decorGrid');
+  const total = filteredDecors.length;
+  const totalPages = Math.ceil(total / PER_PAGE) || 1;
+  if (currentPage > totalPages) currentPage = totalPages;
+  const start = (currentPage - 1) * PER_PAGE;
+  const pageItems = filteredDecors.slice(start, start + PER_PAGE);
+
+  if (total === 0) {
+    grid.innerHTML = '<p style="color:#555;padding:2rem;text-align:center;grid-column:1/-1;">Ничего не найдено</p>';
+    renderPagination(0, 0);
+    return;
+  }
+
+  grid.innerHTML = pageItems.map((d) => {
+    const realIdx = allDecors.indexOf(d);
+    const thumb = getDecorThumb(d);
+    const imgCount = getDecorImages(d).length;
+    const typeBadge = d.type ? `<div class="d-type">${d.type}</div>` : '';
+    const imgBadge = imgCount > 1 ? `<div class="img-count-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>${imgCount}</div>` : '';
+    return `<div class="decor-card">
+      <div class="decor-thumb" style="position:relative;">
+        <img src="${thumb}" alt="${d.name}" onerror="this.src='https://placehold.co/200x200/1a1a1a/555?text=No+Image'" loading="lazy">
+        ${imgBadge}
+      </div>
+      <div class="decor-body">
+        <div class="d-name" title="${d.name}">${d.name}</div>
+        ${typeBadge}
+        <div class="d-actions">
+          <button class="d-btn" data-edit="${realIdx}" title="Редактировать">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </button>
+          <button class="d-btn del" data-delete="${realIdx}" title="Удалить">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          </button>
         </div>
-    `).join('');
+      </div>
+    </div>`;
+  }).join('');
+
+  renderPagination(totalPages, total);
+
+  grid.querySelectorAll('[data-edit]').forEach(btn => {
+    btn.addEventListener('click', () => openEditModal(parseInt(btn.dataset.edit)));
+  });
+  grid.querySelectorAll('[data-delete]').forEach(btn => {
+    btn.addEventListener('click', () => openDeleteModal(parseInt(btn.dataset.delete)));
+  });
 }
 
-// Global functions for inline event listeners
-window.editDecor = (index) => {
-    const decor = decors[index];
-    modalTitle.innerText = 'Редактировать декор';
-    document.getElementById('decor-index').value = index;
-    document.getElementById('decor-input-name').value = decor.name;
-    document.getElementById('decor-input-img').value = decor.img;
-    decorModal.classList.add('active');
-};
+function renderPagination(totalPages, total) {
+  const pag = document.getElementById('decorPagination');
+  if (totalPages <= 1) { pag.innerHTML = ''; return; }
+  let html = `<button class="page-btn" ${currentPage===1?'disabled':''} data-pg="${currentPage-1}">&lt;</button>`;
 
-window.deleteDecor = (index) => {
-    if (confirm(`Удалить декор "${decors[index].name}"?`)) {
-        decors.splice(index, 1);
-        renderDecors(decors);
-        document.getElementById('stat-decors').innerText = decors.length;
-        saveMessage('Декор успешно удален (только в браузере)');
-    }
-};
+  const pgNums = [];
+  pgNums.push(1);
+  if (currentPage > 3) pgNums.push('...');
+  for (let i = Math.max(2, currentPage-1); i <= Math.min(totalPages-1, currentPage+1); i++) pgNums.push(i);
+  if (currentPage < totalPages-2) pgNums.push('...');
+  if (totalPages > 1) pgNums.push(totalPages);
 
-// Search
-document.getElementById('decor-search').addEventListener('input', (e) => {
-    const val = e.target.value.toLowerCase();
-    const filtered = decors.filter(d => d.name.toLowerCase().includes(val));
-    renderDecors(filtered);
+  pgNums.forEach(p => {
+    if (p === '...') { html += '<span class="page-info">...</span>'; }
+    else { html += `<button class="page-btn${p===currentPage?' active':''}" data-pg="${p}">${p}</button>`; }
+  });
+  html += `<button class="page-btn" ${currentPage===totalPages?'disabled':''} data-pg="${currentPage+1}">&gt;</button>`;
+  html += `<span class="page-info">${total} ta dekor</span>`;
+  pag.innerHTML = html;
+
+  pag.querySelectorAll('[data-pg]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const pg = parseInt(btn.dataset.pg);
+      if (pg >= 1 && pg <= totalPages) {
+        currentPage = pg;
+        renderDecorGrid();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  });
+}
+
+// Search & Filter
+document.getElementById('decorSearch').addEventListener('input', debounce(() => applyFilters(), 300));
+document.getElementById('decorTypeFilter').addEventListener('change', () => applyFilters());
+
+function debounce(fn, ms) {
+  let t;
+  return function() { clearTimeout(t); t = setTimeout(fn, ms); };
+}
+
+// ========== MULTI-IMAGE GALLERY IN MODAL ==========
+const imagesGallery = document.getElementById('imagesGallery');
+const imgAddBtn = document.getElementById('imgAddBtn');
+const imgInputArea = document.getElementById('imgInputArea');
+const decorInputImg = document.getElementById('decorInputImg');
+const imgUrlAddBtn = document.getElementById('imgUrlAddBtn');
+const decorFileInput = document.getElementById('decorFileInput');
+const fileUploadArea = document.getElementById('fileUploadArea');
+
+function renderModalImages() {
+  // Remove all img-thumb elements (keep the + button)
+  imagesGallery.querySelectorAll('.img-thumb').forEach(el => el.remove());
+  // Insert thumbs before the + button
+  modalImages.forEach((url, i) => {
+    const div = document.createElement('div');
+    div.className = 'img-thumb';
+    div.innerHTML = `<img src="${url}" onerror="this.src='https://placehold.co/72x72/1a1a1a/555?text=Err'"><button type="button" class="img-remove" data-img-idx="${i}">&times;</button>`;
+    imagesGallery.insertBefore(div, imgAddBtn);
+  });
+  // Hide + button if max reached
+  imgAddBtn.style.display = modalImages.length >= MAX_IMAGES ? 'none' : 'flex';
+  // Hide input area if not adding
+  imgInputArea.style.display = 'none';
+}
+
+function addImageToModal(url) {
+  if (!url || modalImages.length >= MAX_IMAGES) return;
+  modalImages.push(url);
+  renderModalImages();
+}
+
+// + button -> show input area
+imgAddBtn.addEventListener('click', () => {
+  if (modalImages.length >= MAX_IMAGES) {
+    showToast(`Максимум ${MAX_IMAGES} изображений`, 'error');
+    return;
+  }
+  imgInputArea.style.display = 'block';
+  decorInputImg.value = '';
+  decorInputImg.focus();
 });
 
-// Modal Logic
-addDecorBtn.addEventListener('click', () => {
-    modalTitle.innerText = 'Добавить новый декор';
-    document.getElementById('decor-index').value = '-1';
-    decorForm.reset();
-    decorModal.classList.add('active');
+// "Добавить" button for URL
+imgUrlAddBtn.addEventListener('click', () => {
+  const url = decorInputImg.value.trim();
+  if (url) {
+    addImageToModal(url);
+    decorInputImg.value = '';
+  }
 });
 
-closeModalBtn.addEventListener('click', () => {
-    decorModal.classList.remove('active');
-});
-
-decorForm.addEventListener('submit', (e) => {
+// Enter key in URL input
+decorInputImg.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
     e.preventDefault();
-    const index = parseInt(document.getElementById('decor-index').value);
-    const newDecor = {
-        name: document.getElementById('decor-input-name').value,
-        img: document.getElementById('decor-input-img').value
+    imgUrlAddBtn.click();
+  }
+});
+
+// Remove image
+imagesGallery.addEventListener('click', (e) => {
+  const removeBtn = e.target.closest('.img-remove');
+  if (removeBtn) {
+    const idx = parseInt(removeBtn.dataset.imgIdx);
+    modalImages.splice(idx, 1);
+    renderModalImages();
+  }
+});
+
+// File upload (multiple)
+fileUploadArea.addEventListener('click', () => decorFileInput.click());
+fileUploadArea.addEventListener('dragover', (e) => { e.preventDefault(); fileUploadArea.style.borderColor = '#c8a45c'; });
+fileUploadArea.addEventListener('dragleave', () => { fileUploadArea.style.borderColor = ''; });
+fileUploadArea.addEventListener('drop', (e) => {
+  e.preventDefault();
+  fileUploadArea.style.borderColor = '';
+  if (e.dataTransfer.files.length) handleFiles(e.dataTransfer.files);
+});
+decorFileInput.addEventListener('change', () => {
+  if (decorFileInput.files.length) handleFiles(decorFileInput.files);
+});
+
+function handleFiles(files) {
+  Array.from(files).forEach(file => {
+    if (!file.type.startsWith('image/') || modalImages.length >= MAX_IMAGES) return;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      addImageToModal(e.target.result);
     };
+    reader.readAsDataURL(file);
+  });
+  decorFileInput.value = '';
+}
 
-    if (index === -1) {
-        decors.unshift(newDecor);
+// ========== ADD / EDIT MODAL ==========
+const decorModal = document.getElementById('decorModal');
+const decorModalTitle = document.getElementById('decorModalTitle');
+const decorEditId = document.getElementById('decorEditId');
+const decorInputName = document.getElementById('decorInputName');
+const decorInputType = document.getElementById('decorInputType');
+const decorInputCategory = document.getElementById('decorInputCategory');
+
+function openAddModal() {
+  decorModalTitle.textContent = 'Добавить декор';
+  decorEditId.value = '-1';
+  decorInputName.value = '';
+  decorInputType.value = '';
+  decorInputCategory.value = '';
+  modalImages = [];
+  renderModalImages();
+  imgInputArea.style.display = 'none';
+  decorModal.classList.add('active');
+}
+
+function openEditModal(idx) {
+  const d = allDecors[idx];
+  if (!d) return;
+  decorModalTitle.textContent = 'Редактировать декор';
+  decorEditId.value = idx;
+  decorInputName.value = d.name || '';
+  decorInputType.value = d.type || '';
+  decorInputCategory.value = d.category || '';
+  modalImages = getDecorImages(d).slice(0, MAX_IMAGES);
+  renderModalImages();
+  imgInputArea.style.display = 'none';
+  decorModal.classList.add('active');
+}
+
+function closeDecorModal() {
+  decorModal.classList.remove('active');
+  imgInputArea.style.display = 'none';
+}
+
+document.getElementById('addDecorBtn').addEventListener('click', openAddModal);
+document.getElementById('decorModalClose').addEventListener('click', closeDecorModal);
+document.getElementById('decorModalCancel').addEventListener('click', closeDecorModal);
+decorModal.addEventListener('click', (e) => { if (e.target === decorModal) closeDecorModal(); });
+
+// Save decor
+document.getElementById('decorModalSave').addEventListener('click', async () => {
+  const name = decorInputName.value.trim();
+  if (!name) { decorInputName.focus(); return; }
+  if (modalImages.length === 0) {
+    showToast('Kamida 1 ta rasm qo\'shing', 'error');
+    return;
+  }
+
+  const idx = parseInt(decorEditId.value);
+  const decor = {
+    name,
+    type: decorInputType.value || '',
+    category: decorInputCategory.value || '',
+    images: modalImages.slice(),
+    thumbnail: modalImages[0],
+    img: modalImages[0]
+  };
+
+  try {
+    if (idx === -1) {
+      decor.id = 'admin-' + Date.now() + '-' + Math.random().toString(36).substr(2,5);
+      allDecors.unshift(decor);
+      addActivity('Yangi dekor qo\'shildi', name);
+      showToast('Декор добавлен');
     } else {
-        decors[index] = newDecor;
+      allDecors[idx] = { ...allDecors[idx], ...decor };
+      addActivity('Dekor tahrirlandi', name);
+      showToast('Декор обновлен');
     }
+  } catch (err) {
+    showToast('Xatolik yuz berdi', 'error');
+    console.error(err);
+  }
 
-    renderDecors(decors);
-    document.getElementById('stat-decors').innerText = decors.length;
-    decorModal.classList.remove('active');
-    saveMessage('Изменения сохранены (только в браузере)');
+  updateDecorCount();
+  applyFilters();
+  closeDecorModal();
 });
 
-function saveMessage(msg) {
-    // A simple toast-like notification could be added here
-    console.log(msg);
-    alert(msg + "\n\nВнимание: Изменения сохраняются только в текущей сессии браузера. Для перманентного сохранения необходимо подключить серверную часть.");
+// ========== DELETE MODAL ==========
+const deleteModal = document.getElementById('deleteModal');
+const deleteDecorNameEl = document.getElementById('deleteDecorName');
+
+function openDeleteModal(idx) {
+  deleteTargetIndex = idx;
+  deleteDecorNameEl.textContent = `"${allDecors[idx].name}"`;
+  deleteModal.classList.add('active');
 }
 
-// Gallery Management
-const galleryContainer = document.getElementById('gallery-container');
-const uploadImgBtn = document.getElementById('upload-img-btn');
+function closeDeleteModal() { deleteModal.classList.remove('active'); deleteTargetIndex = -1; }
 
-let galleryImages = [
-    { name: 'Modern Kitchen Hero', img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400' },
-    { name: 'Classic Kitchen Showroom', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400' },
-    { name: 'Bathroom Luxury', img: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400' }
-];
+document.getElementById('deleteModalClose').addEventListener('click', closeDeleteModal);
+document.getElementById('deleteCancelBtn').addEventListener('click', closeDeleteModal);
+deleteModal.addEventListener('click', (e) => { if (e.target === deleteModal) closeDeleteModal(); });
 
-function renderGallery() {
-    galleryContainer.innerHTML = galleryImages.map((item, index) => `
-        <div class="decor-card">
-            <div class="decor-img-container">
-                <img src="${item.img}" alt="${item.name}">
-            </div>
-            <div class="decor-info">
-                <div class="decor-name">${item.name}</div>
-                <div class="decor-actions">
-                    <button class="btn-icon btn-delete" onclick="deleteGalleryImage(${index})">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    `).join('');
-}
-
-window.deleteGalleryImage = (index) => {
-    if (confirm('Удалить изображение из галереи?')) {
-        galleryImages.splice(index, 1);
-        renderGallery();
-    }
-};
-
-uploadImgBtn.addEventListener('click', () => {
-    const url = prompt('Введите URL изображения:');
-    if (url) {
-        galleryImages.unshift({ name: 'Новое изображение', img: url });
-        renderGallery();
-    }
+document.getElementById('deleteConfirmBtn').addEventListener('click', async () => {
+  if (deleteTargetIndex >= 0 && deleteTargetIndex < allDecors.length) {
+    const decor = allDecors[deleteTargetIndex];
+    const name = decor.name;
+    allDecors.splice(deleteTargetIndex, 1);
+    addActivity('Dekor o\'chirildi', name);
+    showToast('Декор удален');
+    updateDecorCount();
+    applyFilters();
+  }
+  closeDeleteModal();
 });
 
-// Initial Load
-loadDecors();
-renderGallery();
-
-// Mock some stats updates
-function updateStats() {
-    const visitors = document.getElementById('stat-visitors');
-    const orders = document.getElementById('stat-orders');
-    
-    // Initial random stats
-    visitors.innerText = (Math.floor(Math.random() * 5000) + 1000).toLocaleString();
-    orders.innerText = (Math.floor(Math.random() * 50) + 5).toString();
-
-    // Simulate real-time updates
-    setInterval(() => {
-        const v = parseInt(visitors.innerText.replace(',', '')) + Math.floor(Math.random() * 3);
-        visitors.innerText = v.toLocaleString();
-    }, 4000);
-}
-
-updateStats();
+// ========== KEYBOARD ==========
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeDecorModal();
+    closeDeleteModal();
+  }
+});

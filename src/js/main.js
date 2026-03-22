@@ -1,8 +1,8 @@
 import stones from '../data/stones.json';
 
 // ============ TELEGRAM CONFIG ============
-const TELEGRAM_BOT_TOKEN = '8149591957:AAHXf76-EEPoqWB6tIfW8B7xjmE3o9fKvB8';
-const TELEGRAM_CHAT_IDS = ['1093264285', '5114247292', '1032173492'];
+// Token va chat IDs server-side proxy orqali ishlatiladi (.env da saqlanadi)
+// Client faqat /tg/sendMessage va /tg/sendPhoto endpointlarini chaqiradi
 
 // ============ THEME SYSTEM ============
 function initTheme() {
@@ -767,30 +767,22 @@ async function sendToTelegram(data) {
   text += `\n📅 *Sana:* ${new Date().toLocaleString('uz-UZ')}`;
 
   try {
-    for (const chatId of TELEGRAM_CHAT_IDS) {
-      // Send text message
-      await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          chat_id: chatId,
-          text: text,
-          parse_mode: 'Markdown',
-        }),
-      });
+    // Send text message via server proxy (token hidden)
+    await fetch('/tg/sendMessage', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text }),
+    });
 
-      // Send stone thumbnail image if available
-      if (stone && stone.thumbnail) {
-        await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            chat_id: chatId,
-            photo: stone.thumbnail,
-            caption: `🪨 ${stone.name} (${stone.category})`,
-          }),
-        });
-      }
+    // Send stone thumbnail image if available
+    if (stone && stone.thumbnail) {
+      const formData = new FormData();
+      formData.append('photo', stone.thumbnail);
+      formData.append('caption', `🪨 ${stone.name} (${stone.category})`);
+      await fetch('/tg/sendPhoto', {
+        method: 'POST',
+        body: formData,
+      });
     }
 
     return true;

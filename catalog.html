@@ -7,6 +7,13 @@
   <title>Каталог — Asl Tosh Mebellari</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/src/styles/main.css" />
+  <script>
+    (function(){
+      var k='aslToshVisitors';
+      try{var d=new Date(),t=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');var v=JSON.parse(localStorage.getItem(k)||'{}');v[t]=(v[t]||0)+1;localStorage.setItem(k,JSON.stringify(v));}catch(e){}
+      try{fetch('/sb/increment-visitor',{method:'POST'}).catch(function(){});}catch(e){}
+    })()
+  </script>
 </head>
 <body>
 
@@ -14,7 +21,7 @@
   <nav class="navbar scrolled" id="navbar">
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
       <a href="/" class="flex items-center gap-3 text-decoration-none">
-        <img src="/public/logo.svg" alt="Asl Tosh Mebellari" class="navbar-logo" />
+        <img src="/logo.svg" alt="Asl Tosh Mebellari" class="navbar-logo" />
       </a>
 
       <div class="hidden md:flex items-center gap-10">

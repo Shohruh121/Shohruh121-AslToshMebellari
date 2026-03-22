@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="/front/css/visual.css?ver=32" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    (function(){
+      var k='aslToshVisitors';
+      try{var d=new Date(),t=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');var v=JSON.parse(localStorage.getItem(k)||'{}');v[t]=(v[t]||0)+1;localStorage.setItem(k,JSON.stringify(v));}catch(e){}
+      try{fetch('/sb/increment-visitor',{method:'POST'}).catch(function(){});}catch(e){}
+    })()
+  </script>
   <style>
     /* Scope interstone footer/nav hide - only inside vizContainer */
     #vizContainer nav.sticky, #vizContainer footer,
@@ -300,7 +307,7 @@
   <nav class="navbar" style="z-index:9990;">
     <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
       <a href="/" class="flex items-center gap-3 text-decoration-none">
-        <img src="/public/logo-new.png" alt="Asl Tosh Mebellari" class="navbar-logo" />
+        <img src="/logo-new.png" alt="Asl Tosh Mebellari" class="navbar-logo" />
       </a>
       <div class="hidden md:flex items-center gap-10">
         <a href="/" class="nav-link" data-ru="Главная" data-uz="Bosh sahifa">Главная</a>
@@ -584,10 +591,10 @@
       function runVisualizerLogic(interiorId) {
         var svg = document.getElementById('svg');
         var navigation_tabs = document.querySelector('.tab_navigation');
-        var route_filters = '/api/front/interiors/' + interiorId + '/filters';
-        var route_defaults = '/api/front/interiors/' + interiorId + '/default';
-        var route_generate = '/api/front/interiors/' + interiorId + '/generate';
-        var route_materials = '/api/front/interiors/' + interiorId + '/materials';
+        var route_filters = '/iapi/front/interiors/' + interiorId + '/filters';
+        var route_defaults = '/iapi/front/interiors/' + interiorId + '/default';
+        var route_generate = '/iapi/front/interiors/' + interiorId + '/generate';
+        var route_materials = '/iapi/front/interiors/' + interiorId + '/materials';
 
         var parentVisual = document.querySelector('.visual');
         var parentVisualBlock = document.querySelector('.visual-container');
@@ -1044,8 +1051,7 @@
       if (currentLang !== 'ru') switchLanguage(currentLang);
 
       // ========== 3D ORDER MODAL & TELEGRAM ==========
-      var TELEGRAM_BOT_TOKEN = '8149591957:AAHXf76-EEPoqWB6tIfW8B7xjmE3o9fKvB8';
-      var TELEGRAM_CHAT_IDS = ['1093264285', '5114247292', '1032173492'];
+      // Telegram token va chat IDs server-side proxy orqali (.env da saqlanadi)
 
       var vizOrderModal = document.getElementById('vizOrderModal');
       var vizOrderBtn = document.getElementById('vizOrderBtn');
@@ -1186,40 +1192,39 @@
 
           var promises = [];
 
-          TELEGRAM_CHAT_IDS.forEach(function(chatId) {
-            // Send text message
-            var p = fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ chat_id: chatId, text: text, parse_mode: 'Markdown' })
-            });
-            promises.push(p);
-
-            // Send 3D visualization image
-            if (vizCurrentImageBlob) {
-              var fd = new FormData();
-              fd.append('chat_id', chatId);
-              fd.append('photo', vizCurrentImageBlob, '3d-visualization.png');
-              fd.append('caption', '🏠 3D Vizualizatsiya: ' + interiorName);
-              var p2 = fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendPhoto', {
-                method: 'POST',
-                body: fd
-              });
-              promises.push(p2);
-            } else {
-              // Try sending image URL if available (download link)
-              var dlLink = document.getElementById('downloadLink');
-              if (dlLink && dlLink.href) {
-                var imgUrl = window.location.origin + dlLink.getAttribute('href');
-                var p3 = fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendPhoto', {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify({ chat_id: chatId, photo: imgUrl, caption: '🏠 3D Vizualizatsiya: ' + interiorName })
-                });
-                promises.push(p3);
-              }
-            }
+          // Send text via server proxy (token hidden in .env)
+          var p = fetch('/tg/sendMessage', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text: text })
           });
+          promises.push(p);
+
+          // Send 3D visualization image
+          if (vizCurrentImageBlob) {
+            var fd = new FormData();
+            fd.append('photo', vizCurrentImageBlob, '3d-visualization.png');
+            fd.append('caption', '🏠 3D Vizualizatsiya: ' + interiorName);
+            var p2 = fetch('/tg/sendPhoto', {
+              method: 'POST',
+              body: fd
+            });
+            promises.push(p2);
+          } else {
+            // Try sending image URL if available (download link)
+            var dlLink = document.getElementById('downloadLink');
+            if (dlLink && dlLink.href) {
+              var imgUrl = window.location.origin + dlLink.getAttribute('href');
+              var fd2 = new FormData();
+              fd2.append('photo', imgUrl);
+              fd2.append('caption', '🏠 3D Vizualizatsiya: ' + interiorName);
+              var p3 = fetch('/tg/sendPhoto', {
+                method: 'POST',
+                body: fd2
+              });
+              promises.push(p3);
+            }
+          }
 
           Promise.all(promises).then(function() {
             var msg = currentLang === 'ru' ? 'Ваш заказ принят! Мы скоро свяжемся.' : "Buyurtmangiz qabul qilindi! Tez orada bog'lanamiz.";
