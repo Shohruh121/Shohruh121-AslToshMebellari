@@ -182,14 +182,29 @@ let deleteTargetIndex = -1;
 let modalImages = []; // current images being edited in modal
 
 async function loadDecors() {
-  // Load from stones.json (same data as catalog page)
+  // Load from Supabase decors table
   try {
-    const res = await fetch('/stones.json');
-    if (!res.ok) throw new Error('Failed');
-    allDecors = await res.json();
+    const res = await fetch('/sb/decors');
+    if (!res.ok) throw new Error('Supabase xatolik');
+    const data = await res.json();
+    if (Array.isArray(data)) {
+      // Parse images from JSONB if needed
+      allDecors = data.map(d => ({
+        ...d,
+        images: typeof d.images === 'string' ? JSON.parse(d.images) : (d.images || []),
+        thumbnail: d.thumbnail || (Array.isArray(d.images) ? d.images[0] : ''),
+        features: typeof d.features === 'string' ? JSON.parse(d.features) : (d.features || []),
+        thickness: typeof d.thickness === 'string' ? JSON.parse(d.thickness) : (d.thickness || []),
+        finish: typeof d.finish === 'string' ? JSON.parse(d.finish) : (d.finish || []),
+        applications: typeof d.applications === 'string' ? JSON.parse(d.applications) : (d.applications || [])
+      }));
+    } else {
+      allDecors = [];
+    }
     applyFilters();
     updateDecorCount();
   } catch (err) {
+    console.error('loadDecors error:', err);
     document.getElementById('decorGrid').innerHTML = '<p style="color:#ef4444;padding:2rem;text-align:center;">Ma\'lumotlarni yuklashda xatolik</p>';
   }
 }
@@ -472,23 +487,44 @@ document.getElementById('decorModalSave').addEventListener('click', async () => 
     type: decorInputType.value || '',
     category: decorInputCategory.value || '',
     images: modalImages.slice(),
-    thumbnail: modalImages[0],
-    img: modalImages[0]
+    thumbnail: modalImages[0]
   };
 
   try {
     if (idx === -1) {
-      decor.id = 'admin-' + Date.now() + '-' + Math.random().toString(36).substr(2,5);
-      allDecors.unshift(decor);
-      addActivity('Yangi dekor qo\'shildi', name);
-      showToast('Декор добавлен');
+      // INSERT new decor to Supabase
+      const res = await fetch('/sb/decors', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(decor)
+      });
+      const data = await res.json();
+      if (Array.isArray(data) && data.length > 0) {
+        allDecors.unshift(data[0]);
+        addActivity('Yangi dekor qo\'shildi', name);
+        showToast('Декор добавлен');
+      } else {
+        throw new Error('Insert failed');
+      }
     } else {
-      allDecors[idx] = { ...allDecors[idx], ...decor };
+      // UPDATE existing decor in Supabase
+      const existingId = allDecors[idx].id;
+      const res = await fetch('/sb/decor-update?id=' + existingId, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(decor)
+      });
+      const data = await res.json();
+      if (Array.isArray(data) && data.length > 0) {
+        allDecors[idx] = data[0];
+      } else {
+        allDecors[idx] = { ...allDecors[idx], ...decor };
+      }
       addActivity('Dekor tahrirlandi', name);
       showToast('Декор обновлен');
     }
   } catch (err) {
-    showToast('Xatolik yuz berdi', 'error');
+    showToast('Xatolik yuz berdi: ' + err.message, 'error');
     console.error(err);
   }
 
@@ -517,9 +553,16 @@ document.getElementById('deleteConfirmBtn').addEventListener('click', async () =
   if (deleteTargetIndex >= 0 && deleteTargetIndex < allDecors.length) {
     const decor = allDecors[deleteTargetIndex];
     const name = decor.name;
-    allDecors.splice(deleteTargetIndex, 1);
-    addActivity('Dekor o\'chirildi', name);
-    showToast('Декор удален');
+    try {
+      // DELETE from Supabase
+      await fetch('/sb/decor-delete?id=' + decor.id, { method: 'POST' });
+      allDecors.splice(deleteTargetIndex, 1);
+      addActivity('Dekor o\'chirildi', name);
+      showToast('Декор удален');
+    } catch (err) {
+      showToast('O\'chirishda xatolik', 'error');
+      console.error(err);
+    }
     updateDecorCount();
     applyFilters();
   }

@@ -341,6 +341,36 @@ async function loadExtraStones() {
   } catch (err) {
     console.error('Error loading extra stones:', err);
   }
+
+  // Load admin-added decors from Supabase
+  try {
+    const sbRes = await fetch('/sb/decors');
+    if (sbRes.ok) {
+      const sbDecors = await sbRes.json();
+      if (Array.isArray(sbDecors) && sbDecors.length > 0) {
+        const formatted = sbDecors.map(d => ({
+          id: 'sb-' + d.id,
+          name: d.name || '',
+          type: d.type || '',
+          category: d.category || '',
+          thumbnail: d.thumbnail || (Array.isArray(d.images) ? d.images[0] : ''),
+          images: Array.isArray(d.images) ? d.images : (typeof d.images === 'string' ? JSON.parse(d.images) : []),
+          features: Array.isArray(d.features) ? d.features : [],
+          thickness: Array.isArray(d.thickness) ? d.thickness : [],
+          finish: Array.isArray(d.finish) ? d.finish : [],
+          origin: d.origin || '',
+          applications: Array.isArray(d.applications) ? d.applications : [],
+          description_uz: d.description_uz || '',
+          description_ru: d.description_ru || ''
+        }));
+        // Add Supabase decors at the beginning
+        allStones = [...formatted, ...allStones];
+        renderStones();
+      }
+    }
+  } catch (err) {
+    console.error('Error loading Supabase decors:', err);
+  }
 }
 
 function renderStones() {
