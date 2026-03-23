@@ -56,6 +56,19 @@ var uzToRu = {
   "Ofis stoli": "Офисная столешница",
   "Kafe stoli": "Столешница для кафе",
   "Pol qoplamasi": "Напольное покрытие",
+  // Kvarts features
+  "Kuchli va bardoshli": "Прочный и износостойкий",
+  "Issiqlikka to'liq chidamli": "Полностью термостойкий",
+  "Dog'lanishga bardoshli": "Устойчив к пятнам",
+  "10 yil kafolat": "10 лет гарантии",
+  "Chidamli va mustahkam": "Прочный и долговечный",
+  "Tabiiy ko'rinish": "Натуральный вид",
+  // Kvarts applications
+  "Tibbiy mebel": "Медицинская мебель",
+  "Spa markaz": "Спа-центр",
+  "Mehmonxona": "Гостиница",
+  "Restoran": "Ресторан",
+  "Ofis": "Офис",
   // Finish
   "Silliq": "Гладкая",
   "Glyantsli": "Глянцевая",
@@ -65,7 +78,8 @@ var uzToRu = {
   "O'zbekiston": "Узбекистан",
   "Rossiya": "Россия",
   "Xitoy": "Китай",
-  "Turkiya": "Турция"
+  "Turkiya": "Турция",
+  "Yevropa": "Европа"
 };
 function tr(text) { return currentLang === 'ru' ? (uzToRu[text] || text) : text; }
 
