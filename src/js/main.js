@@ -27,6 +27,38 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============ LANGUAGE SYSTEM ============
 let currentLang = localStorage.getItem('siteLang') || 'ru';
 
+// ---- Uz -> Ru tarjima lug'ati (xarakteristikalar uchun) ----
+const uzToRu = {
+  "Issiqlikka chidamli": "Термостойкий",
+  "Chizilishga bardoshli": "Устойчив к царапинам",
+  "Oson tozalash": "Легко чистить",
+  "Gigienik sirt": "Гигиеничная поверхность",
+  "Mustahkam": "Прочный",
+  "Dog'lanmaydi": "Не оставляет пятен",
+  "UV barqaror": "UV-стабильный",
+  "Antibakterial": "Антибактериальный",
+  "Namlikka bardoshli": "Влагостойкий",
+  "Uzoq umr": "Долговечный",
+  "Oshxona stoli": "Кухонная столешница",
+  "Vanna xonasi": "Ванная комната",
+  "Bar peshtaxta": "Барная стойка",
+  "Devor paneli": "Стеновая панель",
+  "Oshxona": "Кухня",
+  "Vanna": "Ванная",
+  "Ofis stoli": "Офисная столешница",
+  "Kafe stoli": "Столешница для кафе",
+  "Pol qoplamasi": "Напольное покрытие",
+  "Silliq": "Гладкая",
+  "Glyantsli": "Глянцевая",
+  "Mat": "Матовая",
+  "Janubiy Koreya": "Южная Корея",
+  "O'zbekiston": "Узбекистан",
+  "Rossiya": "Россия",
+  "Xitoy": "Китай",
+  "Turkiya": "Турция"
+};
+function tr(text) { return currentLang === 'ru' ? (uzToRu[text] || text) : text; }
+
 function getDesc(stone) {
   if (currentLang === 'uz') return stone.description_uz || stone.description_ru || '';
   return stone.description_ru || stone.description_uz || '';
@@ -525,7 +557,7 @@ function openStoneModal(stone) {
             ${stone.features.map((f) => `
               <span class="modal-feature-tag">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                ${f}
+                ${tr(f)}
               </span>
             `).join('')}
           </div>
@@ -538,7 +570,7 @@ function openStoneModal(stone) {
           </h4>
           <div class="flex flex-wrap gap-2">
             ${stone.applications.map((a) => `
-              <span class="inline-block px-3 py-1.5 text-xs bg-[rgba(255,255,255,0.05)] text-[#a8a8a8] border border-white/5">${a}</span>
+              <span class="inline-block px-3 py-1.5 text-xs bg-[rgba(255,255,255,0.05)] text-[#a8a8a8] border border-white/5">${tr(a)}</span>
             `).join('')}
           </div>
         </div>
@@ -551,15 +583,15 @@ function openStoneModal(stone) {
         </div>
         <div>
           <div class="text-[#8a8578] text-xs tracking-wider uppercase mb-1">${thickLabel}</div>
-          <div class="text-white text-sm font-medium">${stone.thickness.join(', ')}</div>
+          <div class="text-white text-sm font-medium">${stone.thickness.map(t => tr(t)).join(', ')}</div>
         </div>
         <div>
           <div class="text-[#8a8578] text-xs tracking-wider uppercase mb-1">${finishLabel}</div>
-          <div class="text-white text-sm font-medium">${stone.finish.join(', ')}</div>
+          <div class="text-white text-sm font-medium">${stone.finish.map(f => tr(f)).join(', ')}</div>
         </div>
         <div>
           <div class="text-[#8a8578] text-xs tracking-wider uppercase mb-1">${originLabel}</div>
-          <div class="text-white text-sm font-medium">${stone.origin}</div>
+          <div class="text-white text-sm font-medium">${tr(stone.origin)}</div>
         </div>
       </div>
 

@@ -811,6 +811,39 @@
     letter-spacing: 2px;
   }
 
+  /* ============ MOBILE 3D KITCHEN BUTTON ============ */
+  .mobile-3d-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0a0a0a;
+    background: linear-gradient(135deg, #c8a45c 0%, #dbb96a 50%, #c8a45c 100%);
+    background-size: 200% 200%;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    animation: shimmer3d 3s ease infinite;
+    box-shadow: 0 2px 8px rgba(200, 164, 92, 0.4);
+  }
+  .mobile-3d-btn:hover,
+  .mobile-3d-btn.active {
+    box-shadow: 0 2px 12px rgba(200, 164, 92, 0.6);
+    transform: scale(1.03);
+  }
+  .mobile-3d-btn svg {
+    flex-shrink: 0;
+  }
+  @keyframes shimmer3d {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
   /* ============ HAMBURGER ============ */
   .hamburger {
     display: flex;
@@ -1263,6 +1296,13 @@ body.light-mode .nav-link.active {
 
 body.light-mode .hamburger span {
   background: #4a4a4a;
+}
+
+body.light-mode .mobile-3d-btn {
+  color: #fff;
+  background: linear-gradient(135deg, #8a7440 0%, #a68c50 50%, #8a7440 100%);
+  background-size: 200% 200%;
+  box-shadow: 0 2px 8px rgba(138, 116, 64, 0.3);
 }
 
 /* Mobile menu */
