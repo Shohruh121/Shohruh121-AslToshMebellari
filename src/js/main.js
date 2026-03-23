@@ -612,6 +612,11 @@ function openStoneModal(stone) {
   const oldFs = document.getElementById('fullscreenOverlay');
   if (oldFs) oldFs.remove();
 
+  // Eski granit: birinchi rasmni fullscreen dan olib tashlash (logoli)
+  const isOldGranit = stone.type === 'granit' && stone.images.length >= 1 && !stone.images[0].includes('supabase.co');
+  const fsImages = (isOldGranit && stone.images.length > 1) ? stone.images.slice(1) : stone.images;
+  const fsTotalSlides = fsImages.length;
+
   // Create fullscreen overlay on document.body (avoids overflow:auto clipping)
   const fullscreenOverlay = document.createElement('div');
   fullscreenOverlay.id = 'fullscreenOverlay';
@@ -619,7 +624,7 @@ function openStoneModal(stone) {
   fullscreenOverlay.innerHTML = `
     <button class="fullscreen-close" id="fullscreenClose"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
     <img id="fullscreenImg" src="" alt="" class="${stone.type === 'granit' ? 'granit-crop-fs' : ''}" style="max-width:90vw;max-height:85vh;object-fit:${stone.type === 'granit' ? 'cover' : 'contain'};${stone.type === 'granit' ? 'object-position:center 20%;' : ''}" />
-    ${stone.images.length > 1 ? `
+    ${fsTotalSlides > 1 ? `
       <div style="position:absolute;top:50%;left:12px;transform:translateY(-50%);z-index:9002;">
         <button class="gallery-arrow" id="fsPrev"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
       </div>
@@ -627,7 +632,7 @@ function openStoneModal(stone) {
         <button class="gallery-arrow" id="fsNext"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
       </div>
       <div style="position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:12px;" id="fullscreenDots">
-        ${stone.images.map((_, i) => `
+        ${fsImages.map((_, i) => `
           <span class="gallery-dot fullscreen-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>
         `).join('')}
       </div>
@@ -640,22 +645,15 @@ function openStoneModal(stone) {
   let fsSlide = 0;
 
   function goToFsSlide(idx) {
-    fsSlide = Math.max(0, Math.min(idx, totalSlides - 1));
-    if (fullscreenImg) fullscreenImg.src = stone.images[fsSlide];
+    fsSlide = Math.max(0, Math.min(idx, fsTotalSlides - 1));
+    if (fullscreenImg) fullscreenImg.src = fsImages[fsSlide];
     fullscreenDots.forEach((d, i) => d.classList.toggle('active', i === fsSlide));
   }
 
-  // Click scale button to open fullscreen
-  const isOldGranit = stone.type === 'granit' && stone.images.length >= 1 && !stone.images[0].includes('supabase.co');
   const fullscreenBtn = document.getElementById('fullscreenBtn');
   if (fullscreenBtn) {
     fullscreenBtn.addEventListener('click', () => {
-      // Eski granit dekorlar: 2-rasmdan (index 1) boshlash (1-rasmda logo bor)
-      if (isOldGranit && stone.images.length > 1) {
-        fsSlide = 1;
-      } else {
-        fsSlide = currentSlide;
-      }
+      fsSlide = 0;
       goToFsSlide(fsSlide);
       fullscreenOverlay.classList.add('active');
     });
