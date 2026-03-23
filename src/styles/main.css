@@ -176,6 +176,9 @@
 
   /* ============ NAV HIGHLIGHT (Katalog & 3D Kuxnya) ============ */
   .nav-link.nav-highlight {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     color: #0a0a0a;
     background: linear-gradient(135deg, #c8a45c 0%, #dbb96a 50%, #c8a45c 100%);
     background-size: 200% 200%;
