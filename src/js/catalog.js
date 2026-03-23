@@ -845,17 +845,20 @@ try {
           category: d.category || '',
           thumbnail: d.thumbnail || (Array.isArray(d.images) ? d.images[0] : ''),
           images: Array.isArray(d.images) ? d.images : (typeof d.images === 'string' ? JSON.parse(d.images) : []),
-          features: Array.isArray(d.features) ? d.features : [],
-          thickness: Array.isArray(d.thickness) ? d.thickness : [],
-          finish: Array.isArray(d.finish) ? d.finish : [],
+          features: Array.isArray(d.features) ? d.features : (typeof d.features === 'string' ? JSON.parse(d.features) : []),
+          thickness: Array.isArray(d.thickness) ? d.thickness : (typeof d.thickness === 'string' ? JSON.parse(d.thickness) : []),
+          finish: Array.isArray(d.finish) ? d.finish : (typeof d.finish === 'string' ? JSON.parse(d.finish) : []),
           origin: d.origin || '',
-          applications: Array.isArray(d.applications) ? d.applications : [],
+          applications: Array.isArray(d.applications) ? d.applications : (typeof d.applications === 'string' ? JSON.parse(d.applications) : []),
           size: d.size || '',
-          description_uz: d.description_uz || '',
-          description_ru: d.description_ru || ''
+          description_uz: d.description_uz || d.description || '',
+          description_ru: d.description_ru || d.description || ''
         };
       });
-      allStones = formatted.concat(allStones);
+      // Deduplicate: skip json entries already edited in Supabase (same name)
+      var sbNames = {};
+      formatted.forEach(function(d) { sbNames[d.name] = true; });
+      allStones = formatted.concat(allStones.filter(function(d) { return !sbNames[d.name]; }));
       renderStones();
     }
   }

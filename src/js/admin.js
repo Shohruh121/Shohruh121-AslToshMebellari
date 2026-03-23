@@ -423,8 +423,6 @@ function debounce(fn, ms) {
 const imagesGallery = document.getElementById('imagesGallery');
 const imgAddBtn = document.getElementById('imgAddBtn');
 const imgInputArea = document.getElementById('imgInputArea');
-const decorInputImg = document.getElementById('decorInputImg');
-const imgUrlAddBtn = document.getElementById('imgUrlAddBtn');
 const decorFileInput = document.getElementById('decorFileInput');
 const fileUploadArea = document.getElementById('fileUploadArea');
 
@@ -450,32 +448,13 @@ function addImageToModal(url) {
   renderModalImages();
 }
 
-// + button -> show input area
+// + button -> show file upload area
 imgAddBtn.addEventListener('click', () => {
   if (modalImages.length >= MAX_IMAGES) {
     showToast(`Максимум ${MAX_IMAGES} изображений`, 'error');
     return;
   }
   imgInputArea.style.display = 'block';
-  decorInputImg.value = '';
-  decorInputImg.focus();
-});
-
-// "Добавить" button for URL
-imgUrlAddBtn.addEventListener('click', () => {
-  const url = decorInputImg.value.trim();
-  if (url) {
-    addImageToModal(url);
-    decorInputImg.value = '';
-  }
-});
-
-// Enter key in URL input
-decorInputImg.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    e.preventDefault();
-    imgUrlAddBtn.click();
-  }
 });
 
 // Remove image
