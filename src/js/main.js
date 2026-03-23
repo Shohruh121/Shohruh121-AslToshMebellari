@@ -1,4 +1,4 @@
-import stones from '../data/stones.json';
+let stones = [];
 
 // ============ TELEGRAM CONFIG ============
 // Token va chat IDs server-side proxy orqali ishlatiladi (.env da saqlanadi)
@@ -370,10 +370,21 @@ function createStoneCard(stone, index) {
   return card;
 }
 
-let allStones = [...stones];
+let allStones = [];
 let homeFeaturedIds = []; // Bosh sahifa uchun featured dekor ID lari (site_config dan)
 
 async function loadExtraStones() {
+  // Load stones.json
+  try {
+    const stonesRes = await fetch('/stones.json');
+    if (stonesRes.ok) {
+      stones = await stonesRes.json();
+      allStones = [...stones];
+    }
+  } catch (e) {
+    console.error('Error loading stones.json:', e);
+  }
+
   // Load featured IDs from Supabase site_config
   try {
     const cfgRes = await fetch('/sb/config');
