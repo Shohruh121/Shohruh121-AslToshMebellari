@@ -88,7 +88,7 @@ function showToast(msg, type = 'success') {
   const icon = document.getElementById('toastIcon');
   text.textContent = msg;
   toast.className = 'admin-toast show ' + type;
-  icon.setAttribute('stroke', type === 'success' ? '#22c55e' : '#ef4444');
+  icon.setAttribute('stroke', type === 'success' ? '#22c55e' : type === 'info' ? '#c8a45c' : '#ef4444');
   setTimeout(() => { toast.classList.remove('show'); }, 3000);
 }
 
@@ -535,6 +535,105 @@ function strToArr(str) {
   return str.split(',').map(s => s.trim()).filter(Boolean);
 }
 
+// ========== AUTO-TRANSLATION (UZ → RU) ==========
+const KNOWN_UZ_RU = {
+  "Issiqlikka chidamli": "Термостойкий",
+  "Chizilishga bardoshli": "Устойчив к царапинам",
+  "Oson tozalash": "Легко чистить",
+  "Gigienik sirt": "Гигиеничная поверхность",
+  "Mustahkam": "Прочный",
+  "Dog'lanmaydi": "Не оставляет пятен",
+  "UV barqaror": "UV-стабильный",
+  "Antibakterial": "Антибактериальный",
+  "Namlikka bardoshli": "Влагостойкий",
+  "Uzoq umr": "Долговечный",
+  "Oshxona stoli": "Кухонная столешница",
+  "Vanna xonasi": "Ванная комната",
+  "Bar peshtaxta": "Барная стойка",
+  "Devor paneli": "Стеновая панель",
+  "Ofis stoli": "Офисная столешница",
+  "Kafe stoli": "Столешница для кафе",
+  "Vanna stoli": "Столешница для ванной",
+  "Mehmonxona": "Гостиница",
+  "Restoran": "Ресторан",
+  "Devor qoplama": "Стеновое покрытие",
+  "Zinapoya": "Лестница",
+  "Derazaband": "Подоконник",
+  "Tibbiy mebel": "Медицинская мебель",
+  "Spa markaz": "Спа-центр",
+  "Glyantsli": "Глянцевая",
+  "Mat": "Матовая",
+  "Silliq": "Гладкая",
+  "Janubiy Koreya": "Южная Корея",
+  "Yevropa": "Европа",
+  "Xitoy": "Китай",
+  "Turkiya": "Турция",
+  "O'zbekiston": "Узбекистан",
+  "Rossiya": "Россия",
+  "12mm": "12мм",
+  "20mm": "20мм",
+  "30mm": "30мм"
+};
+
+async function translateText(text, from = 'uz', to = 'ru') {
+  if (!text || !text.trim()) return '';
+  try {
+    const res = await fetch('/api/translate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text, from, to })
+    });
+    const data = await res.json();
+    return data.translated || text;
+  } catch (e) {
+    console.warn('Translation failed:', e);
+    return text;
+  }
+}
+
+async function translateTerm(term) {
+  if (KNOWN_UZ_RU[term]) return KNOWN_UZ_RU[term];
+  return await translateText(term);
+}
+
+async function autoTranslateDecor(decor) {
+  const translations = {};
+
+  // Translate description_uz → description_ru if description_ru is empty
+  if (decor.description_uz && !decor.description_ru) {
+    decor.description_ru = await translateText(decor.description_uz);
+  }
+
+  // Translate custom terms in features, applications, finish
+  const arrFields = ['features', 'applications', 'finish'];
+  for (const field of arrFields) {
+    if (Array.isArray(decor[field])) {
+      for (const term of decor[field]) {
+        if (!KNOWN_UZ_RU[term] && term.trim()) {
+          const translated = await translateText(term);
+          if (translated && translated !== term) {
+            translations[term] = translated;
+          }
+        }
+      }
+    }
+  }
+
+  // Translate origin if custom
+  if (decor.origin && !KNOWN_UZ_RU[decor.origin]) {
+    const translated = await translateText(decor.origin);
+    if (translated && translated !== decor.origin) {
+      translations[decor.origin] = translated;
+    }
+  }
+
+  if (Object.keys(translations).length > 0) {
+    decor.translations = translations;
+  }
+
+  return decor;
+}
+
 // ========== PRESET CHIPS ==========
 const PRESETS = {
   category: {
@@ -722,16 +821,19 @@ document.getElementById('decorModalCancel').addEventListener('click', closeDecor
 decorModal.addEventListener('click', (e) => { if (e.target === decorModal) closeDecorModal(); });
 
 // Save decor
-document.getElementById('decorModalSave').addEventListener('click', async () => {
+const saveBtn = document.getElementById('decorModalSave');
+saveBtn.addEventListener('click', async () => {
   const name = decorInputName.value.trim();
   if (!name) { decorInputName.focus(); return; }
   if (modalImages.length === 0) {
     showToast('Kamida 1 ta rasm qo\'shing', 'error');
     return;
   }
+  saveBtn.disabled = true;
+  saveBtn.textContent = 'Сохранение...';
 
   const idx = parseInt(decorEditId.value);
-  const decor = {
+  let decor = {
     name,
     type: decorInputType.value || '',
     category: decorInputCategory.value || '',
@@ -746,6 +848,14 @@ document.getElementById('decorModalSave').addEventListener('click', async () => 
     features: strToArr(decorInputFeatures.value),
     applications: strToArr(decorInputApplications.value)
   };
+
+  // Auto-translate UZ → RU
+  showToast('Tarjima qilinmoqda...', 'info');
+  try {
+    decor = await autoTranslateDecor(decor);
+  } catch (e) {
+    console.warn('Auto-translate error:', e);
+  }
 
   try {
     if (idx === -1 || (idx >= 0 && allDecors[idx]._source === 'json')) {
@@ -798,6 +908,8 @@ document.getElementById('decorModalSave').addEventListener('click', async () => 
     console.error('Save error:', err);
   }
 
+  saveBtn.disabled = false;
+  saveBtn.textContent = 'Сохранить';
   updateDecorCount();
   applyFilters();
   closeDecorModal();

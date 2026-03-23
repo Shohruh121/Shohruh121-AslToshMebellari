@@ -838,6 +838,13 @@ try {
     var sbDecors = await sbRes.json();
     if (Array.isArray(sbDecors) && sbDecors.length > 0) {
       var formatted = sbDecors.map(function(d) {
+        // Merge custom translations into uzToRu dictionary
+        if (d.translations) {
+          var customTr = typeof d.translations === 'string' ? JSON.parse(d.translations) : d.translations;
+          for (var key in customTr) {
+            if (customTr.hasOwnProperty(key)) uzToRu[key] = customTr[key];
+          }
+        }
         return {
           id: 'sb-' + d.id,
           name: d.name || '',

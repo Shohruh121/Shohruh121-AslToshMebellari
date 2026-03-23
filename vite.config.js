@@ -275,6 +275,31 @@ export default defineConfig(({ mode }) => {
             }
           });
 
+          // ---- Translation proxy ----
+          server.middlewares.use('/api/translate', async (req, res) => {
+            if (req.method !== 'POST') { res.statusCode = 405; res.end('Method not allowed'); return; }
+            let body = '';
+            req.on('data', chunk => { body += chunk; });
+            req.on('end', async () => {
+              try {
+                const { text, from = 'uz', to = 'ru' } = JSON.parse(body);
+                if (!text) { res.setHeader('Content-Type', 'application/json'); res.end(JSON.stringify({ translated: '' })); return; }
+                const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${from}&tl=${to}&dt=t&q=${encodeURIComponent(text)}`;
+                const r = await fetch(url);
+                const data = await r.json();
+                let translated = '';
+                if (Array.isArray(data) && Array.isArray(data[0])) {
+                  translated = data[0].map(s => s[0]).join('');
+                }
+                res.setHeader('Content-Type', 'application/json');
+                res.end(JSON.stringify({ translated }));
+              } catch (e) {
+                res.statusCode = 500;
+                res.end(JSON.stringify({ error: e.message }));
+              }
+            });
+          });
+
           // ---- Telegram proxy endpoints ----
 
           // POST /tg/sendMessage — proxy text messages
