@@ -190,10 +190,8 @@ async function loadDecors() {
   // 1) Load stones.json (katalog dekorlari)
   try {
     const res = await fetch('/stones.json');
-    console.log('stones.json status:', res.status);
     if (res.ok) {
       const stones = await res.json();
-      console.log('stones.json loaded:', stones.length, 'items');
       if (Array.isArray(stones)) {
         allDecors = stones.map(d => ({
           ...d,
@@ -208,10 +206,8 @@ async function loadDecors() {
   // 2) Load Supabase decors (admin qo'shgan dekorlar)
   try {
     const res = await fetch('/sb/decors');
-    console.log('sb/decors status:', res.status);
     if (res.ok) {
       const data = await res.json();
-      console.log('sb/decors loaded:', Array.isArray(data) ? data.length + ' items' : data);
       if (Array.isArray(data)) {
         const sbDecors = data.map(d => ({
           ...d,
@@ -235,7 +231,6 @@ async function loadDecors() {
     console.error('Supabase decors load error:', e);
   }
 
-  console.log('Total allDecors:', allDecors.length);
 
   if (allDecors.length === 0) {
     grid.innerHTML = '<p style="color:#ef4444;padding:2rem;text-align:center;">Dekorlar topilmadi. Supabase va stones.json tekshiring.</p>';

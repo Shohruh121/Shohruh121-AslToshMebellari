@@ -812,7 +812,7 @@ async function loadStonesData() {
     var response = await fetch('/stones.json');
     if (response.ok) {
       stones = await response.json();
-      console.log('Stones loaded:', stones.length);
+      // Stones loaded
       return true;
     }
     console.error('Failed to load stones:', response.status);

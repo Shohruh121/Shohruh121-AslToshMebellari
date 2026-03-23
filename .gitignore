@@ -4,9 +4,12 @@ dist
 *.local
 .env
 .env.*
+.idea
+.vscode
 add_granit.cjs
 scrape_granit.cjs
 rebuild_granit.cjs
+fix_control_chars.cjs
 update_desc.cjs
 granistone_all.json
 html_snippet.txt
