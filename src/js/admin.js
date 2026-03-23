@@ -223,7 +223,9 @@ async function loadDecors() {
           applications: typeof d.applications === 'string' ? JSON.parse(d.applications) : (d.applications || []),
           _source: 'supabase'
         }));
-        allDecors = [...sbDecors, ...allDecors];
+        // Deduplicate: skip json entries already edited in Supabase (same name)
+        const sbNames = new Set(sbDecors.map(d => d.name));
+        allDecors = [...sbDecors, ...allDecors.filter(d => !sbNames.has(d.name))];
       }
     } else {
       const errText = await res.text();
@@ -554,6 +556,138 @@ function strToArr(str) {
   return str.split(',').map(s => s.trim()).filter(Boolean);
 }
 
+// ========== PRESET CHIPS ==========
+const PRESETS = {
+  category: {
+    target: 'decorInputCategory',
+    mode: 'single',
+    options: ['Adventure', 'Carrara', 'Delicious', 'Jewel', 'Life', 'Mineral', 'Natural', 'Sand&Pearl', 'Sport', 'Kvarts', 'Kvarts Premium', 'PS Series', 'MG Series']
+  },
+  descUz: {
+    target: 'decorInputDescUz',
+    mode: 'template',
+    options: [
+      { label: 'Akril', value: "Yuqori sifatli akril tosh \u2014 issiqlikka chidamli, gigienik va oson qayta tiklanadi." },
+      { label: 'Kvarts', value: "Yuqori sifatli kvarts tosh \u2014 issiqlikka chidamli, dog'lanishga bardoshli va oson tozalanadigan sirt." },
+      { label: 'Marmar', value: "Hashamatli kvarts tosh \u2014 tabiiy marmar ko'rinishi bilan. Antibakterial va gigienik sirt kafolatlanadi." },
+      { label: 'Granit', value: "Premium suyuq granit \u2014 mustahkam, chidamli va uzoq xizmat muddatiga ega." }
+    ]
+  },
+  descRu: {
+    target: 'decorInputDescRu',
+    mode: 'template',
+    options: [
+      { label: '\u0410\u043a\u0440\u0438\u043b', value: '\u0412\u044b\u0441\u043e\u043a\u043e\u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0430\u043a\u0440\u0438\u043b\u043e\u0432\u044b\u0439 \u043a\u0430\u043c\u0435\u043d\u044c \u2014 \u0442\u0435\u0440\u043c\u043e\u0441\u0442\u043e\u0439\u043a\u0438\u0439, \u0433\u0438\u0433\u0438\u0435\u043d\u0438\u0447\u043d\u044b\u0439 \u0438 \u043b\u0435\u0433\u043a\u043e \u0440\u0435\u0441\u0442\u0430\u0432\u0440\u0438\u0440\u0443\u0435\u0442\u0441\u044f.' },
+      { label: '\u041a\u0432\u0430\u0440\u0446', value: '\u0412\u044b\u0441\u043e\u043a\u043e\u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u043a\u0432\u0430\u0440\u0446\u0435\u0432\u044b\u0439 \u043a\u0430\u043c\u0435\u043d\u044c \u2014 \u0442\u0435\u0440\u043c\u043e\u0441\u0442\u043e\u0439\u043a\u0430\u044f, \u0443\u0441\u0442\u043e\u0439\u0447\u0438\u0432\u0430\u044f \u043a \u043f\u044f\u0442\u043d\u0430\u043c \u043f\u043e\u0432\u0435\u0440\u0445\u043d\u043e\u0441\u0442\u044c. \u0414\u043b\u044f \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0433\u043e \u0434\u0438\u0437\u0430\u0439\u043d\u0430.' },
+      { label: '\u041c\u0440\u0430\u043c\u043e\u0440', value: '\u0420\u043e\u0441\u043a\u043e\u0448\u043d\u044b\u0439 \u043a\u0432\u0430\u0440\u0446\u0435\u0432\u044b\u0439 \u043a\u0430\u043c\u0435\u043d\u044c \u0441 \u0432\u0438\u0434\u043e\u043c \u043d\u0430\u0442\u0443\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u043c\u0440\u0430\u043c\u043e\u0440\u0430. \u0410\u043d\u0442\u0438\u0431\u0430\u043a\u0442\u0435\u0440\u0438\u0430\u043b\u044c\u043d\u0430\u044f \u0438 \u0433\u0438\u0433\u0438\u0435\u043d\u0438\u0447\u043d\u0430\u044f \u043f\u043e\u0432\u0435\u0440\u0445\u043d\u043e\u0441\u0442\u044c.' },
+      { label: '\u0413\u0440\u0430\u043d\u0438\u0442', value: '\u0416\u0438\u0434\u043a\u0438\u0439 \u0433\u0440\u0430\u043d\u0438\u0442 \u043f\u0440\u0435\u043c\u0438\u0443\u043c \u043a\u043b\u0430\u0441\u0441\u0430 \u2014 \u043f\u0440\u043e\u0447\u043d\u044b\u0439, \u0438\u0437\u043d\u043e\u0441\u043e\u0441\u0442\u043e\u0439\u043a\u0438\u0439 \u0438 \u0434\u043e\u043b\u0433\u043e\u0432\u0435\u0447\u043d\u044b\u0439 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b \u0434\u043b\u044f \u0441\u0442\u043e\u043b\u0435\u0448\u043d\u0438\u0446.' }
+    ]
+  },
+  size: {
+    target: 'decorInputSize',
+    mode: 'single',
+    options: ['3680x760 mm', '3050x1440 mm', '3200x1600 mm']
+  },
+  origin: {
+    target: 'decorInputOrigin',
+    mode: 'single',
+    options: ['Janubiy Koreya', 'Yevropa', 'Xitoy', 'Turkiya', "O'zbekiston", 'Rossiya']
+  },
+  thickness: {
+    target: 'decorInputThickness',
+    mode: 'multi',
+    options: ['12mm', '20mm', '30mm']
+  },
+  finish: {
+    target: 'decorInputFinish',
+    mode: 'multi',
+    options: ['Glyantsli', 'Mat', 'Silliq']
+  },
+  features: {
+    target: 'decorInputFeatures',
+    mode: 'multi',
+    options: ['Issiqlikka chidamli', 'Chizilishga bardoshli', 'Oson tozalash', 'Gigienik sirt', 'Mustahkam', "Dog'lanmaydi", 'UV barqaror', 'Antibakterial', 'Namlikka bardoshli', 'Uzoq umr']
+  },
+  applications: {
+    target: 'decorInputApplications',
+    mode: 'multi',
+    options: ['Oshxona stoli', 'Vanna xonasi', 'Bar peshtaxta', 'Devor paneli', 'Ofis stoli', 'Kafe stoli', 'Vanna stoli', 'Mehmonxona', 'Restoran', 'Devor qoplama', 'Zinapoya', 'Derazaband', 'Tibbiy mebel', 'Spa markaz']
+  }
+};
+
+function initPresets() {
+  Object.entries(PRESETS).forEach(([key, preset]) => {
+    const target = document.getElementById(preset.target);
+    if (!target) return;
+    const container = document.createElement('div');
+    container.className = 'preset-chips';
+    container.dataset.presetKey = key;
+    preset.options.forEach(opt => {
+      const chip = document.createElement('span');
+      chip.className = 'preset-chip';
+      const isObj = typeof opt === 'object';
+      chip.textContent = isObj ? opt.label : opt;
+      chip.dataset.value = isObj ? opt.value : opt;
+      container.appendChild(chip);
+    });
+    target.parentElement.insertBefore(container, target);
+    container.addEventListener('click', (e) => {
+      const chip = e.target.closest('.preset-chip');
+      if (!chip) return;
+      handleChipClick(key, chip, target);
+    });
+  });
+}
+
+function handleChipClick(key, chip, target) {
+  const preset = PRESETS[key];
+  if (preset.mode === 'single') {
+    const wasActive = chip.classList.contains('active');
+    chip.parentElement.querySelectorAll('.preset-chip').forEach(c => c.classList.remove('active'));
+    if (!wasActive) {
+      chip.classList.add('active');
+      target.value = chip.dataset.value;
+    } else {
+      target.value = '';
+    }
+  } else if (preset.mode === 'multi') {
+    chip.classList.toggle('active');
+    const activeVals = Array.from(chip.parentElement.querySelectorAll('.preset-chip.active')).map(c => c.dataset.value);
+    const allPresetVals = preset.options.map(o => typeof o === 'object' ? o.value : o);
+    const customVals = strToArr(target.value).filter(v => !allPresetVals.includes(v));
+    target.value = [...activeVals, ...customVals].join(', ');
+  } else if (preset.mode === 'template') {
+    const wasActive = chip.classList.contains('active');
+    chip.parentElement.querySelectorAll('.preset-chip').forEach(c => c.classList.remove('active'));
+    if (!wasActive) {
+      chip.classList.add('active');
+      const name = decorInputName.value.trim();
+      target.value = name ? (name + ' \u2014 ' + chip.dataset.value) : chip.dataset.value;
+    } else {
+      target.value = '';
+    }
+  }
+}
+
+function syncPresetChips() {
+  Object.entries(PRESETS).forEach(([key, preset]) => {
+    const target = document.getElementById(preset.target);
+    const container = document.querySelector(`[data-preset-key="${key}"]`);
+    if (!target || !container) return;
+    const chips = container.querySelectorAll('.preset-chip');
+    if (preset.mode === 'single') {
+      chips.forEach(c => c.classList.toggle('active', target.value === c.dataset.value));
+    } else if (preset.mode === 'multi') {
+      const vals = strToArr(target.value);
+      chips.forEach(c => c.classList.toggle('active', vals.includes(c.dataset.value)));
+    } else if (preset.mode === 'template') {
+      chips.forEach(c => c.classList.toggle('active', target.value.includes(c.dataset.value)));
+    }
+  });
+}
+
+initPresets();
+
 function openAddModal() {
   decorModalTitle.textContent = 'Добавить декор';
   decorEditId.value = '-1';
@@ -571,6 +705,7 @@ function openAddModal() {
   modalImages = [];
   renderModalImages();
   imgInputArea.style.display = 'none';
+  syncPresetChips();
   decorModal.classList.add('active');
 }
 
@@ -593,6 +728,7 @@ function openEditModal(idx) {
   modalImages = getDecorImages(d).slice(0, MAX_IMAGES);
   renderModalImages();
   imgInputArea.style.display = 'none';
+  syncPresetChips();
   decorModal.classList.add('active');
 }
 

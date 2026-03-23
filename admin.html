@@ -242,6 +242,16 @@
         .file-upload-area:hover { border-color: var(--accent); color: var(--accent); }
         .file-upload-area input { display: none; }
 
+        /* Preset chips */
+        .preset-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+        .preset-chip {
+            background: rgba(200,164,92,0.08); border: 1px solid rgba(200,164,92,0.25);
+            color: #b89a4a; padding: 4px 10px; border-radius: 20px; font-size: 0.7rem;
+            cursor: pointer; transition: all 0.2s; user-select: none; white-space: nowrap;
+        }
+        .preset-chip:hover { background: rgba(200,164,92,0.2); border-color: var(--accent); }
+        .preset-chip.active { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
+
         /* Multi-image gallery in modal */
         .images-gallery { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 0.75rem; }
         .images-gallery .img-thumb {
